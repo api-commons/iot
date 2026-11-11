@@ -1,7 +1,7 @@
 provider: amazon-iot-core
 apis_io: https://apis.io/providers/amazon-iot-core/
 context: iot
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   device:
     path_segment:

@@ -62,8 +62,8 @@ duplicates:
 findings:
   - "A device agrees on name, id and type across IoT clouds, smart-home platforms and
     industrial systems; firmware version and last-seen time are carried by too few to share."
-  - "Telemetry agrees only on a timestamp: a reading is a value, a map of values, a fragment
-    (Cumulocity) or a sample with every sensor in it, depending on the platform."
+  - "Telemetry agrees only on a timestamp -- a reading is a value, a map of values, a
+    fragment or a sample with every sensor in it, depending on the platform."
   - "A device command agrees on the command and its status -- the remote-procedure-call shape
     that IoT platforms share."
 decisions:

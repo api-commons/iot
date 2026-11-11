@@ -1,7 +1,7 @@
 provider: eight-sleep
 apis_io: https://apis.io/providers/eight-sleep/
 context: iot
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   device:
     path_segment:

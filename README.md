@@ -17,7 +17,7 @@ generated. Every number below is a count of providers.
 | device_command | 12 | 10 | command 60%, status 60% | commands 6, actions 3, jobs 2, rpc 2 |
 | firmware_update | 11 | 8 | description 50% | firmware 6, ota 3, updates 2 |
 
-Cohort: 195 providers with harvested OpenAPI, 69 crosswalks. Of the providers exposing a device: 46% create, 93% list, 75% fetch, 41% update, 46% delete. Generated 2026-11-10 by build.py.
+Cohort: 195 providers with harvested OpenAPI, 69 crosswalks. Of the providers exposing a device: 46% create, 93% list, 75% fetch, 41% update, 46% delete. Generated 2026-11-11 by build.py.
 <!-- /commons:summary -->
 
 Shares are of the providers with a readable resource schema for that concept. The
@@ -26,7 +26,7 @@ extended tier and the long tail of every concept are in [profile.yml](profile.ym
 ## What the measurement shows
 
 - A device agrees on name, id and type across IoT clouds, smart-home platforms and industrial systems; firmware version and last-seen time are carried by too few to share.
-- Telemetry agrees only on a timestamp: a reading is a value, a map of values, a fragment (Cumulocity) or a sample with every sensor in it, depending on the platform.
+- Telemetry agrees only on a timestamp -- a reading is a value, a map of values, a fragment or a sample with every sensor in it, depending on the platform.
 - A device command agrees on the command and its status -- the remote-procedure-call shape that IoT platforms share.
 
 ## Artifacts
