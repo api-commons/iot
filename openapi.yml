@@ -183,7 +183,7 @@ paths:
           application/json:
             schema: *id003
     get:
-      operationId: listDeviceCommands
+      operationId: listCommands
       summary: List commands
       tags:
       - Device Commands
