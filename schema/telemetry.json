@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/iot/main/schema/telemetry.json",
+  "title": "Telemetry",
+  "description": "The common telemetry in IoT Devices, distilled from 14 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "timestamp": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "timestamp",
+        "time",
+        "measuredAt"
+      ]
+    },
+    "device_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.286,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "deviceId",
+        "device"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.214,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "name"
+      ]
+    },
+    "status": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.214,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "status",
+        "state"
+      ]
+    }
+  },
+  "required": [],
+  "x-commons": {
+    "context": "iot",
+    "concept": "telemetry",
+    "providers": 14,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

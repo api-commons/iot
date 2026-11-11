@@ -1,0 +1,21 @@
+provider: the-things-network
+apis_io: https://apis.io/providers/the-things-network/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    - gateways
+    properties:
+      name: name
+      metadata: attributes
+      serial_number: serial_number
+      created_at: created_at
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/the-things-stack-application-server-openapi.yml#DELETE /as/applications/{application_ids.application_id}/devices/batch
+    - openapi/_original/the-things-stack-application-server-openapi.yml#DELETE /as/applications/{application_ids.application_id}/devices/{device_id}
+    - openapi/_original/the-things-stack-application-server-openapi.yml#GET /as/applications/{end_device_ids.application_ids.application_id}/devices/{end_device_ids.device_id}
+    - openapi/_original/the-things-stack-application-server-openapi.yml#POST /as/applications/{end_device.ids.application_ids.application_id}/devices
+    - openapi/_original/the-things-stack-application-server-openapi.yml#PUT /as/applications/{end_device.ids.application_ids.application_id}/devices/{end_device.ids.device_id}

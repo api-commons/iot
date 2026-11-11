@@ -1,0 +1,50 @@
+provider: gridx-ai
+apis_io: https://apis.io/providers/gridx-ai/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - gateways
+    properties:
+      name: name
+      type:
+      - type
+      - model
+      - kind
+      id: id
+      metadata:
+      - metadata
+      - tags
+      status:
+      - connectionStatus
+      - status
+      created_at:
+      - createdAt
+      - registeredAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/gridx-ai-openapi.yml#DELETE /gateways/{gatewayID}
+    - openapi/_original/gridx-ai-openapi.yml#GET /gateways
+    - openapi/_original/gridx-ai-openapi.yml#GET /gateways/{gatewayID}
+    - openapi/_original/gridx-ai-openapi.yml#POST /systems/{systemID}/gateways
+    - openapi/_original/gridx-api.json#DELETE /gateways/{gatewayID}
+  telemetry:
+    path_segment:
+    - measurements
+    properties:
+      timestamp: measuredAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/gridx-ai-openapi.yml#GET /gateways/{gatewayID}/appliances/{applianceID}/measurements
+    - openapi/_original/gridx-ai-openapi.yml#GET /systems/{systemID}/assets/{assetID}/measurements
+    - openapi/_original/gridx-api.json#GET /gateways/{gatewayID}/appliances/{applianceID}/measurements
+    - openapi/_original/gridx-api.json#GET /systems/{systemID}/assets/{assetID}/measurements
+  firmware_update:
+    path_segment:
+    - firmware
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/gridx-ai-openapi.yml#GET /gateways/{gatewayID}/firmware
+    - openapi/_original/gridx-api.json#GET /gateways/{gatewayID}/firmware

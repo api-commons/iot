@@ -1,0 +1,320 @@
+openapi: 3.1.0
+info:
+  title: IoT Devices (API Commons)
+  version: 0.1.0-draft.20261110
+  description: 'The common IoT Devices interface, distilled from the harvested OpenAPI of 195 providers in the APIs.io
+    catalog. Not a product: no one serves this API. It is the shape the market already shares, measured, so that
+    providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /devices:
+    get:
+      operationId: listDevices
+      summary: List devices
+      tags:
+      - Devices
+      x-commons-tier: core
+      x-commons-share: 0.928
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/Device'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createDevice
+      summary: Create a device
+      tags:
+      - Devices
+      x-commons-tier: extended
+      x-commons-share: 0.464
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /devices/{device_id}:
+    parameters:
+    - $ref: '#/components/parameters/device_id'
+    get:
+      operationId: getDevice
+      summary: Get a device
+      tags:
+      - Devices
+      x-commons-tier: core
+      x-commons-share: 0.754
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    delete:
+      operationId: deleteDevice
+      summary: Delete a device
+      tags:
+      - Devices
+      x-commons-tier: extended
+      x-commons-share: 0.464
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    patch:
+      operationId: updateDevice
+      summary: Update a device
+      tags:
+      - Devices
+      x-commons-tier: extended
+      x-commons-share: 0.406
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /telemetries:
+    get:
+      operationId: listTelemetries
+      summary: List telemetries
+      tags:
+      - Telemetries
+      x-commons-tier: core
+      x-commons-share: 0.833
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id002
+                  $ref: '#/components/schemas/Telemetry'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createTelemetry
+      summary: Create a telemetry
+      tags:
+      - Telemetries
+      x-commons-tier: extended
+      x-commons-share: 0.278
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /telemetries/{telemetry_id}:
+    parameters:
+    - $ref: '#/components/parameters/telemetry_id'
+    get:
+      operationId: getTelemetry
+      summary: Get a telemetry
+      tags:
+      - Telemetries
+      x-commons-tier: extended
+      x-commons-share: 0.222
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+  /devices/{device_id}/commands:
+    parameters:
+    - $ref: '#/components/parameters/device_id'
+    post:
+      operationId: createDeviceCommand
+      summary: Create a device command
+      tags:
+      - Device Commands
+      x-commons-tier: core
+      x-commons-share: 0.667
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: &id003
+                $ref: '#/components/schemas/DeviceCommand'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+    get:
+      operationId: listDeviceCommands
+      summary: List commands
+      tags:
+      - Device Commands
+      x-commons-tier: extended
+      x-commons-share: 0.417
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: *id003
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+  /devices/{device_id}/commands/{device_command_id}:
+    parameters:
+    - $ref: '#/components/parameters/device_id'
+    - $ref: '#/components/parameters/device_command_id'
+    get:
+      operationId: getDeviceCommand
+      summary: Get a device command
+      tags:
+      - Device Commands
+      x-commons-tier: extended
+      x-commons-share: 0.25
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+  /firmware-updates:
+    get:
+      operationId: listFirmwareUpdates
+      summary: List firmware updates
+      tags:
+      - Firmware Updates
+      x-commons-tier: core
+      x-commons-share: 0.818
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id004
+                  $ref: '#/components/schemas/FirmwareUpdate'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createFirmwareUpdate
+      summary: Create a firmware update
+      tags:
+      - Firmware Updates
+      x-commons-tier: core
+      x-commons-share: 0.545
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id004
+  /firmware-updates/{firmware_update_id}:
+    parameters:
+    - $ref: '#/components/parameters/firmware_update_id'
+    get:
+      operationId: getFirmwareUpdate
+      summary: Get a firmware update
+      tags:
+      - Firmware Updates
+      x-commons-tier: extended
+      x-commons-share: 0.364
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+components:
+  schemas:
+    Device:
+      $ref: ./schema/device.json
+    Telemetry:
+      $ref: ./schema/telemetry.json
+    DeviceCommand:
+      $ref: ./schema/device_command.json
+    FirmwareUpdate:
+      $ref: ./schema/firmware_update.json
+  parameters:
+    device_id:
+      name: device_id
+      in: path
+      required: true
+      schema:
+        type: string
+    telemetry_id:
+      name: telemetry_id
+      in: path
+      required: true
+      schema:
+        type: string
+    device_command_id:
+      name: device_command_id
+      in: path
+      required: true
+      schema:
+        type: string
+    firmware_update_id:
+      name: firmware_update_id
+      in: path
+      required: true
+      schema:
+        type: string

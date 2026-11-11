@@ -1,0 +1,20 @@
+provider: ixon
+apis_io: https://apis.io/providers/ixon/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties:
+      name: name
+      type: type
+      serial_number: macAddress
+      status: status
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/ixon-openapi.json#DELETE /agents/{agentId}/devices
+    - openapi/_original/ixon-openapi.json#DELETE /agents/{agentId}/devices/{publicId}
+    - openapi/_original/ixon-openapi.json#GET /agents/{agentId}/devices
+    - openapi/_original/ixon-openapi.json#GET /agents/{agentId}/devices/{publicId}
+    - openapi/_original/ixon-openapi.json#PATCH /agents/{agentId}/devices

@@ -1,0 +1,15 @@
+provider: ptc-thingworx
+apis_io: https://apis.io/providers/ptc-thingworx/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - things
+    properties:
+      name: name
+      metadata: tags
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/ptc-thingworx-rest-openapi.yml#GET /Things
+    - openapi/_original/ptc-thingworx-rest-openapi.yml#GET /Things/{thingName}

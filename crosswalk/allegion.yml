@@ -1,0 +1,29 @@
+provider: allegion
+apis_io: https://apis.io/providers/allegion/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties:
+      name: name
+      type: model
+      device_id: deviceId
+      firmware_version: firmwareVersion
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/engage-credentialing-openapi.yml#GET /devices
+    - openapi/_original/schlage-home-openapi.yml#GET /devices
+    - openapi/_original/schlage-home-openapi.yml#GET /devices/{deviceId}
+    - openapi/_original/schlage-home-openapi.yml#PUT /devices/{deviceId}
+  device_command:
+    path_segment:
+    - commands
+    properties:
+      command: type
+      status: status
+      created_at: createdAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/schlage-home-openapi.yml#GET /devices/{deviceId}/commands/{commandId}

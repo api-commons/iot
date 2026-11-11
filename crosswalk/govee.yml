@@ -1,0 +1,13 @@
+provider: govee
+apis_io: https://apis.io/providers/govee/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties:
+      type: type
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/govee-openapi.yml#GET /user/devices

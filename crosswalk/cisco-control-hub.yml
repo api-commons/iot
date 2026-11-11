@@ -1,0 +1,12 @@
+provider: cisco-control-hub
+apis_io: https://apis.io/providers/cisco-control-hub/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/cisco-control-hub-openapi.yml#GET /devices

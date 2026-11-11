@@ -1,0 +1,15 @@
+provider: tank-utility
+apis_io: https://apis.io/providers/tank-utility/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties:
+      name: name
+      status: status
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/tank-utility-devices-openapi.yml#GET /devices
+    - openapi/_original/tank-utility-devices-openapi.yml#GET /devices/{deviceId}

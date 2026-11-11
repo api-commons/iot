@@ -1,0 +1,18 @@
+provider: tibber
+apis_io: https://apis.io/providers/tibber/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties:
+      type:
+      - category
+      - model
+      id: id
+      metadata: attributes
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/tibber-data-api-openapi.yml#GET /v1/homes/{homeId}/devices
+    - openapi/_original/tibber-data-api-openapi.yml#GET /v1/homes/{homeId}/devices/{deviceId}

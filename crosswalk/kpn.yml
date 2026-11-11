@@ -1,0 +1,21 @@
+provider: kpn
+apis_io: https://apis.io/providers/kpn/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties:
+      name: name
+      type: model
+      serial_number:
+      - EUI
+      - serial
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/kpn-lora-device-management-openapi.yml#DELETE /devices/{deviceRef}
+    - openapi/_original/kpn-lora-device-management-openapi.yml#GET /devices
+    - openapi/_original/kpn-lora-device-management-openapi.yml#GET /devices/{deviceRef}
+    - openapi/_original/kpn-lora-device-management-openapi.yml#POST /devices
+    - openapi/_original/kpn-lora-device-management-openapi.yml#PUT /devices/{deviceRef}

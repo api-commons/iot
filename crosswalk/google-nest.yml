@@ -1,0 +1,15 @@
+provider: google-nest
+apis_io: https://apis.io/providers/google-nest/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties:
+      name: name
+      type: type
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/openapi.yml#GET /enterprises/{enterpriseId}/devices
+    - openapi/_original/openapi.yml#GET /enterprises/{enterpriseId}/devices/{deviceId}

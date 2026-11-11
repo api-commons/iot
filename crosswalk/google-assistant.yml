@@ -1,0 +1,15 @@
+provider: google-assistant
+apis_io: https://apis.io/providers/google-assistant/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties:
+      name: nickname
+      id: id
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/openapi.yml#GET /v1alpha2/projects/{projectId}/devices
+    - openapi/_original/openapi.yml#POST /v1alpha2/projects/{projectId}/devices

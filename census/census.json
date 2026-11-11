@@ -1,0 +1,6094 @@
+{
+ "cohort_size": 195,
+ "unreadable": [
+  {
+   "spec": "aeris/openapi/_original/aeris-watchtower-api-openapi-openapi.yaml",
+   "error": "did not find expected <document start>"
+  }
+ ],
+ "concepts": {
+  "device": {
+   "1nce": {
+    "segments": [
+     "endpoints",
+     "devices"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {
+     "protocol": "string",
+     "active": "boolean",
+     "domain": "string",
+     "ipAddresses": "array",
+     "port": "number",
+     "securePort": "number",
+     "settings": "array",
+     "id": "string",
+     "iccid": "string",
+     "imsi1": "string",
+     "ip": "string",
+     "name": "string"
+    },
+    "evidence": [
+     "openapi/_original/1nce-os-openapi.yml#GET /v1/inspect/devices",
+     "openapi/_original/1nce-os-openapi.yml#GET /v1/inspect/devices/{deviceId}",
+     "openapi/_original/1nce-os-openapi.yml#GET /v1/integrate/devices/endpoints",
+     "openapi/_original/1nce-os-openapi.yml#GET /v1/integrate/devices/endpoints/{protocol}",
+     "openapi/_original/1nce-os-openapi.yml#PATCH /v1/integrate/devices/endpoints/{protocol}"
+    ]
+   },
+   "30mhz": {
+    "segments": [
+     "device"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "POST item",
+     "PUT item"
+    ],
+    "properties": {
+     "assignee": "string",
+     "resourceId": "string",
+     "resourceType": "string",
+     "role": "string",
+     "deviceModel": "string",
+     "deviceType": "string",
+     "name": "string",
+     "organizationId": "string",
+     "serialNumber": "string",
+     "siteId": "string",
+     "createdAt": "string",
+     "createdBy": "string",
+     "deviceId": "string",
+     "siteUuid": "string"
+    },
+    "evidence": [
+     "openapi/_original/30mhz-zensie-openapi.json#DELETE /authorization/role-assignment/assignee/{assignee}/role/{role}/device/{deviceId}",
+     "openapi/_original/30mhz-zensie-openapi.json#DELETE /device/{deviceId}",
+     "openapi/_original/30mhz-zensie-openapi.json#GET /authorization/check/device/{deviceId}",
+     "openapi/_original/30mhz-zensie-openapi.json#GET /device",
+     "openapi/_original/30mhz-zensie-openapi.json#GET /device/{deviceId}",
+     "openapi/_original/30mhz-zensie-openapi.json#PATCH /device/{deviceId}",
+     "openapi/_original/30mhz-zensie-openapi.json#POST /authorization/role-assignment/assignee/{assignee}/role/{role}/device/{deviceId}",
+     "openapi/_original/30mhz-zensie-openapi.json#POST /device",
+     "openapi/_original/30mhz-zensie-openapi.json#POST /status/alarm/mother/location/{locationName}/device/{deviceId}",
+     "openapi/_original/30mhz-zensie-openapi.json#PUT /device/{deviceId}",
+     "openapi/_original/30mhz-zensie-openapi_2.json#DELETE /authorization/role-assignment/assignee/{assignee}/role/{role}/device/{deviceId}",
+     "openapi/_original/30mhz-zensie-openapi_2.json#DELETE /device/{deviceId}"
+    ]
+   },
+   "actionstreamer": {
+    "segments": [
+     "device"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "POST item",
+     "PUT item"
+    ],
+    "properties": {
+     "key": "integer",
+     "deviceTypeID": "integer",
+     "deviceName": "string",
+     "serialNumber": "string",
+     "deviceDescription": "string",
+     "recentOutput": "string",
+     "cameraStatus": "string",
+     "lastIPAddress": "string",
+     "tunnelIPAddress": "string",
+     "lastHeardFromDate": "string",
+     "offlineNotificationDate": "string",
+     "softwareDate": "string",
+     "location": "string",
+     "setupStatus": "integer",
+     "autoSendFiles": "integer",
+     "runStartupEvent": "integer",
+     "deviceReadyEventPresetID": "integer",
+     "standaloneEventPresetID": "integer",
+     "logHealth": "integer",
+     "runAnalytics": "integer",
+     "audioChannelName": "string",
+     "volume": "integer",
+     "commentListID": "integer",
+     "creationDate": "string",
+     "eventPresetName": "string",
+     "deviceID": "integer",
+     "deviceGroupID": "integer",
+     "agentTypeID": "integer",
+     "agentID": "integer",
+     "eventTypeID": "integer",
+     "eventStatus": "integer",
+     "eventParameters": "string",
+     "processID": "integer",
+     "result": "string",
+     "percentComplete": "number",
+     "priority": "integer",
+     "expirationEpoch": "integer",
+     "attemptNumber": "integer",
+     "maxAttempts": "integer",
+     "tagString": "string",
+     "tagNumber": "integer"
+    },
+    "evidence": [
+     "openapi/_original/actionstreamer-openapi-original.json#DELETE /v1/device/{deviceID}",
+     "openapi/_original/actionstreamer-openapi-original.json#DELETE /v1/devicesetting/device/{deviceID}",
+     "openapi/_original/actionstreamer-openapi-original.json#DELETE /v1/eventpreset/startupevent/{deviceState}/device/{deviceID}",
+     "openapi/_original/actionstreamer-openapi-original.json#GET /v1/device/{deviceID}",
+     "openapi/_original/actionstreamer-openapi-original.json#GET /v1/devicesetting/device/{deviceID}",
+     "openapi/_original/actionstreamer-openapi-original.json#GET /v1/eventpreset/list/device/{deviceID}",
+     "openapi/_original/actionstreamer-openapi-original.json#PATCH /v1/device/{deviceID}",
+     "openapi/_original/actionstreamer-openapi-original.json#POST /v1/device",
+     "openapi/_original/actionstreamer-openapi-original.json#POST /v1/devicegroup/{deviceGroupID}/device/{deviceID}",
+     "openapi/_original/actionstreamer-openapi-original.json#PUT /v1/device/{deviceID}",
+     "openapi/_original/actionstreamer-openapi-original.json#PUT /v1/devicesetting/device/{deviceID}"
+    ]
+   },
+   "aedifion": {
+    "segments": [
+     "device",
+     "devices"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "child_devices": "array",
+     "datapoints": "array",
+     "id": "integer",
+     "name": "string",
+     "project_id": "integer",
+     "tags": "array"
+    },
+    "evidence": [
+     "openapi/_original/aedifion-openapi.json#GET /v2/project/{project_id}/device/{device_id}",
+     "openapi/_original/aedifion-openapi.json#GET /v2/project/{project_id}/devices",
+     "openapi/_original/aedifion-openapi.yml#GET /v2/project/{project_id}/device/{device_id}",
+     "openapi/_original/aedifion-openapi.yml#GET /v2/project/{project_id}/devices"
+    ]
+   },
+   "aeris": {
+    "segments": [
+     "gateways",
+     "devices"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "iccId": "string",
+     "imsi": "string",
+     "status": "string",
+     "subscriptionState": "string",
+     "msisdn": "string",
+     "deviceId": "string",
+     "gatewayId": "string",
+     "companyId": "string",
+     "carrierId": "string",
+     "imei": "string",
+     "iccid": "string",
+     "mcc": "string",
+     "mnc": "string",
+     "serialNumber": "string",
+     "deviceType": "string",
+     "firmwareVersion": "string",
+     "billingStatus": "string",
+     "assignedIp": "string",
+     "apn": "string",
+     "correlationId": "string",
+     "createdAt": "string",
+     "attributes": "object",
+     "billing": "object",
+     "gateways": "array"
+    },
+    "evidence": [
+     "openapi/_original/subscription-device-api.yaml#GET /devices",
+     "openapi/_original/watchtower-api-openapi.yaml#DELETE /watchtower/v1/batch/gateways",
+     "openapi/_original/watchtower-api-openapi.yaml#DELETE /watchtower/v1/gateways/{gatewayId}",
+     "openapi/_original/watchtower-api-openapi.yaml#GET /watchtower/v1/gateways",
+     "openapi/_original/watchtower-api-openapi.yaml#GET /watchtower/v1/gateways/{gatewayId}",
+     "openapi/_original/watchtower-api-openapi.yaml#POST /watchtower/v1/batch/gateways",
+     "openapi/_original/watchtower-api-openapi.yaml#POST /watchtower/v1/gateways",
+     "openapi/_original/watchtower-api-openapi.yaml#PUT /watchtower/v1/gateways/{gatewayId}"
+    ]
+   },
+   "afero": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "deviceId": "string",
+     "profileId": "string",
+     "deviceTypeId": "string",
+     "partnerId": "string",
+     "friendlyName": "string",
+     "updating": "boolean",
+     "virtual": "boolean",
+     "developerDevice": "boolean",
+     "disconnectNotificationLevel": "string",
+     "createdTimestamp": "integer",
+     "deviceState": "object",
+     "deviceTags": "array",
+     "attributes": "array"
+    },
+    "evidence": [
+     "openapi/_original/afero-cloud-api-openapi.yml#GET /v1/accounts/{accountId}/devices",
+     "openapi/_original/afero-cloud-api-openapi.yml#GET /v1/accounts/{accountId}/devices/{deviceId}"
+    ]
+   },
+   "agrology": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/agrology-public-api-openapi.yml#GET /historical/ground-truth/{siteID}/devices"
+    ]
+   },
+   "allegion": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {
+     "deviceId": "string",
+     "name": "string",
+     "model": "string",
+     "firmwareVersion": "string",
+     "siteId": "string",
+     "batteryLevel": "integer",
+     "wifiSignalStrength": "integer",
+     "connectivityState": "string",
+     "lockState": "string",
+     "timeZone": "string",
+     "autoLockDelaySeconds": "integer",
+     "vacationMode": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/engage-credentialing-openapi.yml#GET /devices",
+     "openapi/_original/schlage-home-openapi.yml#GET /devices",
+     "openapi/_original/schlage-home-openapi.yml#GET /devices/{deviceId}",
+     "openapi/_original/schlage-home-openapi.yml#PUT /devices/{deviceId}"
+    ]
+   },
+   "amazon-iot-core": {
+    "segments": [
+     "things"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "POST item",
+     "PUT item"
+    ],
+    "properties": {
+     "defaultClientId": null,
+     "thingName": null,
+     "thingId": null,
+     "thingArn": null,
+     "thingTypeName": null,
+     "attributes": null,
+     "version": null,
+     "billingGroupName": null,
+     "attributePayload": "object",
+     "expectedVersion": "integer",
+     "removeThingType": "boolean",
+     "executionSummaries": null,
+     "nextToken": null,
+     "things": null,
+     "certificatePem": null,
+     "resourceArns": null,
+     "templateBody": "string",
+     "parameters": "object"
+    },
+    "evidence": [
+     "openapi/_original/amazon-iot-core-openapi-original.yml#DELETE /things/{thingName}",
+     "openapi/_original/amazon-iot-core-openapi-original.yml#GET /billing-groups/{billingGroupName}/things",
+     "openapi/_original/amazon-iot-core-openapi-original.yml#GET /jobs/{jobId}/things",
+     "openapi/_original/amazon-iot-core-openapi-original.yml#GET /thing-groups/{thingGroupName}/things",
+     "openapi/_original/amazon-iot-core-openapi-original.yml#GET /things",
+     "openapi/_original/amazon-iot-core-openapi-original.yml#GET /things/{thingName}",
+     "openapi/_original/amazon-iot-core-openapi-original.yml#PATCH /things/{thingName}",
+     "openapi/_original/amazon-iot-core-openapi-original.yml#POST /things",
+     "openapi/_original/amazon-iot-core-openapi-original.yml#POST /things/{thingName}",
+     "openapi/_original/amazon-iot-core-openapi.yml#DELETE /things/{thingName}",
+     "openapi/_original/amazon-iot-core-openapi.yml#GET /things",
+     "openapi/_original/amazon-iot-core-openapi.yml#GET /things/{thingName}"
+    ]
+   },
+   "amazon-iot-device-defender": {
+    "segments": [
+     "things"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "defaultClientId": null,
+     "thingName": null,
+     "thingId": null,
+     "thingArn": null,
+     "thingTypeName": null,
+     "attributes": null,
+     "version": null,
+     "billingGroupName": null,
+     "attributePayload": "object",
+     "expectedVersion": "integer",
+     "removeThingType": "boolean",
+     "executionSummaries": null,
+     "nextToken": null,
+     "things": null,
+     "certificatePem": null,
+     "resourceArns": null,
+     "templateBody": "string",
+     "parameters": "object"
+    },
+    "evidence": [
+     "openapi/_original/amazon-iot-device-defender-openapi-original.yml#DELETE /things/{thingName}",
+     "openapi/_original/amazon-iot-device-defender-openapi-original.yml#GET /billing-groups/{billingGroupName}/things",
+     "openapi/_original/amazon-iot-device-defender-openapi-original.yml#GET /jobs/{jobId}/things",
+     "openapi/_original/amazon-iot-device-defender-openapi-original.yml#GET /thing-groups/{thingGroupName}/things",
+     "openapi/_original/amazon-iot-device-defender-openapi-original.yml#GET /things",
+     "openapi/_original/amazon-iot-device-defender-openapi-original.yml#GET /things/{thingName}",
+     "openapi/_original/amazon-iot-device-defender-openapi-original.yml#PATCH /things/{thingName}",
+     "openapi/_original/amazon-iot-device-defender-openapi-original.yml#POST /things",
+     "openapi/_original/amazon-iot-device-defender-openapi-original.yml#POST /things/{thingName}"
+    ]
+   },
+   "amazon-iot-device-management": {
+    "segments": [
+     "things"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "defaultClientId": null,
+     "thingName": null,
+     "thingId": null,
+     "thingArn": null,
+     "thingTypeName": null,
+     "attributes": null,
+     "version": null,
+     "billingGroupName": null,
+     "attributePayload": "object",
+     "expectedVersion": "integer",
+     "removeThingType": "boolean",
+     "executionSummaries": null,
+     "nextToken": null,
+     "things": null,
+     "certificatePem": null,
+     "resourceArns": null,
+     "templateBody": "string",
+     "parameters": "object"
+    },
+    "evidence": [
+     "openapi/_original/amazon-iot-device-management-openapi-original.yml#DELETE /things/{thingName}",
+     "openapi/_original/amazon-iot-device-management-openapi-original.yml#GET /billing-groups/{billingGroupName}/things",
+     "openapi/_original/amazon-iot-device-management-openapi-original.yml#GET /jobs/{jobId}/things",
+     "openapi/_original/amazon-iot-device-management-openapi-original.yml#GET /thing-groups/{thingGroupName}/things",
+     "openapi/_original/amazon-iot-device-management-openapi-original.yml#GET /things",
+     "openapi/_original/amazon-iot-device-management-openapi-original.yml#GET /things/{thingName}",
+     "openapi/_original/amazon-iot-device-management-openapi-original.yml#PATCH /things/{thingName}",
+     "openapi/_original/amazon-iot-device-management-openapi-original.yml#POST /things",
+     "openapi/_original/amazon-iot-device-management-openapi-original.yml#POST /things/{thingName}"
+    ]
+   },
+   "amazon-iot-sitewise": {
+    "segments": [
+     "gateways"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "gatewaySummaries": null,
+     "nextToken": null,
+     "gatewayId": null,
+     "gatewayArn": null,
+     "gatewayName": "string",
+     "gatewayPlatform": "object",
+     "tags": "object",
+     "gatewayCapabilitySummaries": null,
+     "creationDate": null,
+     "lastUpdateDate": null
+    },
+    "evidence": [
+     "openapi/_original/amazon-iot-sitewise-openapi-original.yml#DELETE /20200301/gateways/{gatewayId}",
+     "openapi/_original/amazon-iot-sitewise-openapi-original.yml#GET /20200301/gateways",
+     "openapi/_original/amazon-iot-sitewise-openapi-original.yml#GET /20200301/gateways/{gatewayId}",
+     "openapi/_original/amazon-iot-sitewise-openapi-original.yml#POST /20200301/gateways",
+     "openapi/_original/amazon-iot-sitewise-openapi-original.yml#PUT /20200301/gateways/{gatewayId}"
+    ]
+   },
+   "amazon-panorama": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "AlternateSoftwares": null,
+     "Arn": null,
+     "Brand": null,
+     "CreatedTime": null,
+     "CurrentNetworkingStatus": null,
+     "CurrentSoftware": null,
+     "Description": null,
+     "DeviceAggregatedStatus": null,
+     "DeviceConnectionStatus": null,
+     "DeviceId": null,
+     "LatestAlternateSoftware": null,
+     "LatestDeviceJob": null,
+     "LatestSoftware": null,
+     "LeaseExpirationTime": null,
+     "Name": null,
+     "NetworkingConfiguration": null,
+     "ProvisioningStatus": null,
+     "SerialNumber": null,
+     "Tags": null,
+     "Type": null,
+     "Devices": null,
+     "NextToken": null,
+     "Certificates": null,
+     "IotThingName": null,
+     "Status": null
+    },
+    "evidence": [
+     "openapi/_original/amazon-panorama-openapi.yml#DELETE /devices/{DeviceId}",
+     "openapi/_original/amazon-panorama-openapi.yml#GET /devices",
+     "openapi/_original/amazon-panorama-openapi.yml#GET /devices/{DeviceId}",
+     "openapi/_original/amazon-panorama-openapi.yml#POST /devices",
+     "openapi/_original/amazon-panorama-openapi.yml#PUT /devices/{DeviceId}"
+    ]
+   },
+   "arduino": {
+    "segments": [
+     "things",
+     "devices"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST item",
+     "PUT collection"
+    ],
+    "properties": {
+     "fqbn": "string",
+     "label": "string",
+     "min_provisioning_sketch_version": "string",
+     "min_provisioning_wifi_version": "string",
+     "ota_available": "boolean",
+     "provisioning": "string",
+     "tags": "array",
+     "type": "string",
+     "vendor": "string",
+     "assistant": "string",
+     "created_at": "string",
+     "deleted_at": "string",
+     "device_fqbn": "string",
+     "device_id": "string",
+     "device_name": "string",
+     "device_type": "string",
+     "href": "string",
+     "id": "string",
+     "name": "string",
+     "organization_id": "string",
+     "properties": "array",
+     "properties_count": "integer",
+     "sketch_id": "string",
+     "source_template": "string",
+     "timezone": "string",
+     "updated_at": "string",
+     "user_id": "string",
+     "webhook_active": "boolean",
+     "webhook_uri": "string",
+     "soft_deleted": "boolean",
+     "ble_mac": "string",
+     "connection_type": "string",
+     "device_status": "string",
+     "events": "array",
+     "issuer_ca": "string",
+     "last_activity_at": "string",
+     "latest_wifi_fw_version": "string",
+     "lib_version": "string",
+     "locked": "boolean",
+     "metadata": "object",
+     "no_sketch": "boolean",
+     "ota_compatible": "boolean",
+     "required_wifi_fw_version": "string",
+     "serial": "string",
+     "thing": "object",
+     "unique_hardware_id": "string",
+     "webhooks": "array",
+     "wifi_fw_version": "string"
+    },
+    "evidence": [
+     "openapi/_original/arduino-iot-cloud-api-openapi.yml#DELETE /iot/v1/manage/users/{id}/devices",
+     "openapi/_original/arduino-iot-cloud-api-openapi.yml#DELETE /iot/v1/things/{id}",
+     "openapi/_original/arduino-iot-cloud-api-openapi.yml#DELETE /iot/v2/devices/{id}",
+     "openapi/_original/arduino-iot-cloud-api-openapi.yml#DELETE /iot/v2/things/{id}",
+     "openapi/_original/arduino-iot-cloud-api-openapi.yml#GET /iot/v1/supported/devices",
+     "openapi/_original/arduino-iot-cloud-api-openapi.yml#GET /iot/v1/things",
+     "openapi/_original/arduino-iot-cloud-api-openapi.yml#GET /iot/v1/things/{id}",
+     "openapi/_original/arduino-iot-cloud-api-openapi.yml#GET /iot/v2/devices",
+     "openapi/_original/arduino-iot-cloud-api-openapi.yml#GET /iot/v2/devices/{id}",
+     "openapi/_original/arduino-iot-cloud-api-openapi.yml#GET /iot/v2/things",
+     "openapi/_original/arduino-iot-cloud-api-openapi.yml#GET /iot/v2/things/{id}",
+     "openapi/_original/arduino-iot-cloud-api-openapi.yml#POST /iot/v1/things/{id}"
+    ]
+   },
+   "avnet": {
+    "segments": [
+     "device",
+     "devices"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT collection",
+     "PUT item"
+    ],
+    "properties": {
+     "certificatePemURL": "string",
+     "privateKeyURL": "string",
+     "configFile": "string",
+     "amazonRootCAURL": "string",
+     "guid": "string",
+     "uniqueId": "string",
+     "displayName": "string",
+     "isConnected": "boolean",
+     "lastactivityDate": "string",
+     "isActive": "boolean",
+     "firmwareupgradeGuid": "string",
+     "deviceTemplateGuid": "string",
+     "authType": "integer",
+     "authTypeName": "string",
+     "messageVersion": "string",
+     "isSolutionTemplate": "boolean",
+     "solutionName": "string",
+     "deviceInfo": "object",
+     "deviceTemplateName": "string",
+     "reportingTo": "string",
+     "entityName": "string",
+     "IsAcquired": "boolean",
+     "childDeviceCount": "integer",
+     "isType2Support": "boolean",
+     "isAllottedDevice": "integer",
+     "allottedDevicePermission": "integer",
+     "count": "integer",
+     "properties": "array",
+     "deviceStatus": "string",
+     "recentAttrValue": "object",
+     "lastConnection": "string",
+     "lastCommunication": "string",
+     "solutionGuid": "string",
+     "groupName": "string",
+     "productName": "string",
+     "parentCompanyGuid": "string",
+     "certLocation": "integer",
+     "Wireless": "boolean",
+     "wirelessDeviceType": "integer",
+     "publicDevice": "boolean",
+     "certAvailable": "boolean",
+     "ggDeviceType": "integer",
+     "cloudTemplateGuid": "string",
+     "createdBy": "string",
+     "createdDate": "string",
+     "attrEnable": "boolean",
+     "deviceCapability": "integer",
+     "info": "array",
+     "newid": "string",
+     "entityGuid": "string",
+     "ParentUniqueId": "string",
+     "ggDeviceScript": "string",
+     "activeDeviceCount": "integer",
+     "inActiveDeviceCount": "integer",
+     "fileSupport": "boolean",
+     "deviceCertificateGuid": "string",
+     "deviceCertificate": "string",
+     "deviceCertificatePassword": "string",
+     "certificateText": "string",
+     "note": "string",
+     "lastActivityDate": "string",
+     "firmwareUpgradeGuid": "string",
+     "certificateGuid": "string",
+     "certificateName": "string",
+     "certificateType": "integer",
+     "deviceTemplateAuthType": "integer",
+     "image": "string",
+     "cpId": "string",
+     "isAcquired": "integer",
+     "firmwareAvail": "integer",
+     "parentDeviceGuid": "string",
+     "tag": "string",
+     "parentDeviceUniqueId": "string",
+     "isParentAcquired": "integer",
+     "isSimulatorOn": "integer",
+     "isEdgeSupport": "boolean",
+     "imageUrl": "string",
+     "isLowBandwidth": "boolean",
+     "msgCode": "string",
+     "hasTwin": "boolean",
+     "companyGuid": "string",
+     "cUrl": "string",
+     "ckUrl": "string",
+     "wireless": "boolean",
+     "wirelessId": "string",
+     "parentAuthType": "integer",
+     "parentAuthTypeName": "string",
+     "commandFormat": "integer",
+     "rawTelemetry": "boolean",
+     "lorawanDeviceProfileGuid": "string",
+     "lorawanProfileName": "string",
+     "isExistLorawanProfile": "boolean",
+     "clientId": "string",
+     "c2dOnDemand": "integer",
+     "videoStreamResource": "string",
+     "videoStreamType": "string",
+     "supportStream": "boolean",
+     "autoStartStream": "boolean",
+     "availableSecondaryCert": "boolean",
+     "clientStreamingName": "string",
+     "networkType": "string",
+     "gatewayName": "string",
+     "networkCoverage": "string",
+     "decoderName": "string",
+     "appKey": "string",
+     "regionalParameterVersion": "string",
+     "macVersion": "string",
+     "appEui": "string",
+     "rfRegion": "string",
+     "capability": "integer",
+     "status": "boolean",
+     "eventPlaceHolders": "string",
+     "xmlProperties": "object",
+     "isAutoGeneratedSelfSignCertificate": "boolean",
+     "sidewalkDevice": "object",
+     "autoStartVideoStream": "boolean",
+     "templateCode": "string",
+     "channelARN": "string",
+     "message": "string",
+     "data": "array",
+     "deviceGuid": "string",
+     "oldEntityGuid": "string",
+     "isDeleted": "boolean",
+     "createdByName": "string",
+     "cpid": "string",
+     "deviceCertExpiryDate": "string",
+     "error": "array",
+     "success": "array",
+     "groupGuid": "string",
+     "deviceGuids": "array",
+     "deviceUniqueId": "string",
+     "templateName": "string",
+     "reportingGroupGuid": "string",
+     "templateAttributeGuid": "string",
+     "attributeName": "string",
+     "attributeValue": "string",
+     "deviceUpdatedDate": "string",
+     "notificationCount": "integer",
+     "aggregateType": "integer",
+     "DataType": "string",
+     "aggregateTypeValues": "object",
+     "attributeColor": "string",
+     "parentUniqueId": "string",
+     "endorsementKey": "string",
+     "primaryThumbprint": "string",
+     "secondaryThumbprint": "string",
+     "primaryKey": "string",
+     "secondaryKey": "string",
+     "autoGenerate": "boolean",
+     "isSphere": "boolean",
+     "isIotEdgeEnable": "boolean",
+     "hasDirectMethod": "boolean",
+     "isDpsDevice": "boolean",
+     "sendOfflineCommand": "boolean",
+     "cloudDeviceTemplateGuid": "string",
+     "authenticationType": "string",
+     "isSharedDevice": "boolean",
+     "aduGroup": "string",
+     "gatewayUpdatedDate": "string"
+    },
+    "evidence": [
+     "openapi/_original/avnet-iotconnect-device-aws-prod-swagger.json#DELETE /api/v2.1/CloudTemplate/device/{deviceGuid}",
+     "openapi/_original/avnet-iotconnect-device-aws-prod-swagger.json#DELETE /api/v2.1/Device/{deviceGuid}",
+     "openapi/_original/avnet-iotconnect-device-aws-prod-swagger.json#DELETE /api/v2.1/Group/{groupGuid}/device/{deviceGuid}",
+     "openapi/_original/avnet-iotconnect-device-aws-prod-swagger.json#GET /api/v2.1/Certificate/device/{uniqueId}",
+     "openapi/_original/avnet-iotconnect-device-aws-prod-swagger.json#GET /api/v2.1/CloudTemplate/device",
+     "openapi/_original/avnet-iotconnect-device-aws-prod-swagger.json#GET /api/v2.1/CloudTemplate/device/{uniqueId}",
+     "openapi/_original/avnet-iotconnect-device-aws-prod-swagger.json#GET /api/v2.1/Device",
+     "openapi/_original/avnet-iotconnect-device-aws-prod-swagger.json#GET /api/v2.1/Group/{groupGuid}/device",
+     "openapi/_original/avnet-iotconnect-device-aws-prod-swagger.json#GET /api/v2.1/Telemetry/device/{deviceGuid}",
+     "openapi/_original/avnet-iotconnect-device-aws-prod-swagger.json#GET /api/v2.1/WirelessDevice/lorawanGateway/{lorawanGatewayGuid}/device",
+     "openapi/_original/avnet-iotconnect-device-aws-prod-swagger.json#GET /api/v2.1/company/{companyGuid}/device",
+     "openapi/_original/avnet-iotconnect-device-aws-prod-swagger.json#GET /api/v2.1/entity/{entityGuid}/device"
+    ]
+   },
+   "ayla-networks": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "total": "integer",
+     "previous_page": "integer",
+     "next_page": "integer",
+     "current_page_number": "integer",
+     "start_count_on_page": "integer",
+     "end_count_on_page": "integer",
+     "devices": "array",
+     "product_name": "string",
+     "dsn": "string",
+     "sw_version": "string",
+     "ip": "string",
+     "connected_at": "string",
+     "user_id": "integer",
+     "user_uuid": "string",
+     "lat": "string",
+     "lng": "string",
+     "locality": "string",
+     "homekit": "string",
+     "connection_status": "string",
+     "oem_model": "string",
+     "dealer": "object",
+     "facility_uuid": "string",
+     "manuf_model": "string",
+     "transport_type": "string",
+     "id": "integer",
+     "model": "string",
+     "oem": "string",
+     "connect_path": "string",
+     "unique_hardware_id": "string",
+     "hwsig": "string",
+     "template_id": "integer",
+     "mac": "string",
+     "imei": "string",
+     "lan_ip": "string",
+     "ssid": "string",
+     "key": "integer",
+     "product_class": "string",
+     "has_properties": "boolean",
+     "lan_enabled": "boolean",
+     "connection_priority": "array",
+     "enable_ssl": "string",
+     "enable_ip_loc": "boolean",
+     "enable_wifi_loc": "boolean",
+     "ans_enabled": "boolean",
+     "ans_server": "string",
+     "log_enabled": "boolean",
+     "registered": "boolean",
+     "registration_type": "string",
+     "enable_setup_loc": "boolean",
+     "force_location": "boolean",
+     "module_updated_at": "string",
+     "registrable": "boolean",
+     "regtoken": "string",
+     "device_type": "string",
+     "provisional": "boolean",
+     "activated_at": "string",
+     "setup_token": "string",
+     "created_at": "string",
+     "last_get_at": "string",
+     "address": "string",
+     "gateway_type": "string",
+     "nodes": "array",
+     "device": "object",
+     "device_id": "integer"
+    },
+    "evidence": [
+     "openapi/_original/ayla-networks-data-search-service-v2-openapi.yml#GET /dsapi/v2/devices.json",
+     "openapi/_original/ayla-networks-data-search-service-v2-openapi.yml#GET /dsapi/v2/oems/{oem}/dealers/{dealer}/devices.json",
+     "openapi/_original/ayla-networks-dealer-service-openapi.yml#GET /apiv1/oems/{oem_str}/dealers/{dealer_uuid}/devices",
+     "openapi/_original/ayla-networks-device-service-openapi.yml#DELETE /devices/{devId}.json",
+     "openapi/_original/ayla-networks-device-service-openapi.yml#DELETE /groups/{groupId}/devices/{devId}.json",
+     "openapi/_original/ayla-networks-device-service-openapi.yml#GET /devices.json",
+     "openapi/_original/ayla-networks-device-service-openapi.yml#GET /devices/{devId}.json",
+     "openapi/_original/ayla-networks-device-service-openapi.yml#POST /devices.json",
+     "openapi/_original/ayla-networks-device-service-openapi.yml#POST /groups/{groupId}/devices.json",
+     "openapi/_original/ayla-networks-device-service-openapi.yml#PUT /devices/{devId}.json",
+     "openapi/_original/ayla-networks-rule-service-openapi.yml#GET /rules/devices.json"
+    ]
+   },
+   "balena": {
+    "segments": [
+     "device"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "uuid": "string",
+     "device_name": "string",
+     "device_type": "string",
+     "is_online": "boolean",
+     "ip_address": "string",
+     "os_version": "string",
+     "status": "string",
+     "belongs_to__application": "object",
+     "created_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/balena-openapi.yml#GET /device",
+     "openapi/_original/balena-openapi.yml#POST /device"
+    ]
+   },
+   "blues-wireless": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "best_location": "object",
+     "cellular_usage": "array",
+     "contact": "object",
+     "dfu": "object",
+     "disabled": "boolean",
+     "firmware_host": "string",
+     "firmware_notecard": "string",
+     "fleet_uids": "array",
+     "gps_location": "object",
+     "last_activity": "string",
+     "product_uid": "string",
+     "provisioned": "string",
+     "serial_number": "string",
+     "sku": "string",
+     "temperature": "number",
+     "tower_info": "object",
+     "tower_location": "object",
+     "triangulated_location": "object",
+     "uid": "string",
+     "voltage": "number"
+    },
+    "evidence": [
+     "openapi/_original/blues-wireless-notehub-api-openapi.yml#DELETE /v1/projects/{projectOrProductUID}/devices/{deviceUID}",
+     "openapi/_original/blues-wireless-notehub-api-openapi.yml#GET /v1/projects/{projectOrProductUID}/devices",
+     "openapi/_original/blues-wireless-notehub-api-openapi.yml#GET /v1/projects/{projectOrProductUID}/devices/{deviceUID}",
+     "openapi/_original/blues-wireless-notehub-api-openapi.yml#GET /v1/projects/{projectOrProductUID}/fleets/{fleetUID}/devices"
+    ]
+   },
+   "bodytrace": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "imei": "string",
+     "deviceType": "string",
+     "lastSeen": "integer",
+     "batteryVoltage": "integer",
+     "signalStrength": "integer",
+     "provisioned": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/bodytrace-openapi.yml#GET /devices"
+    ]
+   },
+   "butterflymx": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/butterflymx-api-openapi.json#GET /v4/devices",
+     "openapi/_original/butterflymx-api-openapi.json#GET /v4/devices/{id}",
+     "openapi/_original/butterflymx-api-openapi.yml#GET /v4/devices",
+     "openapi/_original/butterflymx-api-openapi.yml#GET /v4/devices/{id}"
+    ]
+   },
+   "cesanta": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "shared_with": "string",
+     "shadow": "object"
+    },
+    "evidence": [
+     "openapi/_original/cesanta-mdash-openapi.yml#DELETE /devices/{id}",
+     "openapi/_original/cesanta-mdash-openapi.yml#GET /devices",
+     "openapi/_original/cesanta-mdash-openapi.yml#POST /devices",
+     "openapi/_original/cesanta-mdash-openapi.yml#POST /devices/{id}"
+    ]
+   },
+   "cisco-control-hub": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/cisco-control-hub-openapi.yml#GET /devices"
+    ]
+   },
+   "cisco-meraki": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {
+     "name": "string",
+     "lat": "number",
+     "lng": "number",
+     "address": "string",
+     "notes": "string",
+     "tags": "array",
+     "networkId": "string",
+     "serial": "string",
+     "model": "string",
+     "mac": "string",
+     "lanIp": "string",
+     "firmware": "string",
+     "floorPlanId": "string",
+     "url": "string",
+     "details": "array",
+     "beaconIdParams": "object",
+     "moveMapMarker": "boolean",
+     "switchProfileId": "string",
+     "id": "string",
+     "ssid": "string",
+     "wifiMac": "string",
+     "osName": "string",
+     "systemModel": "string",
+     "uuid": "string",
+     "serialNumber": "string",
+     "ip": "string",
+     "imei": "string",
+     "productType": "string",
+     "software": "object",
+     "modems": "array",
+     "profile": "object",
+     "network": "object",
+     "status": "string",
+     "floorPlan": "object",
+     "autoLocate": "object",
+     "type": "string",
+     "isAnchor": "boolean",
+     "sku": "string",
+     "orderNumber": "string",
+     "claimedAt": "string",
+     "licenseExpirationDate": "string",
+     "countryCode": "string",
+     "eox": "object",
+     "panId": "string",
+     "channel": "string",
+     "transmitPowerLevel": "integer",
+     "enrolled": "boolean",
+     "gateway": "object",
+     "counts": "object"
+    },
+    "evidence": [
+     "openapi/_original/cisco-meraki-dashboard-api-openapi.json#GET /devices/{serial}",
+     "openapi/_original/cisco-meraki-dashboard-api-openapi.json#GET /networks/{networkId}/devices",
+     "openapi/_original/cisco-meraki-dashboard-api-openapi.json#GET /networks/{networkId}/sm/devices",
+     "openapi/_original/cisco-meraki-dashboard-api-openapi.json#GET /organizations/{organizationId}/devices",
+     "openapi/_original/cisco-meraki-dashboard-api-openapi.json#GET /organizations/{organizationId}/devices/cellular/data/devices",
+     "openapi/_original/cisco-meraki-dashboard-api-openapi.json#GET /organizations/{organizationId}/floorPlans/autoLocate/devices",
+     "openapi/_original/cisco-meraki-dashboard-api-openapi.json#GET /organizations/{organizationId}/inventory/devices",
+     "openapi/_original/cisco-meraki-dashboard-api-openapi.json#GET /organizations/{organizationId}/inventory/devices/{serial}",
+     "openapi/_original/cisco-meraki-dashboard-api-openapi.json#GET /organizations/{organizationId}/wireless/zigbee/devices",
+     "openapi/_original/cisco-meraki-dashboard-api-openapi.json#PUT /devices/{serial}",
+     "openapi/_original/cisco-meraki-dashboard-api-openapi.json#PUT /organizations/{organizationId}/wireless/zigbee/devices/{id}"
+    ]
+   },
+   "controlup": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "device_id": "string",
+     "device_name": "string",
+     "agent_status": "string",
+     "os_name": "string",
+     "mac_address": "string",
+     "local_ip": "string",
+     "public_ip": "string",
+     "security_controls": "array",
+     "last_scan": "string",
+     "score": "number",
+     "score_severity": "string",
+     "issues_count": "integer",
+     "device_group": "string",
+     "device_tags": "array",
+     "location": "string",
+     "agent_version": "string",
+     "vulns_count": "string",
+     "available_patches_count": "string",
+     "compliance_count": "string",
+     "misconfig_count": "string",
+     "rows": "array",
+     "rows_available": "integer",
+     "page_size": "integer",
+     "start_row": "integer",
+     "end_row": "integer",
+     "device_registration_code": "string",
+     "total_managed_device_count": "integer",
+     "total_managed_device_limit": "integer",
+     "mappings": "array"
+    },
+    "evidence": [
+     "openapi/_original/ComplianceAPI.yaml#GET /devices",
+     "openapi/_original/ComplianceAPI.yaml#GET /devices/{device_id}",
+     "openapi/_original/controlup-compliance-openapi.yml#GET /devices",
+     "openapi/_original/controlup-compliance-openapi.yml#GET /devices/{device_id}",
+     "openapi/_original/controlup-desktops-openapi.yml#GET /devices",
+     "openapi/_original/edge-dx-api.json#GET /devices"
+    ]
+   },
+   "edge-impulse": {
+    "segments": [
+     "device",
+     "devices"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "success": "boolean",
+     "error": "string",
+     "id": "integer",
+     "deviceId": "string",
+     "created": "string",
+     "lastSeen": "string",
+     "name": "string",
+     "deviceType": "string",
+     "sensors": "array",
+     "remote_mgmt_connected": "boolean",
+     "remote_mgmt_host": "string",
+     "supportsSnapshotStreaming": "boolean",
+     "remoteMgmtMode": "string",
+     "inferenceInfo": "object"
+    },
+    "evidence": [
+     "openapi/_original/edge-impulse-openapi.yml#DELETE /api/{projectId}/device/{deviceId}",
+     "openapi/_original/edge-impulse-openapi.yml#GET /api/{projectId}/device/{deviceId}",
+     "openapi/_original/edge-impulse-openapi.yml#GET /api/{projectId}/devices",
+     "openapi/_original/edge-impulse-studio-openapi-2026-09-06.yml#DELETE /api/{projectId}/device/{deviceId}",
+     "openapi/_original/edge-impulse-studio-openapi-2026-09-06.yml#GET /api/{projectId}/device/{deviceId}",
+     "openapi/_original/edge-impulse-studio-openapi-2026-09-06.yml#GET /api/{projectId}/devices"
+    ]
+   },
+   "eight-sleep": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "deviceId": "string",
+     "online": "boolean",
+     "firmwareVersion": "string",
+     "leftUserId": "string",
+     "rightUserId": "string",
+     "awaySides": "object"
+    },
+    "evidence": [
+     "openapi/_original/eight-sleep-openapi.yml#GET /v1/devices/{deviceId}"
+    ]
+   },
+   "esper": {
+    "segments": [
+     "devices",
+     "device"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "url": "string",
+     "device_name": "string",
+     "alias_name": "string",
+     "policy_name": "string",
+     "status": "integer",
+     "state": "integer",
+     "current_command": "string",
+     "suid": "string",
+     "directory_record_id": "string",
+     "fcm_id": "string",
+     "enterprise": "string",
+     "policy": "string",
+     "user": "string",
+     "groups": "array",
+     "tags": "array",
+     "api_level": "integer",
+     "template_name": "string",
+     "mqtt_id": "string",
+     "softwareInfo": "object",
+     "hardwareInfo": "object",
+     "displays": "object",
+     "networkInfo": "object",
+     "memoryInfo": "object",
+     "esper_cient": "string",
+     "device_type": "string",
+     "audioConstraints": "object",
+     "provisioned_on": "string",
+     "created_on": "string",
+     "current_app_mode": "integer",
+     "kiosk_app_name": "string",
+     "lockdown_state": "integer",
+     "timezone_string": "string",
+     "initialtemplate": "string",
+     "updated_on": "string",
+     "emm_device": "object",
+     "is_gms": "boolean",
+     "is_active": "boolean",
+     "has_seamlessInfo": "boolean",
+     "code": "integer",
+     "message": "string",
+     "content": "object",
+     "name": "string",
+     "alias": "string",
+     "os": "string",
+     "platform": "string",
+     "serial": "string",
+     "os_version": "string",
+     "global_device_id": "string",
+     "tenant_id": "string",
+     "group_id": "string",
+     "hardware_info": "object",
+     "software_info": "object",
+     "network_info": "object",
+     "memory_info": "object",
+     "network_stats": "object",
+     "location_stats": "object",
+     "memory_stats": "object",
+     "blueprint_info": "object",
+     "battery_stats": "object",
+     "mqtt_topic": "string",
+     "dpc_version": "string",
+     "eea_version": "string",
+     "managed_by": "string",
+     "provisioned_with": "string",
+     "is_seamless": "boolean",
+     "is_esper_managed": "boolean",
+     "app_mode_meta": "object",
+     "created_by": "string",
+     "updated_by": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "operation_id": "string",
+     "device_id": "string",
+     "reason": "string",
+     "device_operation_activity": "array",
+     "operation_type": "string",
+     "service_id": "string",
+     "blueprint_id": "string",
+     "blueprint_version_number": "integer",
+     "inside": "boolean",
+     "state_changed_at": "string",
+     "latitude": "number",
+     "longitude": "number",
+     "location_updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/esper-openapi.json#DELETE /device/v0/devices/{id}/",
+     "openapi/_original/esper-openapi.json#GET /device/v0/devices/",
+     "openapi/_original/esper-openapi.json#GET /device/v0/devices/{id}/",
+     "openapi/_original/esper-openapi.json#GET /enterprise/{enterprise_id}/device/",
+     "openapi/_original/esper-openapi.json#GET /enterprise/{enterprise_id}/device/{device_id}/",
+     "openapi/_original/esper-openapi.json#GET /geofence/v1/geofences/{geofence_id}/devices",
+     "openapi/_original/esper-openapi.json#GET /pipelines/v0/pipelines/{pipeline_id}/targetlists/{targetlist_id}/devicegroups/{device_group_id}/devices/",
+     "openapi/_original/esper-openapi.json#GET /v0/operations/{operationsId}/devices/",
+     "openapi/_original/esper-openapi.json#GET /v0/operations/{operationsId}/devices/{deviceId}/",
+     "openapi/_original/esper-openapi.json#GET /v2/devices/",
+     "openapi/_original/esper-openapi.json#GET /v2/devices/{id}",
+     "openapi/_original/esper-openapi.json#PUT /v0/operations/{operationsId}/devices/{deviceId}/"
+    ]
+   },
+   "fitbit": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "battery": "string",
+     "batteryLevel": "integer",
+     "deviceVersion": "string",
+     "features": "array",
+     "id": "string",
+     "lastSyncTime": "string",
+     "mac": "string",
+     "type": "string"
+    },
+    "evidence": [
+     "openapi/_original/fitbit-devices-api-openapi.yml#GET /1/user/{user-id}/devices.json"
+    ]
+   },
+   "golioth": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "firstSeenOnGateway": "string",
+     "gatewayId": "string",
+     "id": "string",
+     "lastSeen": "string",
+     "dates": "object",
+     "entity": "string",
+     "unit": "string",
+     "blueprintId": "string",
+     "certificateId": "string",
+     "cohortId": "string",
+     "createdAt": "string",
+     "data": "object",
+     "enabled": "boolean",
+     "hardwareIds": "array",
+     "lastReport": "string",
+     "metadata": "object",
+     "name": "string",
+     "status": "string",
+     "tagIds": "array",
+     "updatedAt": "string",
+     "addHardwareId": "array",
+     "addTagId": "array",
+     "removeHardwareId": "array",
+     "removeTagId": "array"
+    },
+    "evidence": [
+     "openapi/_original/golioth-openapi.yml#DELETE /v1/projects/{projectId}/devices/{deviceId}",
+     "openapi/_original/golioth-openapi.yml#GET /v1/organizations/{organizationId}/projects/{projectId}/networks/{networkId}/devices",
+     "openapi/_original/golioth-openapi.yml#GET /v1/organizations/{organizationId}/usage/{projectId}/devices",
+     "openapi/_original/golioth-openapi.yml#GET /v1/organizations/{organizationId}/usage/{projectId}/devices/{id}",
+     "openapi/_original/golioth-openapi.yml#GET /v1/projects/{projectId}/devices",
+     "openapi/_original/golioth-openapi.yml#GET /v1/projects/{projectId}/devices/{deviceId}",
+     "openapi/_original/golioth-openapi.yml#PATCH /v1/projects/{projectId}/devices/{deviceId}",
+     "openapi/_original/golioth-openapi.yml#POST /v1/projects/{projectId}/devices",
+     "openapi/_original/golioth-openapi.yml#PUT /v1/projects/{projectId}/devices/{deviceId}"
+    ]
+   },
+   "google-assistant": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "deviceModelId": "string",
+     "nickname": "string",
+     "clientType": "string"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yml#GET /v1alpha2/projects/{projectId}/devices",
+     "openapi/_original/openapi.yml#POST /v1alpha2/projects/{projectId}/devices"
+    ]
+   },
+   "google-nest": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "name": "string",
+     "type": "string",
+     "traits": "object",
+     "parentRelations": "array"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yml#GET /enterprises/{enterpriseId}/devices",
+     "openapi/_original/openapi.yml#GET /enterprises/{enterpriseId}/devices/{deviceId}"
+    ]
+   },
+   "got-its": {
+    "segments": [
+     "gateways"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "shortId": "string",
+     "isStatic": "boolean",
+     "latitude": "number",
+     "hasPendingCommands": "boolean",
+     "rssiFilter": null,
+     "deviceId": "string",
+     "gatewayId": "string",
+     "productName": "string",
+     "addedOn": "string",
+     "manufacturer": "string",
+     "longitude": "number",
+     "registerGateway": "boolean",
+     "numberAssetsInSpace": "integer",
+     "facilityId": "string",
+     "name": "string",
+     "locations": "object",
+     "id": "string",
+     "createdOn": "string",
+     "gateway": "object",
+     "workspaceId": "string",
+     "replaceExistingGateway": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/got-its-openapi-original.yml#DELETE /consignments/{consignmentId}/gateways/{gatewayId}",
+     "openapi/_original/got-its-openapi-original.yml#DELETE /spaces/{spaceId}/gateways/{gatewayId}",
+     "openapi/_original/got-its-openapi-original.yml#GET /consignments/{consignmentId}/gateways",
+     "openapi/_original/got-its-openapi-original.yml#POST /consignments/{consignmentId}/gateways",
+     "openapi/_original/got-its-openapi-original.yml#POST /spaces/{spaceId}/gateways",
+     "openapi/_original/got-its-openapi-original.yml#PUT /spaces/{spaceId}/gateways/{gatewayId}"
+    ]
+   },
+   "govee": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "type": "string",
+     "instance": "string",
+     "parameters": "object"
+    },
+    "evidence": [
+     "openapi/_original/govee-openapi.yml#GET /user/devices"
+    ]
+   },
+   "gridx-ai": {
+    "segments": [
+     "gateways"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "debugModeUntil": "string",
+     "id": "string",
+     "type": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "registeredAt": "string",
+     "connectionStatus": "object",
+     "vendorID": "string",
+     "startcode": "string",
+     "manufacturer": "string",
+     "model": "string",
+     "serialnumber": "string",
+     "additionalIdentifiers": "array",
+     "scanners": "array",
+     "applianceComposition": "array",
+     "solution": "string",
+     "priorities": "array",
+     "appliancePriorities": "array",
+     "plan": "string",
+     "operatingSince": "string",
+     "curtailmentStrategy": "string",
+     "location": "object",
+     "metadata": "object",
+     "chargingIntervals": "array",
+     "gateways": "array",
+     "status": "string",
+     "gatewayStatus": "string",
+     "assetsStatus": "object",
+     "assetsKinds": "array",
+     "assetsGatewayType": "string",
+     "tags": "array",
+     "email": "string",
+     "parentID": "string",
+     "systemsCount": "integer",
+     "kind": "string",
+     "mainAddress": null,
+     "customization": null,
+     "productOption": "object",
+     "productOptionUpdatedAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/gridx-ai-openapi.yml#DELETE /gateways/{gatewayID}",
+     "openapi/_original/gridx-ai-openapi.yml#GET /gateways",
+     "openapi/_original/gridx-ai-openapi.yml#GET /gateways/{gatewayID}",
+     "openapi/_original/gridx-ai-openapi.yml#POST /systems/{systemID}/gateways",
+     "openapi/_original/gridx-api.json#DELETE /gateways/{gatewayID}",
+     "openapi/_original/gridx-api.json#GET /gateways",
+     "openapi/_original/gridx-api.json#GET /gateways/{gatewayID}",
+     "openapi/_original/gridx-api.json#POST /systems/{systemID}/gateways"
+    ]
+   },
+   "hildebrand": {
+    "segments": [
+     "device"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "deviceId": "string",
+     "deviceTypeId": "string",
+     "ownerId": "string",
+     "description": "string",
+     "hardwareId": "string",
+     "hardwareIds": "object",
+     "parentHardwareId": "array",
+     "protocol": "object",
+     "status": "string",
+     "valid": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/hildebrand-glowmarkt-device-management-system-swagger.json#GET /device",
+     "openapi/_original/hildebrand-glowmarkt-device-management-system-swagger.json#GET /device/{id}",
+     "openapi/_original/hildebrand-glowmarkt-device-management-system-swagger.json#POST /device"
+    ]
+   },
+   "hologram": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "integer",
+     "orgid": "integer",
+     "name": "string",
+     "phonenumber": "string",
+     "imei": "string",
+     "iccid": "string",
+     "lastsession": "object",
+     "tags": "array",
+     "links": "object",
+     "tunnelable": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/hologram-openapi.yml#GET /devices",
+     "openapi/_original/hologram-openapi.yml#GET /devices/{deviceid}",
+     "openapi/_original/hologram-openapi.yml#PUT /devices/{deviceid}"
+    ]
+   },
+   "hubble-network": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "id": "string",
+     "created_ts": "integer",
+     "tags": "object",
+     "encryption": "string",
+     "eid_rotation": "object",
+     "install_location": "object",
+     "most_recent_packet": "object",
+     "device_id": "string",
+     "protocol": "object",
+     "network_id": "integer",
+     "key": "string",
+     "lat": "number",
+     "long": "number",
+     "location_name": "string",
+     "set_name": "string",
+     "set_tags": "object",
+     "set_install_location": "object",
+     "set_destination_org_id": "string",
+     "device_ids": "array"
+    },
+    "evidence": [
+     "openapi/_original/hubble-network-openapi.yml#DELETE /v2/org/{org_id}/devices",
+     "openapi/_original/hubble-network-openapi.yml#DELETE /v2/org/{org_id}/devices/{device_id}",
+     "openapi/_original/hubble-network-openapi.yml#GET /v2/org/{org_id}/devices",
+     "openapi/_original/hubble-network-openapi.yml#GET /v2/org/{org_id}/devices/{device_id}",
+     "openapi/_original/hubble-network-openapi.yml#PATCH /v2/org/{org_id}/devices",
+     "openapi/_original/hubble-network-openapi.yml#PATCH /v2/org/{org_id}/devices/{device_id}",
+     "openapi/_original/hubble-network-openapi.yml#POST /v2/org/{org_id}/devices",
+     "openapi/_original/hubble-network-platform-openapi-original.yml#DELETE /v1/org/{org_id}/devices",
+     "openapi/_original/hubble-network-platform-openapi-original.yml#DELETE /v1/org/{org_id}/devices/{device_id}",
+     "openapi/_original/hubble-network-platform-openapi-original.yml#GET /v1/org/{org_id}/devices",
+     "openapi/_original/hubble-network-platform-openapi-original.yml#GET /v1/org/{org_id}/devices/{device_id}",
+     "openapi/_original/hubble-network-platform-openapi-original.yml#PATCH /v1/org/{org_id}/devices"
+    ]
+   },
+   "inductive-automation": {
+    "segments": [
+     "device",
+     "gateways"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item",
+     "PUT collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/inductive-automation-ignition-gateway.yaml#GET /data/api/v1/gateway-network/gateways",
+     "openapi/_original/inductive-automation-ignition-gateway.yaml#GET /data/api/v1/resources/find/com.inductiveautomation.opcua/device/{name}",
+     "openapi/_original/inductive-automation-ignition-gateway.yaml#GET /data/api/v1/resources/list/com.inductiveautomation.opcua/device",
+     "openapi/_original/inductive-automation-ignition-gateway.yaml#GET /data/api/v1/resources/names/com.inductiveautomation.opcua/device",
+     "openapi/_original/inductive-automation-ignition-gateway.yaml#GET /data/api/v1/resources/type/com.inductiveautomation.opcua/device",
+     "openapi/_original/inductive-automation-ignition-gateway.yaml#POST /data/api/v1/resources/com.inductiveautomation.opcua/device",
+     "openapi/_original/inductive-automation-ignition-gateway.yaml#POST /data/api/v1/resources/delete/com.inductiveautomation.opcua/device",
+     "openapi/_original/inductive-automation-ignition-gateway.yaml#POST /data/api/v1/resources/rename/com.inductiveautomation.opcua/device/{name}",
+     "openapi/_original/inductive-automation-ignition-gateway.yaml#PUT /data/api/v1/resources/com.inductiveautomation.opcua/device"
+    ]
+   },
+   "itron": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "deviceType": "string",
+     "templateId": "string",
+     "tags": "array",
+     "metadata": "object"
+    },
+    "evidence": [
+     "openapi/_original/starfish-data-platform-openapi.yml#GET /api/devices",
+     "openapi/_original/starfish-data-platform-openapi.yml#POST /api/devices"
+    ]
+   },
+   "ixon": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "publicId": "string",
+     "name": "string",
+     "ipAddress": "string",
+     "macAddress": "string",
+     "customAddress": "string",
+     "agent": "object",
+     "dataSources": "array",
+     "status": "string",
+     "type": "string",
+     "data": "object"
+    },
+    "evidence": [
+     "openapi/_original/ixon-openapi.json#DELETE /agents/{agentId}/devices",
+     "openapi/_original/ixon-openapi.json#DELETE /agents/{agentId}/devices/{publicId}",
+     "openapi/_original/ixon-openapi.json#GET /agents/{agentId}/devices",
+     "openapi/_original/ixon-openapi.json#GET /agents/{agentId}/devices/{publicId}",
+     "openapi/_original/ixon-openapi.json#PATCH /agents/{agentId}/devices",
+     "openapi/_original/ixon-openapi.json#PATCH /agents/{agentId}/devices/{publicId}",
+     "openapi/_original/ixon-openapi.json#POST /agents/{agentId}/devices"
+    ]
+   },
+   "kandji": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {
+     "user": "string",
+     "asset_tag": "string",
+     "blueprint_id": "string",
+     "tags": "array"
+    },
+    "evidence": [
+     "openapi/_original/kandji-endpoint-management-openapi.json#DELETE /api/v1/devices/{device_id}",
+     "openapi/_original/kandji-endpoint-management-openapi.json#GET /api/v1/devices",
+     "openapi/_original/kandji-endpoint-management-openapi.json#GET /api/v1/devices/{device_id}",
+     "openapi/_original/kandji-endpoint-management-openapi.json#GET /api/v1/integrations/apple/ade/devices",
+     "openapi/_original/kandji-endpoint-management-openapi.json#GET /api/v1/integrations/apple/ade/devices/{device_id}",
+     "openapi/_original/kandji-endpoint-management-openapi.json#GET /api/v1/integrations/apple/ade/{ade_token_id}/devices",
+     "openapi/_original/kandji-endpoint-management-openapi.json#GET /api/v1/vulnerability-management/vulnerabilities/{cve_id}/devices",
+     "openapi/_original/kandji-endpoint-management-openapi.json#PATCH /api/v1/devices/{device_id}",
+     "openapi/_original/kandji-endpoint-management-openapi.json#PATCH /api/v1/integrations/apple/ade/devices/{device_id}"
+    ]
+   },
+   "kolide": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "registered_at": "string",
+     "last_authenticated_at": "string",
+     "last_seen_at": "string",
+     "registered_owner_info": null,
+     "operating_system": "string",
+     "hardware_model": "string",
+     "serial": "string",
+     "hardware_uuid": "string",
+     "note": "string",
+     "auth_state": "string",
+     "will_block_at": "string",
+     "product_image_url": "string",
+     "auth_configuration": null,
+     "device_type": "string",
+     "form_factor": "string"
+    },
+    "evidence": [
+     "openapi/_original/kolide-k2-2023-05-26-openapi.json#DELETE /devices/{id}",
+     "openapi/_original/kolide-k2-2023-05-26-openapi.json#GET /device_groups/{deviceGroupId}/devices",
+     "openapi/_original/kolide-k2-2023-05-26-openapi.json#GET /devices",
+     "openapi/_original/kolide-k2-2023-05-26-openapi.json#GET /devices/{id}",
+     "openapi/_original/kolide-k2-openapi.json#DELETE /devices/{id}",
+     "openapi/_original/kolide-k2-openapi.json#GET /device_groups/{deviceGroupId}/devices",
+     "openapi/_original/kolide-k2-openapi.json#GET /devices",
+     "openapi/_original/kolide-k2-openapi.json#GET /devices/{id}"
+    ]
+   },
+   "kontaktio": {
+    "segments": [
+     "device",
+     "gateways"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "uniqueId": "string",
+     "deviceType": "string",
+     "category": "string",
+     "model": "integer",
+     "product": "string",
+     "productCode": "string",
+     "macs": "object",
+     "specification": "string",
+     "managerId": "string",
+     "ownerId": "string",
+     "shortCompanyId": "string",
+     "access": "string",
+     "venue": "object",
+     "shares": "array",
+     "firmware": "string",
+     "orderId": "string",
+     "batteryLevel": "integer",
+     "lastSeen": "integer",
+     "status": "object",
+     "federation": "object",
+     "deployment": "object",
+     "pendingConfig": null,
+     "firmwareInfo": "object",
+     "currentLocation": "object",
+     "displaySettings": "object",
+     "lowBatterySettings": "object",
+     "sensorSettings": "object",
+     "localAlertingSettings": "object",
+     "buzzerSnoozing": "object",
+     "dispenser": "object",
+     "systemTime": "string",
+     "desiredConfig": "object",
+     "alias": "string",
+     "tags": "array",
+     "metadata": "object",
+     "lat": "number",
+     "lng": "number",
+     "deployedlat": "number",
+     "deployedlng": "number",
+     "name": "string",
+     "profiles": "array",
+     "packets": "array",
+     "customConfiguration": "string",
+     "shuffled": "boolean",
+     "txPower": "integer",
+     "interval": "integer",
+     "kontaktFrameInterval": "integer",
+     "telemetryInterval": "integer",
+     "locationFrameInterval": "integer",
+     "telemetryFields": "array",
+     "locationFrameChannel": "integer",
+     "proximity": "string",
+     "major": "integer",
+     "minor": "integer",
+     "rssi1m": "array",
+     "namespace": "string",
+     "instanceId": "string",
+     "url": "string",
+     "decodedUrl": "string",
+     "rssi0m": "array",
+     "buttonFeatures": "array",
+     "multiClickCount": "integer",
+     "panicDuration": "integer",
+     "eidIdentityKey": "string",
+     "eidRotationPeriodExponent": "integer",
+     "powerSaving": "object",
+     "accelerometer": "object",
+     "occupancy": "object",
+     "irReceiver": "object",
+     "irTransmitter": "object",
+     "bleScan": "object",
+     "fingerprinting": "object",
+     "irRoomNumber": "integer",
+     "irBlinkInterval": "integer",
+     "irSlotDuration": "integer",
+     "irSlotCount": "integer",
+     "irDetectionParams": "string",
+     "pirEnabled": "boolean",
+     "airQualityInterval": "integer",
+     "lightSensorSamplingInterval": "integer",
+     "temperatureOffset": "integer",
+     "timeSync": "boolean",
+     "wifiSsid": "string",
+     "wifiProtocol": "string",
+     "wifiUserName": "string",
+     "wifiPassword": "string",
+     "apiHost": "string",
+     "apiKey": "string",
+     "dataHost": "string",
+     "dataApiKey": "string",
+     "otaUrl": "string",
+     "proxyURL": "string",
+     "proxyPort": "integer",
+     "eapType": "string",
+     "ibeaconUUID": "string",
+     "ibeacon_major": "integer",
+     "ibeacon_minor": "integer",
+     "roomID": "integer",
+     "tx_power": "integer",
+     "filtration_mask": "integer",
+     "rssi_threshold": "integer",
+     "bleAdvChannel": "integer",
+     "bleScanChannel": "integer",
+     "dm_poll_interval_s": "integer",
+     "defaultNTP": "string",
+     "secondNTP": "string",
+     "apiCACertificate": "string",
+     "wpa2Certificate": "string",
+     "wpa2CertificatePassword": "string",
+     "wpa2PrivateKeyAlias": "string",
+     "wpa2CACertificate": "string",
+     "beacon_packets_mask": "integer",
+     "led_intensity": "integer",
+     "blink_interval_s": "integer",
+     "ir_duty_cycle": "integer",
+     "ir_intensity": "integer",
+     "device_name": "string",
+     "adv_int": "integer",
+     "debug_features_mask": "integer",
+     "bound_device": "string",
+     "bound_device_password": "string",
+     "relay_mode": "integer",
+     "mqtt_auth": "string",
+     "ir_config_mask": "integer",
+     "data_interval_ms": "integer",
+     "sleepInterval": "integer",
+     "minInterval": "integer",
+     "calibration": "integer",
+     "sensitivity": "integer",
+     "footfallLine": "string",
+     "footfallSensitivity": "integer",
+     "inclusions": "array",
+     "exclusions": "array",
+     "stitching": "object",
+     "altitude": "number",
+     "x": "number",
+     "y": "number",
+     "z": "number",
+     "verticalOrientation": "number",
+     "range": "number",
+     "virtual": "boolean",
+     "sourceId": "string",
+     "floor": "object"
+    },
+    "evidence": [
+     "openapi/_original/kontaktio-device-management-openapi-original.yml#GET /device",
+     "openapi/_original/kontaktio-device-management-openapi.yml#GET /device",
+     "openapi/_original/kontaktio-location-occupancy-openapi-original.yml#GET /v2/locations/gateways",
+     "openapi/_original/kontaktio-location-occupancy-openapi.yml#GET /v2/locations/gateways"
+    ]
+   },
+   "kpn": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "ref": "string",
+     "name": "string",
+     "EUI": "string",
+     "networkAddress": "string",
+     "activationType": "string",
+     "deviceClass": "string",
+     "classBState": "string",
+     "deviceProfileId": "string",
+     "connectivityPlanId": "string",
+     "processingStrategyId": "string",
+     "routingProfileId": "string",
+     "routeRefs": "array",
+     "networkSessionKey": "string",
+     "applicationSessionKeyRules": "array",
+     "applicationEUI": "string",
+     "applicationKey": "string",
+     "administrativeInfo": "string",
+     "geoLatitude": "number",
+     "geoLongitude": "number",
+     "dataflowTags": "array",
+     "homeNsNetID": "string",
+     "asKeyId": "string",
+     "hsmGroupId": "string",
+     "secureElement": "string",
+     "alarmThresholds": "array",
+     "motionIndicator": "string",
+     "statistics": "object",
+     "commercialDetails": "object",
+     "serial": "string",
+     "model": "string",
+     "data": "object"
+    },
+    "evidence": [
+     "openapi/_original/kpn-lora-device-management-openapi.yml#DELETE /devices/{deviceRef}",
+     "openapi/_original/kpn-lora-device-management-openapi.yml#GET /devices",
+     "openapi/_original/kpn-lora-device-management-openapi.yml#GET /devices/{deviceRef}",
+     "openapi/_original/kpn-lora-device-management-openapi.yml#POST /devices",
+     "openapi/_original/kpn-lora-device-management-openapi.yml#PUT /devices/{deviceRef}",
+     "openapi/_original/kpn-sd-lan-sd-wan-network-view-openapi.yml#GET /organizations/{organizationId}/devices",
+     "openapi/_original/parley-secure-messenger-openapi.yml#POST /devices"
+    ]
+   },
+   "lunar-energy": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "entries": "array",
+     "synthId": "string",
+     "kind": "string",
+     "siteId": "string",
+     "manufacturer": "string",
+     "model": "string",
+     "serialNumber": "string",
+     "deviceId": "string",
+     "type": "string",
+     "properties": "object"
+    },
+    "evidence": [
+     "openapi/_original/gridshare-customer-api-openapi.yml#GET /api/v2/devices",
+     "openapi/_original/gridshare-customer-api-openapi.yml#GET /api/v2/devices/{synthId}",
+     "openapi/_original/gridshare-customer-api-openapi.yml#PATCH /api/v2/devices/{synthId}",
+     "openapi/_original/gridshare-partner-api-openapi.yml#GET /api/v1/devices",
+     "openapi/_original/gridshare-partner-api-openapi.yml#GET /api/v1/devices/{synthId}",
+     "openapi/_original/gridshare-partner-api-openapi.yml#POST /api/v1/devices",
+     "openapi/_original/gridshare-partner-api-openapi.yml#PUT /api/v1/devices/{synthId}"
+    ]
+   },
+   "memfault": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/memfault-openapi.yml#DELETE /api/v0/organizations/{organization_slug}/projects/{project_slug}/devices/{device_serial}",
+     "openapi/_original/memfault-openapi.yml#GET /api/v0/organizations/{organization_slug}/projects/{project_slug}/cohorts/{cohort_slug}/devices",
+     "openapi/_original/memfault-openapi.yml#GET /api/v0/organizations/{organization_slug}/projects/{project_slug}/devices",
+     "openapi/_original/memfault-openapi.yml#GET /api/v0/organizations/{organization_slug}/projects/{project_slug}/devices/{device_serial}",
+     "openapi/_original/memfault-openapi.yml#PATCH /api/v0/organizations/{organization_slug}/projects/{project_slug}/cohorts/{cohort_slug}/devices",
+     "openapi/_original/memfault-openapi.yml#PATCH /api/v0/organizations/{organization_slug}/projects/{project_slug}/devices/{device_serial}",
+     "openapi/_original/memfault-openapi.yml#POST /api/v0/organizations/{organization_slug}/projects/{project_slug}/devices"
+    ]
+   },
+   "microsoft-endpoint-configuration-management": {
+    "segments": [
+     "device",
+     "devices"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "MachineId": "integer",
+     "Name": "string",
+     "Domain": "string",
+     "IsActive": "boolean",
+     "LastActiveTime": "string",
+     "DeviceOS": "string",
+     "Status": "string",
+     "SiteCode": "string",
+     "deviceKey": "integer",
+     "deviceId": "string",
+     "deviceName": "string",
+     "deviceType": "string",
+     "operatingSystem": "string",
+     "osVersion": "string",
+     "ownerType": "string",
+     "enrolledDateTime": "string",
+     "lastSyncDateTime": "string",
+     "managementAgent": "string",
+     "managementState": "string",
+     "referenceId": "string",
+     "manufacturer": "string",
+     "model": "string",
+     "serialNumber": "string",
+     "isSupervised": "boolean",
+     "isEncrypted": "boolean",
+     "dateKey": "integer",
+     "complianceState": "string"
+    },
+    "evidence": [
+     "openapi/_original/microsoft-endpoint-configuration-management-configmgr-rest-api-openapi.yml#GET /v1.0/Device",
+     "openapi/_original/microsoft-endpoint-configuration-management-intune-data-warehouse-api-openapi.yml#GET /devices"
+    ]
+   },
+   "mtn-group": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "PATCH collection"
+    ],
+    "properties": {
+     "statusCode": "string",
+     "transactionId": "string",
+     "devices": "array",
+     "regLocationLat": "number",
+     "regLocationLong": "number",
+     "cellGlobalId": "string",
+     "kycCaptureDateTime": "string",
+     "_links": "object"
+    },
+    "evidence": [
+     "openapi/_original/mtn-group-agent-profile.yml#PATCH /{agentId}/devices"
+    ]
+   },
+   "orange-business": {
+    "segments": [
+     "devices",
+     "gateways"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "description": "string",
+     "tags": "array",
+     "properties": "object",
+     "group": "object",
+     "config": "object",
+     "defaultDataStreamId": "string",
+     "created": "string",
+     "updated": "string",
+     "activityState": "string",
+     "staticLocation": "object",
+     "interfaces": "array",
+     "firmwares": "object",
+     "resources": "object",
+     "code": "string",
+     "message": "string",
+     "details": "string",
+     "manufacturer": "string",
+     "model": "string",
+     "status": "string",
+     "lastReportTs": "string",
+     "location": "object",
+     "system": "object",
+     "networkPartner": "object",
+     "analyticsRuleId": "string",
+     "deviceId": "string",
+     "day": "string",
+     "analysisStatus": "string",
+     "groupPath": "string",
+     "historyTimeWindowInDays": "integer",
+     "trafficAnalysis": "object",
+     "interfacesAnalysis": "object",
+     "silent": "boolean",
+     "analyzedPeriod": "object",
+     "regularPattern": "object",
+     "transition": "object",
+     "clusterClassification": "object"
+    },
+    "evidence": [
+     "openapi/_original/orange-business-live-objects-openapi.json#DELETE /api/v1/deviceMgt/devices/{deviceId}",
+     "openapi/_original/orange-business-live-objects-openapi.json#GET /api/v1/device-analytics/rules/{ruleId}/device-analyses/classifications/clusters/devices",
+     "openapi/_original/orange-business-live-objects-openapi.json#GET /api/v1/device-analytics/rules/{ruleId}/device-analyses/classifications/clusters/devices/{deviceId}",
+     "openapi/_original/orange-business-live-objects-openapi.json#GET /api/v1/device-analytics/rules/{ruleId}/device-analyses/classifications/regular-patterns/devices",
+     "openapi/_original/orange-business-live-objects-openapi.json#GET /api/v1/device-analytics/rules/{ruleId}/device-analyses/classifications/regular-patterns/devices/{deviceId}",
+     "openapi/_original/orange-business-live-objects-openapi.json#GET /api/v1/device-analytics/rules/{ruleId}/device-analyses/statistics/days/{day}/devices/{deviceId}",
+     "openapi/_original/orange-business-live-objects-openapi.json#GET /api/v1/deviceMgt/connectors/lora/gateways",
+     "openapi/_original/orange-business-live-objects-openapi.json#GET /api/v1/deviceMgt/connectors/lora/gateways/{id}",
+     "openapi/_original/orange-business-live-objects-openapi.json#GET /api/v1/deviceMgt/devices",
+     "openapi/_original/orange-business-live-objects-openapi.json#GET /api/v1/deviceMgt/devices/{deviceId}",
+     "openapi/_original/orange-business-live-objects-openapi.json#PATCH /api/v1/deviceMgt/connectors/lora/gateways/{id}",
+     "openapi/_original/orange-business-live-objects-openapi.json#PATCH /api/v1/deviceMgt/devices/{deviceId}"
+    ]
+   },
+   "particle": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT collection",
+     "PUT item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/particle-cloud-api-openapi.yml#DELETE /v1/devices/{deviceId}",
+     "openapi/_original/particle-cloud-api-openapi.yml#DELETE /v1/products/{productIdOrSlug}/devices/{deviceId}",
+     "openapi/_original/particle-cloud-api-openapi.yml#GET /v1/devices",
+     "openapi/_original/particle-cloud-api-openapi.yml#GET /v1/devices/{deviceId}",
+     "openapi/_original/particle-cloud-api-openapi.yml#GET /v1/products/{productIdOrSlug}/devices",
+     "openapi/_original/particle-cloud-api-openapi.yml#GET /v1/products/{productIdOrSlug}/devices/{deviceId}",
+     "openapi/_original/particle-cloud-api-openapi.yml#POST /v1/devices",
+     "openapi/_original/particle-cloud-api-openapi.yml#POST /v1/products/{productIdOrSlug}/devices",
+     "openapi/_original/particle-cloud-api-openapi.yml#PUT /v1/devices/{deviceId}",
+     "openapi/_original/particle-cloud-api-openapi.yml#PUT /v1/products/{productIdOrSlug}/devices",
+     "openapi/_original/particle-cloud-api-openapi.yml#PUT /v1/products/{productIdOrSlug}/devices/{deviceId}",
+     "openapi/_original/particle-openapi.yml#DELETE /v1/devices/{deviceId}"
+    ]
+   },
+   "phosphorus": {
+    "segments": [
+     "device"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "success": "boolean",
+     "device": "object"
+    },
+    "evidence": [
+     "openapi/_original/phosphorus-api-openapi.yml#GET /api/v2/device/{uuid}",
+     "openapi/_original/phosphorus-openapi.json#GET /api/v2/device/{uuid}"
+    ]
+   },
+   "ptc-thingworx": {
+    "segments": [
+     "things"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "dataShape": "object",
+     "rows": "array",
+     "name": "string",
+     "description": "string",
+     "thingTemplate": "string",
+     "thingShape": "string",
+     "tags": "array",
+     "isEnabled": "boolean",
+     "isSystemObject": "boolean",
+     "lastModifiedDate": "integer",
+     "identifier": "string",
+     "projectName": "string"
+    },
+    "evidence": [
+     "openapi/_original/ptc-thingworx-rest-openapi.yml#GET /Things",
+     "openapi/_original/ptc-thingworx-rest-openapi.yml#GET /Things/{thingName}"
+    ]
+   },
+   "samsara": {
+    "segments": [
+     "gateways"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "accessoryDevices": "array",
+     "asset": "object",
+     "connectionStatus": "object",
+     "dataUsageLast30Days": "object",
+     "model": "string",
+     "serial": "string"
+    },
+    "evidence": [
+     "openapi/_original/samsara-openapi.yml#DELETE /gateways/{id}",
+     "openapi/_original/samsara-openapi.yml#GET /gateways",
+     "openapi/_original/samsara-openapi.yml#POST /gateways"
+    ]
+   },
+   "samsung": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "deviceId": "string",
+     "name": "string",
+     "label": "string",
+     "manufacturerName": "string",
+     "presentationId": "string",
+     "locationId": "string",
+     "roomId": "string",
+     "ownerId": "string",
+     "type": "string",
+     "components": "array"
+    },
+    "evidence": [
+     "openapi/_original/samsung-smartthings-openapi.yml#DELETE /devices/{deviceId}",
+     "openapi/_original/samsung-smartthings-openapi.yml#GET /devices",
+     "openapi/_original/samsung-smartthings-openapi.yml#GET /devices/{deviceId}"
+    ]
+   },
+   "sense": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "icon": "string",
+     "is_on": "boolean",
+     "power_w": "number",
+     "tags": "object",
+     "DAY": "number",
+     "WEEK": "number",
+     "MONTH": "number",
+     "YEAR": "number"
+    },
+    "evidence": [
+     "openapi/_original/sense-sense-client-api-openapi.yml#GET /app/monitors/{monitor_id}/devices",
+     "openapi/_original/sense-sense-client-api-openapi.yml#GET /app/monitors/{monitor_id}/devices/{device_id}",
+     "openapi/_original/sense-sense-client-api-openapi.yml#GET /monitors/{monitor_id}/devices"
+    ]
+   },
+   "soracom": {
+    "segments": [
+     "devices",
+     "gateways"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "device_id": "string",
+     "endpoint": "string",
+     "firmwareVersion": "string",
+     "groupId": "string",
+     "ipAddress": "string",
+     "lastModifiedTime": "string",
+     "lastRegistrationUpdate": "string",
+     "manufacturer": "string",
+     "modelNumber": "string",
+     "objects": "object",
+     "online": "boolean",
+     "operatorId": "string",
+     "registrationId": "string",
+     "registrationLifeTime": "integer",
+     "serialNumber": "string",
+     "tags": "object",
+     "address": "string",
+     "createdTime": "string",
+     "gatewayId": "string",
+     "networkSetId": "string",
+     "owned": "boolean",
+     "status": "string",
+     "terminationEnabled": "boolean",
+     "appliedLicenses": "array",
+     "configuration": "object",
+     "connected": "boolean",
+     "deviceCategory": "string",
+     "deviceId": "string",
+     "isShared": "boolean",
+     "lastConnectedTime": "integer",
+     "name": "string",
+     "powerState": "string",
+     "productDisplayName": "string"
+    },
+    "evidence": [
+     "openapi/_original/soracom-analysis-query-api-openapi.yml#GET /query/devices",
+     "openapi/_original/soracom-inventory-api-openapi.yml#DELETE /devices/{device_id}",
+     "openapi/_original/soracom-inventory-api-openapi.yml#GET /devices",
+     "openapi/_original/soracom-inventory-api-openapi.yml#GET /devices/{device_id}",
+     "openapi/_original/soracom-inventory-api-openapi.yml#POST /devices",
+     "openapi/_original/soracom-lorawan-api-openapi.yml#GET /lora_network_sets/{ns_id}/gateways",
+     "openapi/_original/soracom-platform-api-openapi.yml#DELETE /devices/{device_id}",
+     "openapi/_original/soracom-platform-api-openapi.yml#DELETE /sora_cam/devices/{device_id}",
+     "openapi/_original/soracom-platform-api-openapi.yml#GET /devices",
+     "openapi/_original/soracom-platform-api-openapi.yml#GET /devices/{device_id}",
+     "openapi/_original/soracom-platform-api-openapi.yml#GET /lora_network_sets/{ns_id}/gateways",
+     "openapi/_original/soracom-platform-api-openapi.yml#GET /query/devices"
+    ]
+   },
+   "tago-io": {
+    "segments": [
+     "device",
+     "devices"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "connector": "string",
+     "id": "string",
+     "name": "string",
+     "network": "string",
+     "tags": "array",
+     "deviceID": "string",
+     "token": "string",
+     "type": "string",
+     "chunk_period": "string",
+     "chunk_retention": "number",
+     "serie_number": "string",
+     "active": "boolean",
+     "created_at": "string",
+     "data_retention": "string",
+     "description": "string",
+     "last_input": "string",
+     "payload_decoder": null,
+     "profile": "string",
+     "updated_at": "string",
+     "visible": "boolean",
+     "result": "string",
+     "status": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/tago-io-tago-io-rest-api-openapi.yml#DELETE /device/{deviceID}",
+     "openapi/_original/tago-io-tago-io-rest-api-openapi.yml#GET /dashboard/{dashboardID}/devices",
+     "openapi/_original/tago-io-tago-io-rest-api-openapi.yml#GET /device",
+     "openapi/_original/tago-io-tago-io-rest-api-openapi.yml#GET /device/{deviceID}",
+     "openapi/_original/tago-io-tago-io-rest-api-openapi.yml#POST /device",
+     "openapi/_original/tago-io-tago-io-rest-api-openapi.yml#PUT /device/{deviceID}"
+    ]
+   },
+   "tank-utility": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "devices": "array",
+     "name": "string",
+     "address": "string",
+     "capacity": "number",
+     "status": "string",
+     "orientation": "string",
+     "fuelType": "string",
+     "lastReading": "object"
+    },
+    "evidence": [
+     "openapi/_original/tank-utility-devices-openapi.yml#GET /devices",
+     "openapi/_original/tank-utility-devices-openapi.yml#GET /devices/{deviceId}"
+    ]
+   },
+   "the-things-network": {
+    "segments": [
+     "devices",
+     "gateways"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "ids": "object",
+     "created_at": "string",
+     "updated_at": "string",
+     "name": "string",
+     "description": "string",
+     "attributes": "object",
+     "version_ids": "object",
+     "service_profile_id": "string",
+     "network_server_address": "string",
+     "network_server_kek_label": "string",
+     "application_server_address": "string",
+     "application_server_kek_label": "string",
+     "application_server_id": "string",
+     "join_server_address": "string",
+     "locations": "object",
+     "picture": "object",
+     "supports_class_b": "boolean",
+     "supports_class_c": "boolean",
+     "lorawan_version": "string",
+     "lorawan_phy_version": "string",
+     "frequency_plan_id": "string",
+     "min_frequency": "string",
+     "max_frequency": "string",
+     "supports_join": "boolean",
+     "resets_join_nonces": "boolean",
+     "root_keys": "object",
+     "net_id": "string",
+     "mac_settings": "object",
+     "mac_state": "object",
+     "pending_mac_state": "object",
+     "session": "object",
+     "pending_session": "object",
+     "last_dev_nonce": "integer",
+     "used_dev_nonces": "array",
+     "last_join_nonce": "integer",
+     "last_rj_count_0": "integer",
+     "last_rj_count_1": "integer",
+     "last_dev_status_received_at": "string",
+     "power_state": "string",
+     "battery_percentage": "number",
+     "downlink_margin": "integer",
+     "queued_application_downlinks": "array",
+     "formatters": "object",
+     "provisioner_id": "string",
+     "provisioning_data": "object",
+     "multicast": "boolean",
+     "claim_authentication_code": "object",
+     "skip_payload_crypto": "boolean",
+     "skip_payload_crypto_override": "boolean",
+     "activated_at": "string",
+     "last_seen_at": "string",
+     "serial_number": "string",
+     "lora_alliance_profile_ids": "object",
+     "mac_settings_profile_ids": "object",
+     "end_device": "object",
+     "field_mask": "string",
+     "application_ids": "object",
+     "failed": "object",
+     "end_device_ids": "object",
+     "home_net_id": "string",
+     "home_ns_id": "string",
+     "vendor_specific": "object",
+     "deleted_at": "string",
+     "contact_info": "array",
+     "administrative_contact": "object",
+     "technical_contact": "object",
+     "gateway_server_address": "string",
+     "auto_update": "boolean",
+     "update_channel": "string",
+     "frequency_plan_ids": "array",
+     "antennas": "array",
+     "status_public": "boolean",
+     "location_public": "boolean",
+     "schedule_downlink_late": "boolean",
+     "enforce_duty_cycle": "boolean",
+     "downlink_path_constraint": "string",
+     "schedule_anytime_delay": "string",
+     "update_location_from_status": "boolean",
+     "lbs_lns_secret": "object",
+     "target_cups_uri": "string",
+     "target_cups_key": "object",
+     "require_authenticated_connection": "boolean",
+     "lrfhss": "object",
+     "disable_packet_broker_forwarding": "boolean",
+     "gateway": "object",
+     "collaborator": "object"
+    },
+    "evidence": [
+     "openapi/_original/the-things-stack-application-server-openapi.yml#DELETE /as/applications/{application_ids.application_id}/devices/batch",
+     "openapi/_original/the-things-stack-application-server-openapi.yml#DELETE /as/applications/{application_ids.application_id}/devices/{device_id}",
+     "openapi/_original/the-things-stack-application-server-openapi.yml#GET /as/applications/{end_device_ids.application_ids.application_id}/devices/{end_device_ids.device_id}",
+     "openapi/_original/the-things-stack-application-server-openapi.yml#POST /as/applications/{end_device.ids.application_ids.application_id}/devices",
+     "openapi/_original/the-things-stack-application-server-openapi.yml#PUT /as/applications/{end_device.ids.application_ids.application_id}/devices/{end_device.ids.device_id}",
+     "openapi/_original/the-things-stack-end-device-registry-openapi.yml#DELETE /applications/{application_ids.application_id}/devices/batch",
+     "openapi/_original/the-things-stack-end-device-registry-openapi.yml#DELETE /applications/{application_ids.application_id}/devices/{device_id}",
+     "openapi/_original/the-things-stack-end-device-registry-openapi.yml#DELETE /edcs/claim/{application_ids.application_id}/devices/batch",
+     "openapi/_original/the-things-stack-end-device-registry-openapi.yml#DELETE /edcs/claim/{application_ids.application_id}/devices/{device_id}",
+     "openapi/_original/the-things-stack-end-device-registry-openapi.yml#GET /applications/{application_ids.application_id}/devices",
+     "openapi/_original/the-things-stack-end-device-registry-openapi.yml#GET /applications/{application_ids.application_id}/devices/batch",
+     "openapi/_original/the-things-stack-end-device-registry-openapi.yml#GET /applications/{end_device_ids.application_ids.application_id}/devices/{end_device_ids.device_id}"
+    ]
+   },
+   "thingsboard": {
+    "segments": [
+     "device",
+     "devices"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "id": "object",
+     "createdTime": "integer",
+     "tenantId": "object",
+     "customerId": "object",
+     "name": "string",
+     "type": "string",
+     "label": "string",
+     "deviceProfileId": "object",
+     "firmwareId": "object",
+     "softwareId": "object",
+     "version": "integer",
+     "additionalInfo": null,
+     "deviceData": "object",
+     "parameters": "object",
+     "relationType": "string",
+     "deviceTypes": "array",
+     "customerTitle": "string",
+     "customerIsPublic": "boolean",
+     "deviceProfileName": "string",
+     "active": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/thingsboard-devices-openapi.yml#DELETE /api/customer/device/{deviceId}",
+     "openapi/_original/thingsboard-devices-openapi.yml#DELETE /api/device/{deviceId}",
+     "openapi/_original/thingsboard-devices-openapi.yml#DELETE /api/edge/{edgeId}/device/{deviceId}",
+     "openapi/_original/thingsboard-devices-openapi.yml#GET /api/customer/{customerId}/devices",
+     "openapi/_original/thingsboard-devices-openapi.yml#GET /api/device/{deviceId}",
+     "openapi/_original/thingsboard-devices-openapi.yml#GET /api/devices",
+     "openapi/_original/thingsboard-devices-openapi.yml#GET /api/edge/{edgeId}/devices",
+     "openapi/_original/thingsboard-devices-openapi.yml#GET /api/tenant/devices",
+     "openapi/_original/thingsboard-devices-openapi.yml#POST /api/customer/public/device/{deviceId}",
+     "openapi/_original/thingsboard-devices-openapi.yml#POST /api/customer/{customerId}/device/{deviceId}",
+     "openapi/_original/thingsboard-devices-openapi.yml#POST /api/device",
+     "openapi/_original/thingsboard-devices-openapi.yml#POST /api/devices"
+    ]
+   },
+   "tibber": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "category": "string",
+     "vendor": "string",
+     "model": "string",
+     "attributes": "object",
+     "capabilities": "array",
+     "supportedHistory": "array",
+     "maxRetentionDays": "integer"
+    },
+    "evidence": [
+     "openapi/_original/tibber-data-api-openapi.yml#GET /v1/homes/{homeId}/devices",
+     "openapi/_original/tibber-data-api-openapi.yml#GET /v1/homes/{homeId}/devices/{deviceId}"
+    ]
+   },
+   "tive": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "deviceId": "string",
+     "deviceName": "string",
+     "accountId": "string",
+     "deviceOwner": "string",
+     "batteryPercent": "number",
+     "description": "string",
+     "powerButtonEnabled": "boolean",
+     "gpsEnabled": "boolean",
+     "wifiEnabled": "boolean",
+     "measurementInterval": "integer",
+     "transmissionInterval": "integer",
+     "estimatedBatteryLifeMinutes": "integer",
+     "alertPresetIds": "array"
+    },
+    "evidence": [
+     "openapi/_original/tive-openapi.yml#GET /devices",
+     "openapi/_original/tive-openapi.yml#GET /devices/{deviceId}"
+    ]
+   },
+   "truphone": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/truphone-openapi.yml#GET /v2.2/devices",
+     "openapi/_original/truphone-openapi.yml#GET /v2.2/devices/{id}",
+     "openapi/_original/truphone-openapi.yml#PATCH /v2.2/devices/{id}"
+    ]
+   },
+   "tttech": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "class": "string",
+     "device_firmware_version": "string",
+     "device_manufacturer": "string",
+     "device_model_name": "string",
+     "device_name": "string",
+     "id": "integer",
+     "status": "integer",
+     "versionId": "string",
+     "workloadId": "string",
+     "type": "string",
+     "parentNodeSerial": "string",
+     "features": "array",
+     "layout": "array",
+     "service_list": "array",
+     "device_api_version": "string"
+    },
+    "evidence": [
+     "openapi/_original/tttech-nerve-management-system-openapi-original.json#GET /nerve/workload/node/{serialNumber}/devices",
+     "openapi/_original/tttech-nerve-management-system-openapi.yml#GET /nerve/workload/node/{serialNumber}/devices"
+    ]
+   },
+   "tuya": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "uid": "string",
+     "local_key": "string",
+     "category": "string",
+     "product_id": "string",
+     "product_name": "string",
+     "sub": "boolean",
+     "uuid": "string",
+     "owner_id": "string",
+     "online": "boolean",
+     "status": "array",
+     "active_time": "integer",
+     "create_time": "integer",
+     "update_time": "integer",
+     "time_zone": "string",
+     "ip": "string",
+     "result": "boolean",
+     "success": "boolean",
+     "t": "integer"
+    },
+    "evidence": [
+     "openapi/_original/tuya-device-management-openapi.yml#DELETE /v1.0/devices/{device_id}",
+     "openapi/_original/tuya-device-management-openapi.yml#GET /v1.0/devices",
+     "openapi/_original/tuya-device-management-openapi.yml#GET /v1.0/devices/{device_id}",
+     "openapi/_original/tuya-device-management-openapi.yml#GET /v1.0/users/{uid}/devices",
+     "openapi/_original/tuya-device-management-openapi.yml#PUT /v1.0/devices/{device_id}"
+    ]
+   },
+   "twilio": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST item"
+    ],
+    "properties": {
+     "sid": "string",
+     "unique_name": "string",
+     "account_sid": "string",
+     "app": null,
+     "logging": null,
+     "date_created": "string",
+     "date_updated": "string",
+     "url": "string",
+     "links": "object"
+    },
+    "evidence": [
+     "openapi/_original/microvisor-openapi-original.yml#GET /v1/Devices",
+     "openapi/_original/microvisor-openapi-original.yml#GET /v1/Devices/{Sid}",
+     "openapi/_original/microvisor-openapi-original.yml#POST /v1/Devices/{Sid}"
+    ]
+   },
+   "viridi-parente": {
+    "segments": [
+     "device",
+     "devices"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "id": "object",
+     "createdTime": "integer",
+     "tenantId": "object",
+     "customerId": "object",
+     "name": "string",
+     "type": "string",
+     "label": "string",
+     "deviceProfileId": "object",
+     "firmwareId": "object",
+     "softwareId": "object",
+     "additionalInfo": null,
+     "deviceData": "object",
+     "parameters": "object",
+     "relationType": "string",
+     "deviceTypes": "array",
+     "customerTitle": "string",
+     "customerIsPublic": "boolean",
+     "deviceProfileName": "string",
+     "active": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/viridi-parente-vista-openapi.json#DELETE /api/customer/device/{deviceId}",
+     "openapi/_original/viridi-parente-vista-openapi.json#DELETE /api/device/{deviceId}",
+     "openapi/_original/viridi-parente-vista-openapi.json#DELETE /api/edge/{edgeId}/device/{deviceId}",
+     "openapi/_original/viridi-parente-vista-openapi.json#GET /api/customer/{customerId}/devices",
+     "openapi/_original/viridi-parente-vista-openapi.json#GET /api/device/{deviceId}",
+     "openapi/_original/viridi-parente-vista-openapi.json#GET /api/devices",
+     "openapi/_original/viridi-parente-vista-openapi.json#GET /api/edge/{edgeId}/devices",
+     "openapi/_original/viridi-parente-vista-openapi.json#GET /api/rpc/persistent/device/{deviceId}",
+     "openapi/_original/viridi-parente-vista-openapi.json#GET /api/tenant/devices",
+     "openapi/_original/viridi-parente-vista-openapi.json#POST /api/customer/public/device/{deviceId}",
+     "openapi/_original/viridi-parente-vista-openapi.json#POST /api/customer/{customerId}/device/{deviceId}",
+     "openapi/_original/viridi-parente-vista-openapi.json#POST /api/device"
+    ]
+   },
+   "vivalink": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "serialNumber": "string",
+     "type": "string",
+     "model": "string",
+     "firmwareVersion": "string",
+     "assignedSubjectId": "string",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/vivalink-openapi.yml#GET /v1/devices",
+     "openapi/_original/vivalink-openapi.yml#GET /v1/devices/{deviceId}"
+    ]
+   },
+   "wattwatchers": {
+    "segments": [
+     "devices"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {
+     "id": "string",
+     "model": "string",
+     "firmwareVersion": "string",
+     "latestStatus": "integer",
+     "shortEnergyReportingInterval": "integer",
+     "pending": "object",
+     "comms": "object",
+     "channels": "array",
+     "phases": "object",
+     "label": "string",
+     "timezone": "string",
+     "switches": "array"
+    },
+    "evidence": [
+     "openapi/_original/wattwatchers-rest-api-v3-openapi.json#GET /devices",
+     "openapi/_original/wattwatchers-rest-api-v3-openapi.json#GET /devices/{device-id}",
+     "openapi/_original/wattwatchers-rest-api-v3-openapi.json#PATCH /devices/{device-id}"
+    ]
+   },
+   "withings": {
+    "segments": [
+     "device"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "status": "integer",
+     "body": "object"
+    },
+    "evidence": [
+     "openapi/_original/withings-data-api-openapi.yml#POST https://wbsapi.withings.net/v2/device"
+    ]
+   },
+   "zededa": {
+    "segments": [
+     "devices",
+     "device"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "devId": "string",
+     "devName": "string",
+     "adapterName": "string",
+     "id": "string",
+     "name": "string",
+     "title": "string",
+     "description": "string",
+     "tags": "object",
+     "utype": "string",
+     "projectId": "string",
+     "serialno": "string",
+     "adminState": "string",
+     "modelId": "string",
+     "clusterID": "string",
+     "baseImage": "array",
+     "interfaces": "array",
+     "debugKnob": "object",
+     "deploymentTag": "string",
+     "vlanAdapters": "array",
+     "revision": "object",
+     "bondAdapter": "array",
+     "operationType": "string",
+     "operationStatus": "string",
+     "objectKind": "string",
+     "objectId": "string",
+     "objectName": "string",
+     "objectRevision": "string",
+     "objectType": "string",
+     "operationTime": "string",
+     "startTime": "string",
+     "endTime": "string",
+     "user": "string",
+     "httpStatusCode": "integer",
+     "httpStatusMsg": "string",
+     "jobId": "string",
+     "error": "array",
+     "location": "string",
+     "cpu": "number",
+     "thread": "number",
+     "memory": "number",
+     "storage": "number",
+     "onboarding": "object",
+     "identity": "string",
+     "obkey": "string",
+     "token": "string",
+     "clientIp": "string",
+     "dlisp": "object",
+     "resetCounter": "number",
+     "resetTime": "string",
+     "configItem": "array",
+     "deprecated": "string",
+     "devLocation": "object",
+     "sitePictures": "array",
+     "assetId": "string",
+     "baseOsRetryCounter": "number",
+     "baseOsRetryTime": "string",
+     "defaultNetInst": "object",
+     "preparePowerOffCounter": "number",
+     "preparePowerOffTime": "string",
+     "edgeviewconfig": "object",
+     "generateSoftSerial": "boolean",
+     "localOperatorConsoleURL": "string",
+     "configLock": "string",
+     "edgeviewAllow": "boolean",
+     "clusterInterface": "string",
+     "edgeNodeCluster": "object",
+     "baseOsForceUpgrade": "boolean",
+     "project": "object",
+     "model": "object",
+     "edgeSyncConfig": "object",
+     "pcrPolicy": "object",
+     "entpId": "string",
+     "deviceSummaryReport": "object"
+    },
+    "evidence": [
+     "openapi/_original/zededa-network_service-openapi.json#GET /v1/networks/id/{id}/devices",
+     "openapi/_original/zededa-node_service-openapi.json#GET /v1/devices",
+     "openapi/_original/zededa-node_service-openapi.json#POST /v1/devices",
+     "openapi/_original/zededa-user_service-openapi.json#GET /v1/reports/device"
+    ]
+   }
+  },
+  "telemetry": {
+   "1nce": {
+    "segments": [
+     "telemetry"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "state": "object"
+    },
+    "evidence": [
+     "openapi/_original/1nce-os-openapi.yml#GET /v1/inspect/devices/{deviceId}/telemetry"
+    ]
+   },
+   "arduino": {
+    "segments": [
+     "events"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "name": "string",
+     "updated_at": "string",
+     "value": null
+    },
+    "evidence": [
+     "openapi/_original/arduino-iot-cloud-api-openapi.yml#GET /iot/v2/devices/{id}/events"
+    ]
+   },
+   "beehero": {
+    "segments": [
+     "samples"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "gateway_mac_address": "string",
+     "sensor_mac_address": "string",
+     "temperature": "integer",
+     "pcb_temperature_one": "integer",
+     "humidity": "integer",
+     "in_count": "integer",
+     "out_count": "integer",
+     "timestamp": "string",
+     "bleRssi": "integer",
+     "external_weight": "integer",
+     "voltage": "integer",
+     "firmware_version": "string",
+     "message": "string",
+     "mac": "array",
+     "from": "string",
+     "to": "string",
+     "modem_rssi": "integer",
+     "latitude": "integer",
+     "longitude": "integer",
+     "pcb_temperature_two": "integer",
+     "battery_voltage": "integer"
+    },
+    "evidence": [
+     "openapi/_original/beehero-openapi-original.yml#POST /gateways/samples",
+     "openapi/_original/beehero-openapi-original.yml#POST /sensors/samples"
+    ]
+   },
+   "cesanta": {
+    "segments": [
+     "data"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/cesanta-mdash-openapi.yml#GET /devices/data",
+     "openapi/_original/cesanta-mdash-openapi.yml#GET /devices/{id}/data"
+    ]
+   },
+   "cumulocity": {
+    "segments": [
+     "measurements",
+     "measurement"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "measurements": "object",
+     "measurementsForSource": "string",
+     "measurementsForSourceAndType": "string",
+     "measurementsForType": "string",
+     "measurementsForValueFragmentType": "string",
+     "measurementsForDate": "string",
+     "measurementsForSourceAndDate": "string",
+     "measurementsForDateAndFragmentType": "string",
+     "measurementsForSourceAndValueFragmentTypeAndValueFragmentSeries": "string",
+     "self": "string",
+     "id": "string",
+     "source": "object",
+     "time": "string",
+     "type": "string",
+     "c8y_Steam": "object"
+    },
+    "evidence": [
+     "openapi/_original/cumulocity-openapi.yml#DELETE /measurement/measurements",
+     "openapi/_original/cumulocity-openapi.yml#DELETE /measurement/measurements/{id}",
+     "openapi/_original/cumulocity-openapi.yml#GET /measurement",
+     "openapi/_original/cumulocity-openapi.yml#GET /measurement/measurements",
+     "openapi/_original/cumulocity-openapi.yml#GET /measurement/measurements/{id}",
+     "openapi/_original/cumulocity-openapi.yml#POST /measurement/measurements"
+    ]
+   },
+   "edge-impulse": {
+    "segments": [
+     "samples"
+    ],
+    "operations": [
+     "POST item"
+    ],
+    "properties": {
+     "success": "boolean",
+     "error": "string",
+     "objectTracking": "object",
+     "objectDetection": "object",
+     "config": "object",
+     "variant": "string"
+    },
+    "evidence": [
+     "openapi/_original/edge-impulse-studio-openapi-2026-09-06.yml#POST /api/{projectId}/post-processing/{postProcessingId}/samples/{sampleId}"
+    ]
+   },
+   "elemental-machines": {
+    "segments": [
+     "samples"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/elemental-machines-api-openapi.yml#GET /api/machines/{machine_uuid}/samples.json"
+    ]
+   },
+   "golioth": {
+    "segments": [
+     "data"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET item",
+     "PATCH item",
+     "POST item",
+     "PUT item"
+    ],
+    "properties": {
+     "data": null
+    },
+    "evidence": [
+     "openapi/_original/golioth-openapi.yml#DELETE /v1/projects/{projectId}/devices/{deviceId}/data/{path}",
+     "openapi/_original/golioth-openapi.yml#GET /v1/projects/{projectId}/devices/{deviceId}/data/{path}",
+     "openapi/_original/golioth-openapi.yml#PATCH /v1/projects/{projectId}/devices/{deviceId}/data/{path}",
+     "openapi/_original/golioth-openapi.yml#POST /v1/projects/{projectId}/devices/{deviceId}/data/{path}",
+     "openapi/_original/golioth-openapi.yml#PUT /v1/projects/{projectId}/devices/{deviceId}/data/{path}"
+    ]
+   },
+   "gridx-ai": {
+    "segments": [
+     "measurements"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "measuredAt": "string",
+     "gridFrequency": "integer",
+     "acCurrent": "integer",
+     "l1ACCurrent": "integer",
+     "l2ACCurrent": "integer",
+     "l3ACCurrent": "integer",
+     "l1ACVoltage": "integer",
+     "l2ACVoltage": "integer",
+     "l3ACVoltage": "integer",
+     "acActivePower": "integer",
+     "acReactivePower": "integer",
+     "acApparentPower": "integer",
+     "dcCurrent": "integer",
+     "dcVoltage": "integer",
+     "dcPower": "integer",
+     "battery": "object",
+     "strategyID": "string",
+     "dynamicFeedInCurtailment": "boolean",
+     "prognosisBasedBatteryCharging": "boolean",
+     "activePowerSetpoint": "integer",
+     "activePowerSetpointSystemicError": "integer",
+     "l1CurrentSetpoint": "integer",
+     "l2CurrentSetpoint": "integer",
+     "l3CurrentSetpoint": "integer",
+     "maxStateOfChargeAfterMaxFeedIn": "integer",
+     "predictedEnergyOutput": "integer",
+     "energyOverFeedInCumulatedDaily": "integer",
+     "measuredFrom": "string",
+     "measuredTo": "string",
+     "capacity": "number",
+     "nominalCapacity": "number",
+     "stateOfCharge": "number",
+     "chargePower": "number",
+     "dischargePower": "number",
+     "activePower": "number"
+    },
+    "evidence": [
+     "openapi/_original/gridx-ai-openapi.yml#GET /gateways/{gatewayID}/appliances/{applianceID}/measurements",
+     "openapi/_original/gridx-ai-openapi.yml#GET /systems/{systemID}/assets/{assetID}/measurements",
+     "openapi/_original/gridx-api.json#GET /gateways/{gatewayID}/appliances/{applianceID}/measurements",
+     "openapi/_original/gridx-api.json#GET /systems/{systemID}/assets/{assetID}/measurements"
+    ]
+   },
+   "hildebrand": {
+    "segments": [
+     "readings"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "status": "string",
+     "name": "string",
+     "resourceTypeId": "string",
+     "resourceId": "string",
+     "classifier": "string",
+     "data": "array",
+     "units": "string",
+     "query": "object"
+    },
+    "evidence": [
+     "openapi/_original/hildebrand-glowmarkt-resource-system-swagger.json#GET /resource/{id}/readings"
+    ]
+   },
+   "influxdata": {
+    "segments": [
+     "measurements"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "orgID": "string",
+     "bucketID": "string",
+     "name": "string",
+     "columns": "array",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "type": "string",
+     "dataType": "string"
+    },
+    "evidence": [
+     "openapi/_original/influxdata-cloud-openapi-original.yml#GET /buckets/{bucketID}/schema/measurements",
+     "openapi/_original/influxdata-cloud-openapi-original.yml#GET /buckets/{bucketID}/schema/measurements/{measurementID}",
+     "openapi/_original/influxdata-cloud-openapi-original.yml#PATCH /buckets/{bucketID}/schema/measurements/{measurementID}",
+     "openapi/_original/influxdata-cloud-openapi-original.yml#POST /buckets/{bucketID}/schema/measurements"
+    ]
+   },
+   "kontaktio": {
+    "segments": [
+     "telemetry"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "PATCH collection",
+     "POST collection"
+    ],
+    "properties": {
+     "trackingId": "string",
+     "timestamp": "string",
+     "beaconTimestamp": "string",
+     "gatewayTimestamp": "string",
+     "cloudTimestamp": "string",
+     "accelerometerSensitivity": "number",
+     "accelerometerX": "number",
+     "accelerometerY": "number",
+     "accelerometerZ": "number",
+     "batteryLevel": "number",
+     "channel": "number",
+     "clickCounter": "number",
+     "secondButtonClickCounter": "number",
+     "humidity": "number",
+     "lightIntensity": "number",
+     "rssi": "number",
+     "movementCounter": "number",
+     "sourceId": "string",
+     "temperature": "number",
+     "airQuality": "number",
+     "roomNumber": "number",
+     "numberOfPeopleDetected": "number",
+     "secondsSincePeopleDetection": "number",
+     "timeSinceClick": "number",
+     "timeSinceDoubleTap": "number",
+     "timeSinceMovement": "number",
+     "timeSinceTap": "number",
+     "firmware": "string",
+     "model": "number",
+     "txPowerDbm": "number",
+     "uniqueId": "string",
+     "calibratedRssi1m": "number",
+     "calibratedRssi0m": "number",
+     "moving": "boolean",
+     "eddystoneNamespace": "string",
+     "eddystoneInstanceId": "string",
+     "eddystoneEphemeralId": "string",
+     "iBeaconProximity": "string",
+     "iBeaconMajor": "number",
+     "iBeaconMinor": "number",
+     "name": "string",
+     "type": "string",
+     "channelIds": "array"
+    },
+    "evidence": [
+     "openapi/_original/kontaktio-location-occupancy-openapi-original.yml#DELETE /v3/streams/subscriptions/telemetry",
+     "openapi/_original/kontaktio-location-occupancy-openapi-original.yml#GET /v3/streams/subscriptions/telemetry",
+     "openapi/_original/kontaktio-location-occupancy-openapi-original.yml#GET /v3/telemetry",
+     "openapi/_original/kontaktio-location-occupancy-openapi-original.yml#PATCH /v3/streams/subscriptions/telemetry",
+     "openapi/_original/kontaktio-location-occupancy-openapi-original.yml#POST /v3/streams/subscriptions/telemetry",
+     "openapi/_original/kontaktio-location-occupancy-openapi.yml#DELETE /v3/streams/subscriptions/telemetry",
+     "openapi/_original/kontaktio-location-occupancy-openapi.yml#GET /v3/streams/subscriptions/telemetry",
+     "openapi/_original/kontaktio-location-occupancy-openapi.yml#GET /v3/telemetry",
+     "openapi/_original/kontaktio-location-occupancy-openapi.yml#PATCH /v3/streams/subscriptions/telemetry",
+     "openapi/_original/kontaktio-location-occupancy-openapi.yml#POST /v3/streams/subscriptions/telemetry"
+    ]
+   },
+   "lunar-energy": {
+    "segments": [
+     "telemetry"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "timestamp": "string",
+     "power_W": "number",
+     "voltage_V": "number",
+     "current_A": "number",
+     "stateOfCharge_pct": "number",
+     "energy_Wh_increment": "number",
+     "energy_Wh_decrement": "number"
+    },
+    "evidence": [
+     "openapi/_original/gridshare-customer-api-openapi.yml#GET /api/v2/devices/{synthId}/telemetry",
+     "openapi/_original/gridshare-partner-api-openapi.yml#GET /api/v1/counterfactuals/{counterfactualName}/devices/{deviceId}/telemetry",
+     "openapi/_original/gridshare-partner-api-openapi.yml#GET /api/v1/devices/{synthId}/telemetry"
+    ]
+   },
+   "particle": {
+    "segments": [
+     "events"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/particle-cloud-api-openapi.yml#GET /v1/devices/events/{eventPrefix}",
+     "openapi/_original/particle-cloud-api-openapi.yml#GET /v1/devices/{deviceId}/events/{eventPrefix}",
+     "openapi/_original/particle-cloud-api-openapi.yml#POST /v1/devices/events"
+    ]
+   },
+   "phosphorus": {
+    "segments": [
+     "data"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "items": "array",
+     "total": "number"
+    },
+    "evidence": [
+     "openapi/_original/phosphorus-api-openapi.yml#GET /api/v2/device/{uuid}/data",
+     "openapi/_original/phosphorus-openapi.json#GET /api/v2/device/{uuid}/data"
+    ]
+   },
+   "polar": {
+    "segments": [
+     "samples"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "samples": "array",
+     "recording-rate": "integer",
+     "sample-type": "string",
+     "data": "string",
+     "date": "string",
+     "steps": "object",
+     "activity_zones": "object",
+     "inactivity_stamps": "array"
+    },
+    "evidence": [
+     "openapi/_original/polar-accesslink-api-openapi.yml#GET /v3/users/activities/samples",
+     "openapi/_original/polar-accesslink-api-openapi.yml#GET /v3/users/activities/samples/{date}",
+     "openapi/_original/polar-accesslink-api-openapi.yml#GET /v3/users/{user-id}/exercise-transactions/{transaction-id}/exercises/{exercise-id}/samples",
+     "openapi/_original/polar-accesslink-api-openapi.yml#GET /v3/users/{user-id}/exercise-transactions/{transaction-id}/exercises/{exercise-id}/samples/{type-id}"
+    ]
+   },
+   "revvo": {
+    "segments": [
+     "measurement"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "FRONT_LEFT": "object",
+     "FRONT_RIGHT": "object",
+     "REAR_LEFT": "object",
+     "REAR_RIGHT": "object",
+     "EXTERNAL": "object",
+     "OBD2": "object",
+     "DEVICE": "object",
+     "UNKNOWN": "object",
+     "FRONT": "object",
+     "REAR": "object",
+     "LEFT_1": "object",
+     "LEFT_1_OUTER": "object",
+     "LEFT_1_INNER": "object",
+     "RIGHT_1": "object",
+     "RIGHT_1_INNER": "object",
+     "RIGHT_1_OUTER": "object",
+     "LEFT_2": "object",
+     "LEFT_2_OUTER": "object",
+     "LEFT_2_INNER": "object",
+     "RIGHT_2": "object",
+     "RIGHT_2_INNER": "object",
+     "RIGHT_2_OUTER": "object",
+     "LEFT_3": "object",
+     "LEFT_3_OUTER": "object",
+     "LEFT_3_INNER": "object",
+     "RIGHT_3": "object",
+     "RIGHT_3_INNER": "object",
+     "RIGHT_3_OUTER": "object",
+     "LEFT_4": "object",
+     "LEFT_4_OUTER": "object",
+     "LEFT_4_INNER": "object",
+     "RIGHT_4": "object",
+     "RIGHT_4_INNER": "object",
+     "RIGHT_4_OUTER": "object",
+     "LEFT_5": "object",
+     "LEFT_5_OUTER": "object",
+     "LEFT_5_INNER": "object",
+     "RIGHT_5": "object",
+     "RIGHT_5_INNER": "object",
+     "RIGHT_5_OUTER": "object",
+     "LEFT_6": "object",
+     "LEFT_6_OUTER": "object",
+     "LEFT_6_INNER": "object",
+     "RIGHT_6": "object",
+     "RIGHT_6_INNER": "object",
+     "RIGHT_6_OUTER": "object",
+     "LEFT_7": "object",
+     "LEFT_7_OUTER": "object",
+     "LEFT_7_INNER": "object",
+     "RIGHT_7": "object",
+     "RIGHT_7_INNER": "object",
+     "RIGHT_7_OUTER": "object",
+     "LEFT_8": "object",
+     "LEFT_8_OUTER": "object",
+     "LEFT_8_INNER": "object",
+     "RIGHT_8": "object",
+     "RIGHT_8_INNER": "object",
+     "RIGHT_8_OUTER": "object",
+     "LEFT_9": "object",
+     "LEFT_9_OUTER": "object",
+     "LEFT_9_INNER": "object",
+     "RIGHT_9": "object",
+     "RIGHT_9_INNER": "object",
+     "RIGHT_9_OUTER": "object",
+     "LEFT_10": "object",
+     "LEFT_10_OUTER": "object",
+     "LEFT_10_INNER": "object",
+     "RIGHT_10": "object",
+     "RIGHT_10_INNER": "object",
+     "RIGHT_10_OUTER": "object",
+     "LEFT_11": "object",
+     "LEFT_11_OUTER": "object",
+     "LEFT_11_INNER": "object",
+     "RIGHT_11": "object",
+     "RIGHT_11_INNER": "object",
+     "RIGHT_11_OUTER": "object",
+     "LEFT_12": "object",
+     "LEFT_12_OUTER": "object",
+     "LEFT_12_INNER": "object",
+     "RIGHT_12": "object",
+     "RIGHT_12_INNER": "object",
+     "RIGHT_12_OUTER": "object",
+     "SPARE_1": "object",
+     "SPARE_2": "object",
+     "SPARE_3": "object",
+     "SPARE_4": "object",
+     "SPARE_5": "object",
+     "SPARE_6": "object",
+     "LEFT_1_OUTER_OUTER": "object",
+     "LEFT_1_OUTER_INNER": "object",
+     "LEFT_1_INNER_OUTER": "object",
+     "LEFT_1_INNER_INNER": "object",
+     "RIGHT_1_OUTER_OUTER": "object",
+     "RIGHT_1_OUTER_INNER": "object",
+     "RIGHT_1_INNER_OUTER": "object",
+     "RIGHT_1_INNER_INNER": "object",
+     "LEFT_2_OUTER_OUTER": "object",
+     "LEFT_2_OUTER_INNER": "object",
+     "LEFT_2_INNER_OUTER": "object",
+     "LEFT_2_INNER_INNER": "object",
+     "RIGHT_2_OUTER_OUTER": "object",
+     "RIGHT_2_OUTER_INNER": "object",
+     "RIGHT_2_INNER_OUTER": "object",
+     "RIGHT_2_INNER_INNER": "object",
+     "LEFT_3_OUTER_OUTER": "object",
+     "LEFT_3_OUTER_INNER": "object",
+     "LEFT_3_INNER_OUTER": "object",
+     "LEFT_3_INNER_INNER": "object",
+     "RIGHT_3_OUTER_OUTER": "object",
+     "RIGHT_3_OUTER_INNER": "object",
+     "RIGHT_3_INNER_OUTER": "object",
+     "RIGHT_3_INNER_INNER": "object",
+     "LEFT_4_OUTER_OUTER": "object",
+     "LEFT_4_OUTER_INNER": "object",
+     "LEFT_4_INNER_OUTER": "object",
+     "LEFT_4_INNER_INNER": "object",
+     "RIGHT_4_OUTER_OUTER": "object",
+     "RIGHT_4_OUTER_INNER": "object",
+     "RIGHT_4_INNER_OUTER": "object",
+     "RIGHT_4_INNER_INNER": "object",
+     "LEFT_5_OUTER_OUTER": "object",
+     "LEFT_5_OUTER_INNER": "object",
+     "LEFT_5_INNER_OUTER": "object",
+     "LEFT_5_INNER_INNER": "object",
+     "RIGHT_5_OUTER_OUTER": "object",
+     "RIGHT_5_OUTER_INNER": "object",
+     "RIGHT_5_INNER_OUTER": "object",
+     "RIGHT_5_INNER_INNER": "object",
+     "LEFT_6_OUTER_OUTER": "object",
+     "LEFT_6_OUTER_INNER": "object",
+     "LEFT_6_INNER_OUTER": "object",
+     "LEFT_6_INNER_INNER": "object",
+     "RIGHT_6_OUTER_OUTER": "object",
+     "RIGHT_6_OUTER_INNER": "object",
+     "RIGHT_6_INNER_OUTER": "object",
+     "RIGHT_6_INNER_INNER": "object",
+     "LEFT_7_OUTER_OUTER": "object",
+     "LEFT_7_OUTER_INNER": "object",
+     "LEFT_7_INNER_OUTER": "object",
+     "LEFT_7_INNER_INNER": "object",
+     "RIGHT_7_OUTER_OUTER": "object",
+     "RIGHT_7_OUTER_INNER": "object",
+     "RIGHT_7_INNER_OUTER": "object",
+     "RIGHT_7_INNER_INNER": "object",
+     "LEFT_8_OUTER_OUTER": "object",
+     "LEFT_8_OUTER_INNER": "object",
+     "LEFT_8_INNER_OUTER": "object",
+     "LEFT_8_INNER_INNER": "object",
+     "RIGHT_8_OUTER_OUTER": "object",
+     "RIGHT_8_OUTER_INNER": "object",
+     "RIGHT_8_INNER_OUTER": "object",
+     "RIGHT_8_INNER_INNER": "object",
+     "LEFT_9_OUTER_OUTER": "object",
+     "LEFT_9_OUTER_INNER": "object",
+     "LEFT_9_INNER_OUTER": "object",
+     "LEFT_9_INNER_INNER": "object",
+     "RIGHT_9_OUTER_OUTER": "object",
+     "RIGHT_9_OUTER_INNER": "object",
+     "RIGHT_9_INNER_OUTER": "object",
+     "RIGHT_9_INNER_INNER": "object",
+     "LEFT_10_OUTER_OUTER": "object",
+     "LEFT_10_OUTER_INNER": "object",
+     "LEFT_10_INNER_OUTER": "object",
+     "LEFT_10_INNER_INNER": "object",
+     "RIGHT_10_OUTER_OUTER": "object",
+     "RIGHT_10_OUTER_INNER": "object",
+     "RIGHT_10_INNER_OUTER": "object",
+     "RIGHT_10_INNER_INNER": "object",
+     "LEFT_11_OUTER_OUTER": "object",
+     "LEFT_11_OUTER_INNER": "object",
+     "LEFT_11_INNER_OUTER": "object",
+     "LEFT_11_INNER_INNER": "object",
+     "RIGHT_11_OUTER_OUTER": "object",
+     "RIGHT_11_OUTER_INNER": "object",
+     "RIGHT_11_INNER_OUTER": "object",
+     "RIGHT_11_INNER_INNER": "object",
+     "LEFT_12_OUTER_OUTER": "object",
+     "LEFT_12_OUTER_INNER": "object",
+     "LEFT_12_INNER_OUTER": "object",
+     "LEFT_12_INNER_INNER": "object",
+     "RIGHT_12_OUTER_OUTER": "object",
+     "RIGHT_12_OUTER_INNER": "object",
+     "RIGHT_12_INNER_OUTER": "object",
+     "RIGHT_12_INNER_INNER": "object"
+    },
+    "evidence": [
+     "openapi/_original/revvo-api-openapi-original.yml#POST /fleet/{fleetId}/vehicle/{assetId}/tire/measurement"
+    ]
+   },
+   "sensibo": {
+    "segments": [
+     "measurements"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "time": "string",
+     "temperature": "number",
+     "humidity": "number",
+     "feelsLike": "number",
+     "tvoc": "number",
+     "co2": "number",
+     "pm25": "number",
+     "rssi": "integer",
+     "battery": "number"
+    },
+    "evidence": [
+     "openapi/_original/sensibo-openapi.yml#GET /pods/{device_id}/measurements"
+    ]
+   },
+   "soracom": {
+    "segments": [
+     "data",
+     "events"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "category": "string",
+     "content": "string",
+     "contentType": "string",
+     "resourceId": "string",
+     "resourceType": "string",
+     "time": "integer",
+     "deviceId": "string",
+     "deviceType": "string",
+     "eventId": "string",
+     "eventInfo": "object"
+    },
+    "evidence": [
+     "openapi/_original/soracom-inventory-api-openapi.yml#GET /devices/{device_id}/data",
+     "openapi/_original/soracom-platform-api-openapi.yml#GET /devices/{device_id}/data",
+     "openapi/_original/soracom-platform-api-openapi.yml#GET /sora_cam/devices/events",
+     "openapi/_original/soracom-platform-api-openapi.yml#GET /sora_cam/devices/{device_id}/events",
+     "openapi/_original/soracom-platform-api-openapi.yml#POST /sora_cam/devices/{device_id}/data",
+     "openapi/_original/soracom-platform-api-openapi.yml#PUT /sora_cam/devices/{device_id}/data/{time}"
+    ]
+   },
+   "tago-io": {
+    "segments": [
+     "data"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "created_at": "string",
+     "device": "string",
+     "group": "string",
+     "id": "string",
+     "location": "object",
+     "time": "string",
+     "unit": "string",
+     "value": "string",
+     "variable": "string",
+     "result": "string",
+     "status": "boolean",
+     "metadata": "object"
+    },
+    "evidence": [
+     "openapi/_original/tago-io-tago-io-rest-api-openapi.yml#DELETE /device/{deviceID}/data",
+     "openapi/_original/tago-io-tago-io-rest-api-openapi.yml#GET /device/{deviceID}/data",
+     "openapi/_original/tago-io-tago-io-rest-api-openapi.yml#POST /device/{deviceID}/data",
+     "openapi/_original/tago-io-tago-io-rest-api-openapi.yml#PUT /device/{deviceID}/data"
+    ]
+   },
+   "thingsboard": {
+    "segments": [
+     "timeseries"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/thingsboard-devices-openapi.yml#GET /api/deviceProfile/devices/keys/timeseries"
+    ]
+   },
+   "twilio": {
+    "segments": [
+     "samples"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "account_sid": "string",
+     "date_created": "string",
+     "date_updated": "string",
+     "task_sid": "string",
+     "language": "string",
+     "assistant_sid": "string",
+     "sid": "string",
+     "tagged_text": "string",
+     "url": "string",
+     "source_channel": "string"
+    },
+    "evidence": [
+     "openapi/_original/assistant-openapi-original.yml#DELETE /understand/Assistants/{AssistantSid}/Tasks/{TaskSid}/Samples/{Sid}",
+     "openapi/_original/assistant-openapi-original.yml#GET /understand/Assistants/{AssistantSid}/Tasks/{TaskSid}/Samples",
+     "openapi/_original/assistant-openapi-original.yml#GET /understand/Assistants/{AssistantSid}/Tasks/{TaskSid}/Samples/{Sid}",
+     "openapi/_original/assistant-openapi-original.yml#POST /understand/Assistants/{AssistantSid}/Tasks/{TaskSid}/Samples",
+     "openapi/_original/assistant-openapi-original.yml#POST /understand/Assistants/{AssistantSid}/Tasks/{TaskSid}/Samples/{Sid}",
+     "openapi/_original/autopilot-openapi-original.yml#DELETE /v1/Assistants/{AssistantSid}/Tasks/{TaskSid}/Samples/{Sid}",
+     "openapi/_original/autopilot-openapi-original.yml#GET /v1/Assistants/{AssistantSid}/Tasks/{TaskSid}/Samples",
+     "openapi/_original/autopilot-openapi-original.yml#GET /v1/Assistants/{AssistantSid}/Tasks/{TaskSid}/Samples/{Sid}",
+     "openapi/_original/autopilot-openapi-original.yml#POST /v1/Assistants/{AssistantSid}/Tasks/{TaskSid}/Samples",
+     "openapi/_original/autopilot-openapi-original.yml#POST /v1/Assistants/{AssistantSid}/Tasks/{TaskSid}/Samples/{Sid}"
+    ]
+   },
+   "viridi-parente": {
+    "segments": [
+     "timeseries"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/viridi-parente-vista-openapi.json#GET /api/deviceProfile/devices/keys/timeseries",
+     "openapi/_original/viridi-parente-vista-openapi_2.json#GET /api/deviceProfile/devices/keys/timeseries"
+    ]
+   },
+   "vivalink": {
+    "segments": [
+     "measurements"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "timestamp": "string",
+     "value": "number",
+     "deviceId": "string"
+    },
+    "evidence": [
+     "openapi/_original/vivalink-openapi.yml#GET /v1/subjects/{subjectId}/measurements"
+    ]
+   },
+   "zededa": {
+    "segments": [
+     "events",
+     "timeseries"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "user": "string",
+     "project": "string",
+     "device": "string",
+     "instance": "string",
+     "severity": "string",
+     "description": "string",
+     "timestamp": "object",
+     "source": "string",
+     "resource": "string",
+     "eventType": "string",
+     "tags": "array",
+     "resourceName": "string",
+     "jsonData": "object",
+     "clusterInstance": "string",
+     "threshold": "object",
+     "metricType": "string",
+     "xLabel": "string",
+     "yLabels": "array",
+     "list": "array"
+    },
+    "evidence": [
+     "openapi/_original/zededa-node_service-openapi.json#GET /v1/devices/id/{objid}/events",
+     "openapi/_original/zededa-node_service-openapi.json#GET /v1/devices/id/{objid}/timeSeries/{mType}",
+     "openapi/_original/zededa-node_service-openapi.json#GET /v1/devices/name/{objname}/events",
+     "openapi/_original/zededa-node_service-openapi.json#GET /v1/devices/name/{objname}/timeSeries/{mType}"
+    ]
+   }
+  },
+  "device_command": {
+   "1nce": {
+    "segments": [
+     "jobs",
+     "actions"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "status": "string",
+     "amount": "number",
+     "failed": "number",
+     "done": "number",
+     "deviceId": "string",
+     "secretKey": "string",
+     "protocol": "string",
+     "format": "string",
+     "action": "string",
+     "resourceAddress": "string",
+     "data": "string",
+     "requestMode": "string",
+     "sendAttempts": "number"
+    },
+    "evidence": [
+     "openapi/_original/1nce-os-openapi.yml#GET /v1/integrate/devices/presharedkey/jobs",
+     "openapi/_original/1nce-os-openapi.yml#GET /v1/integrate/devices/psk/jobs",
+     "openapi/_original/1nce-os-openapi.yml#POST /v1/devices/{deviceId}/actions",
+     "openapi/_original/1nce-os-openapi.yml#POST /v1/integrate/devices/presharedkey/jobs",
+     "openapi/_original/1nce-os-openapi.yml#POST /v1/integrate/devices/psk/jobs"
+    ]
+   },
+   "afero": {
+    "segments": [
+     "actions"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "type": "string",
+     "requestId": "integer",
+     "timestampMs": "integer",
+     "sender": "string",
+     "source": "object",
+     "attrId": "integer",
+     "data": "string"
+    },
+    "evidence": [
+     "openapi/_original/afero-cloud-api-openapi.yml#POST /v1/accounts/{accountId}/devices/{deviceId}/actions"
+    ]
+   },
+   "allegion": {
+    "segments": [
+     "commands"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "commandId": "string",
+     "deviceId": "string",
+     "type": "string",
+     "status": "string",
+     "errorMessage": "string",
+     "createdAt": "string",
+     "completedAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/schlage-home-openapi.yml#GET /devices/{deviceId}/commands/{commandId}"
+    ]
+   },
+   "amazon-iot-core": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "jobId": null,
+     "status": null,
+     "forceCanceled": null,
+     "statusDetails": null,
+     "thingArn": null,
+     "queuedAt": null,
+     "startedAt": null,
+     "lastUpdatedAt": null,
+     "executionNumber": null,
+     "versionNumber": null,
+     "approximateSecondsBeforeTimedOut": null,
+     "executionSummaries": null,
+     "nextToken": null
+    },
+    "evidence": [
+     "openapi/_original/amazon-iot-core-openapi-original.yml#GET /things/{thingName}/jobs",
+     "openapi/_original/amazon-iot-core-openapi-original.yml#GET /things/{thingName}/jobs/{jobId}"
+    ]
+   },
+   "amazon-iot-device-defender": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "jobId": null,
+     "status": null,
+     "forceCanceled": null,
+     "statusDetails": null,
+     "thingArn": null,
+     "queuedAt": null,
+     "startedAt": null,
+     "lastUpdatedAt": null,
+     "executionNumber": null,
+     "versionNumber": null,
+     "approximateSecondsBeforeTimedOut": null,
+     "executionSummaries": null,
+     "nextToken": null
+    },
+    "evidence": [
+     "openapi/_original/amazon-iot-device-defender-openapi-original.yml#GET /things/{thingName}/jobs",
+     "openapi/_original/amazon-iot-device-defender-openapi-original.yml#GET /things/{thingName}/jobs/{jobId}"
+    ]
+   },
+   "amazon-iot-device-management": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "jobId": null,
+     "status": null,
+     "forceCanceled": null,
+     "statusDetails": null,
+     "thingArn": null,
+     "queuedAt": null,
+     "startedAt": null,
+     "lastUpdatedAt": null,
+     "executionNumber": null,
+     "versionNumber": null,
+     "approximateSecondsBeforeTimedOut": null,
+     "executionSummaries": null,
+     "nextToken": null
+    },
+    "evidence": [
+     "openapi/_original/amazon-iot-device-management-openapi-original.yml#GET /things/{thingName}/jobs",
+     "openapi/_original/amazon-iot-device-management-openapi-original.yml#GET /things/{thingName}/jobs/{jobId}"
+    ]
+   },
+   "cesanta": {
+    "segments": [
+     "rpc"
+    ],
+    "operations": [
+     "POST item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/cesanta-mdash-openapi.yml#POST /devices/{id}/rpc/{func}"
+    ]
+   },
+   "cisco-meraki": {
+    "segments": [
+     "commands"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "commandId": "string",
+     "createdAt": "string",
+     "completedAt": "string",
+     "createdBy": "object",
+     "operation": "string",
+     "status": "string",
+     "errors": "array"
+    },
+    "evidence": [
+     "openapi/_original/cisco-meraki-dashboard-api-openapi.json#GET /devices/{serial}/sensor/commands",
+     "openapi/_original/cisco-meraki-dashboard-api-openapi.json#GET /devices/{serial}/sensor/commands/{commandId}",
+     "openapi/_original/cisco-meraki-dashboard-api-openapi.json#POST /devices/{serial}/sensor/commands"
+    ]
+   },
+   "controlup": {
+    "segments": [
+     "actions"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "type": "string",
+     "data": "string"
+    },
+    "evidence": [
+     "openapi/_original/controlup-desktops-openapi.yml#POST /devices/{deviceID}/actions",
+     "openapi/_original/edge-dx-api.json#POST /devices/{deviceID}/actions"
+    ]
+   },
+   "golioth": {
+    "segments": [
+     "rpc"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "detail": null,
+     "statusCode": "integer",
+     "method": "string",
+     "params": "array",
+     "timeout": "integer"
+    },
+    "evidence": [
+     "openapi/_original/golioth-openapi.yml#POST /v1/projects/{projectId}/devices/{deviceId}/rpc"
+    ]
+   },
+   "kandji": {
+    "segments": [
+     "commands"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/kandji-endpoint-management-openapi.json#GET /api/v1/devices/{device_id}/commands"
+    ]
+   },
+   "orange-business": {
+    "segments": [
+     "commands"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "targetDeviceId": "string",
+     "request": "object",
+     "response": "object",
+     "status": "string",
+     "deliveryStatus": "string",
+     "errorCode": "string",
+     "policy": "object",
+     "history": "array",
+     "created": "string",
+     "updated": "string"
+    },
+    "evidence": [
+     "openapi/_original/orange-business-live-objects-openapi.json#GET /api/v1/deviceMgt/devices/{deviceId}/commands",
+     "openapi/_original/orange-business-live-objects-openapi.json#POST /api/v1/deviceMgt/devices/{deviceId}/commands"
+    ]
+   },
+   "samsung": {
+    "segments": [
+     "commands"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "status": "string",
+     "component": "string",
+     "capability": "string",
+     "command": "string",
+     "arguments": "array"
+    },
+    "evidence": [
+     "openapi/_original/samsung-smartthings-openapi.yml#POST /devices/{deviceId}/commands"
+    ]
+   },
+   "tuya": {
+    "segments": [
+     "commands"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "result": "boolean",
+     "success": "boolean",
+     "t": "integer",
+     "commands": "array"
+    },
+    "evidence": [
+     "openapi/_original/tuya-device-management-openapi.yml#POST /v1.0/devices/{device_id}/commands"
+    ]
+   }
+  },
+  "firmware_update": {
+   "arduino": {
+    "segments": [
+     "ota"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "file_sha": "string",
+     "ota_id": "string",
+     "ota_version": "integer",
+     "status": "string",
+     "async": "boolean",
+     "binary_key": "string",
+     "expire_in_mins": "integer"
+    },
+    "evidence": [
+     "openapi/_original/arduino-iot-cloud-api-openapi.yml#GET /iot/ota/{id}",
+     "openapi/_original/arduino-iot-cloud-api-openapi.yml#POST /iot/v2/devices/{id}/ota",
+     "openapi/_original/arduino-iot-cloud-api-openapi.yml#PUT /iot/v2/devices/{id}/ota"
+    ]
+   },
+   "avnet": {
+    "segments": [
+     "firmware"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "guid": "string",
+     "name": "string",
+     "hardware": "string",
+     "createdDate": "string",
+     "createdby": "string",
+     "updatedDate": "string",
+     "releaseCount": "integer",
+     "draftCount": "integer",
+     "isDeprecated": "boolean",
+     "deviceTemplateGuid": "string",
+     "deviceTemplateCode": "string",
+     "deviceTemplateName": "string",
+     "description": "string",
+     "firmwareDescription": "string",
+     "isSolutionTemplate": "boolean",
+     "newId": "string",
+     "firmwareUpgradeGuid": "string",
+     "software": "string",
+     "firmwareUpgradeDescription": "string",
+     "tag": "array",
+     "FirmwareDescription": "string",
+     "firmwareName": "string",
+     "createdBy": "string",
+     "updatedBy": "string",
+     "Upgrades": "array",
+     "eventPlaceHolders": "string",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/avnet-iotconnect-firmware-azure-prod-swagger.json#GET /api/v2/Firmware",
+     "openapi/_original/avnet-iotconnect-firmware-azure-prod-swagger.json#GET /api/v2/Firmware/{firmwareGuid}",
+     "openapi/_original/avnet-iotconnect-firmware-azure-prod-swagger.json#POST /api/v2/Firmware",
+     "openapi/_original/avnet-iotconnect-firmware-azure-prod-swagger.json#PUT /api/v2/Firmware/{firmwareGuid}",
+     "openapi/_original/avnet-iotconnect-firmware-openapi.yml#GET /api/v2/Firmware",
+     "openapi/_original/avnet-iotconnect-firmware-openapi.yml#GET /api/v2/Firmware/{firmwareGuid}",
+     "openapi/_original/avnet-iotconnect-firmware-openapi.yml#POST /api/v2/Firmware",
+     "openapi/_original/avnet-iotconnect-firmware-openapi.yml#PUT /api/v2/Firmware/{firmwareGuid}"
+    ]
+   },
+   "ayla-networks": {
+    "segments": [
+     "ota"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "type": "string",
+     "version": "string",
+     "command": "string",
+     "description": "string",
+     "provider": "string",
+     "ayla_model": "string",
+     "property_name": "string",
+     "image_id": "integer",
+     "from_version": null,
+     "dealer_uuid": null,
+     "facility_uuid": "array"
+    },
+    "evidence": [
+     "openapi/_original/ayla-networks-iot-command-center-openapi.yml#GET /jobs/{jobId}/ota",
+     "openapi/_original/ayla-networks-iot-command-center-openapi.yml#POST /jobs/{jobId}/ota",
+     "openapi/_original/ayla-networks-iot-command-center-openapi.yml#PUT /jobs/{job_id}/ota"
+    ]
+   },
+   "blues-wireless": {
+    "segments": [
+     "firmware"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "built": "string",
+     "created": "string",
+     "description": "string",
+     "filename": "string",
+     "info": "object",
+     "md5": "string",
+     "notes": "string",
+     "organization": "string",
+     "product": "string",
+     "published": "boolean",
+     "tags": "string",
+     "target": "string",
+     "type": "string",
+     "version": "string"
+    },
+    "evidence": [
+     "openapi/_original/blues-wireless-notehub-api-openapi.yml#GET /v1/projects/{projectOrProductUID}/firmware"
+    ]
+   },
+   "cesanta": {
+    "segments": [
+     "ota"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/cesanta-mdash-openapi.yml#POST /devices/{id}/ota"
+    ]
+   },
+   "gridx-ai": {
+    "segments": [
+     "firmware"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "components": "array"
+    },
+    "evidence": [
+     "openapi/_original/gridx-ai-openapi.yml#GET /gateways/{gatewayID}/firmware",
+     "openapi/_original/gridx-api.json#GET /gateways/{gatewayID}/firmware"
+    ]
+   },
+   "kontaktio": {
+    "segments": [
+     "firmware"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "description": "string",
+     "deviceType": "string",
+     "uniqueId": "array",
+     "validVersions": "string",
+     "scheduled": "boolean",
+     "important": "boolean",
+     "optional": "boolean",
+     "url": "string",
+     "fileExtension": "string",
+     "crc32": "string"
+    },
+    "evidence": [
+     "openapi/_original/kontaktio-device-management-openapi-original.yml#GET /firmware",
+     "openapi/_original/kontaktio-device-management-openapi-original.yml#GET /firmware/{firmwareVersion}",
+     "openapi/_original/kontaktio-device-management-openapi.yml#GET /firmware",
+     "openapi/_original/kontaktio-device-management-openapi.yml#GET /firmware/{firmwareVersion}"
+    ]
+   },
+   "openpath": {
+    "segments": [
+     "firmwares"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "name": "string",
+     "description": "string",
+     "version": "string",
+     "extendedVersion": "string",
+     "isPublic": "boolean",
+     "releaseDate": "string"
+    },
+    "evidence": [
+     "openapi/_original/openpath-openapi-original.json#GET /orgs/{orgId}/wirelessLockProviders/{wirelessLockProviderId}/firmwares"
+    ]
+   },
+   "orange-business": {
+    "segments": [
+     "updates"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "resourceId": "string",
+     "created": "string",
+     "updated": "string",
+     "initialVersion": "string",
+     "requestedVersion": "string",
+     "connector": "string",
+     "status": "string",
+     "errorOrigin": "string",
+     "errorCode": "string",
+     "deviceErrorCode": "string",
+     "errorDetails": "string",
+     "progress": "number",
+     "metadata": "object"
+    },
+    "evidence": [
+     "openapi/_original/orange-business-live-objects-openapi.json#GET /api/v1/deviceMgt/devices/{deviceId}/resources/updates",
+     "openapi/_original/orange-business-live-objects-openapi.json#POST /api/v1/deviceMgt/devices/{deviceId}/resources/{resourceId}/updates"
+    ]
+   },
+   "particle": {
+    "segments": [
+     "firmware"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/particle-cloud-api-openapi.yml#DELETE /v1/products/{productIdOrSlug}/firmware/{version}",
+     "openapi/_original/particle-cloud-api-openapi.yml#GET /v1/products/{productIdOrSlug}/firmware",
+     "openapi/_original/particle-cloud-api-openapi.yml#GET /v1/products/{productIdOrSlug}/firmware/{version}",
+     "openapi/_original/particle-cloud-api-openapi.yml#POST /v1/products/{productIdOrSlug}/firmware",
+     "openapi/_original/particle-cloud-api-openapi.yml#PUT /v1/products/{productIdOrSlug}/firmware/{version}"
+    ]
+   },
+   "phosphorus": {
+    "segments": [
+     "firmware"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/phosphorus-api-openapi.yml#GET /api/v2/device/{uuid}/firmware",
+     "openapi/_original/phosphorus-openapi.json#GET /api/v2/device/{uuid}/firmware"
+    ]
+   },
+   "soracom": {
+    "segments": [
+     "updates"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "deviceId": "string",
+     "firmwareVersion": "string",
+     "timeout": "integer"
+    },
+    "evidence": [
+     "openapi/_original/soracom-platform-api-openapi.yml#GET /sora_cam/devices/atom_cam/firmware/updates"
+    ]
+   },
+   "telnyx": {
+    "segments": [
+     "ota_updates"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "record_type": "string",
+     "sim_card_id": "string",
+     "type": "string",
+     "status": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "settings": "object"
+    },
+    "evidence": [
+     "openapi/_original/telnyx-openapi.json#GET /ota_updates",
+     "openapi/_original/telnyx-openapi.json#GET /ota_updates/{id}",
+     "openapi/_original/telnyx-openapi.yml#GET /ota_updates",
+     "openapi/_original/telnyx-openapi.yml#GET /ota_updates/{id}"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "1komma5",
+    "1nce",
+    "30mhz",
+    "701x",
+    "actionstreamer",
+    "adafruit-io",
+    "aedifion",
+    "aeris",
+    "afero",
+    "agrology",
+    "allegion",
+    "amazon-freertos",
+    "amazon-ground-station",
+    "amazon-iot-core",
+    "amazon-iot-device-defender",
+    "amazon-iot-device-management",
+    "amazon-iot-events",
+    "amazon-iot-greengrass",
+    "amazon-iot-sitewise",
+    "amazon-iot-twinmaker",
+    "amazon-kinesis-video-streams",
+    "amazon-lookout-for-equipment",
+    "amazon-panorama",
+    "amazon-signer",
+    "anduril",
+    "angelcam",
+    "apache-nifi",
+    "arccos-golf",
+    "arduino",
+    "armada",
+    "aspentech",
+    "atmospore-pollen-forecasts",
+    "automile",
+    "automotive-grade-linux",
+    "avnet",
+    "awattar",
+    "ayla-networks",
+    "balena",
+    "bear-robotics",
+    "beehero",
+    "bell-canada",
+    "bharti-airtel",
+    "blues-wireless",
+    "bodytrace",
+    "brick",
+    "butterflymx",
+    "carrier-global",
+    "cesanta",
+    "cisco-control-hub",
+    "cisco-meraki",
+    "clevergy",
+    "cloudstudioiot",
+    "cognite",
+    "coinrailz-com",
+    "controlup",
+    "cradlepoint",
+    "cumulocity",
+    "delos",
+    "door",
+    "ecobee",
+    "ecoflow",
+    "edge-impulse",
+    "eight-sleep",
+    "elemental-machines",
+    "emnify",
+    "esper",
+    "ev-energy",
+    "facilio",
+    "farmers-edge",
+    "fitbit",
+    "fiware",
+    "fleet",
+    "geotab",
+    "golioth",
+    "goodyear-tire-and-rubber",
+    "google-assistant",
+    "google-nest",
+    "got-its",
+    "govee",
+    "gridx-ai",
+    "high-mobility",
+    "hildebrand",
+    "hivemq",
+    "hologram",
+    "hubble-network",
+    "ifttt",
+    "ikea",
+    "inductive-automation",
+    "influxdata",
+    "itron",
+    "ixon",
+    "jumpcloud",
+    "kandji",
+    "kisi",
+    "kolide",
+    "kontaktio",
+    "kore-wireless",
+    "kpn",
+    "li-cor-intermediate",
+    "lisnr",
+    "lobster-world",
+    "loconav",
+    "lunar-energy",
+    "lvt",
+    "macadress",
+    "maintainx",
+    "memfault",
+    "microsoft-azure-event-hubs",
+    "microsoft-endpoint-configuration-management",
+    "motorola-solutions",
+    "mtn-group",
+    "nats",
+    "node-red",
+    "nortech",
+    "oden-technologies",
+    "onomondo",
+    "openpath",
+    "optus",
+    "orange",
+    "orange-business",
+    "osisoft-pi",
+    "otonomo",
+    "particle",
+    "passivelogic",
+    "phosphorus",
+    "polar",
+    "pulse-grow",
+    "rachio",
+    "reliance-jio",
+    "revvo",
+    "rfid",
+    "rockwell-automation",
+    "samsara",
+    "samsung",
+    "sense",
+    "sensibo",
+    "sentera",
+    "shodan",
+    "siemens",
+    "siemens-mindsphere",
+    "siemens-plm",
+    "smartcar",
+    "solar-edge",
+    "soracom",
+    "span-io",
+    "stanley-black-and-decker",
+    "starlink",
+    "steelcase",
+    "steute-technologies-gmbh-and-co-kg",
+    "tago-io",
+    "tank-utility",
+    "tata-communications",
+    "telnyx",
+    "tesla",
+    "tesla-energy",
+    "tesla-motors",
+    "the-things-network",
+    "thingsboard",
+    "thingspeak",
+    "threatlocker",
+    "tibber",
+    "tive",
+    "trimble-agriculture",
+    "truphone",
+    "tttech",
+    "tuya",
+    "twilio",
+    "ubicquia",
+    "verdigris-technologies",
+    "videri",
+    "viridi-parente",
+    "visteon",
+    "vivalink",
+    "waqi",
+    "wattwatchers",
+    "weavix",
+    "weidmueller",
+    "withings",
+    "xiaomi",
+    "zededa"
+   ],
+   "kebab-case": [
+    "1komma5",
+    "30mhz",
+    "aedifion",
+    "aeris",
+    "agrology",
+    "allegion",
+    "amazon-freertos",
+    "amazon-ground-station",
+    "amazon-iot-core",
+    "amazon-iot-device-defender",
+    "amazon-iot-device-management",
+    "amazon-iot-events",
+    "amazon-iot-sitewise",
+    "amazon-iot-twinmaker",
+    "amazon-lookout-for-equipment",
+    "amazon-panorama",
+    "amazon-signer",
+    "anduril",
+    "angelcam",
+    "apache-nifi",
+    "arduino",
+    "armada",
+    "atmospore-pollen-forecasts",
+    "automile",
+    "automotive-grade-linux",
+    "avnet",
+    "bear-robotics",
+    "bharti-airtel",
+    "blues-wireless",
+    "carrier-global",
+    "clevergy",
+    "cognite",
+    "coinrailz-com",
+    "controlup",
+    "cumulocity",
+    "delos",
+    "ecoflow",
+    "edge-impulse",
+    "eight-sleep",
+    "emnify",
+    "esper",
+    "ev-energy",
+    "facilio",
+    "farmers-edge",
+    "fitbit",
+    "geotab",
+    "golioth",
+    "goodyear-tire-and-rubber",
+    "got-its",
+    "govee",
+    "gridx-ai",
+    "high-mobility",
+    "hildebrand",
+    "hivemq",
+    "hubble-network",
+    "ikea",
+    "inductive-automation",
+    "itron",
+    "ixon",
+    "jumpcloud",
+    "kandji",
+    "kontaktio",
+    "kore-wireless",
+    "kpn",
+    "lisnr",
+    "maintainx",
+    "mtn-group",
+    "nortech",
+    "onomondo",
+    "openpath",
+    "orange",
+    "orange-business",
+    "otonomo",
+    "particle",
+    "passivelogic",
+    "phosphorus",
+    "polar",
+    "pulse-grow",
+    "reolink",
+    "revvo",
+    "rockwell-automation",
+    "samsara",
+    "shodan",
+    "siemens-plm",
+    "smartcar",
+    "span-io",
+    "starlink",
+    "steute-technologies-gmbh-and-co-kg",
+    "telnyx",
+    "the-things-network",
+    "thingsboard",
+    "tttech",
+    "tuya",
+    "twilio",
+    "ubicquia",
+    "verdigris-technologies",
+    "videri",
+    "viridi-parente",
+    "wattwatchers",
+    "weavix",
+    "weidmueller",
+    "zededa"
+   ],
+   "camelCase": [
+    "1nce",
+    "30mhz",
+    "701x",
+    "aedifion",
+    "aeris",
+    "afero",
+    "amazon-freertos",
+    "amazon-ground-station",
+    "amazon-iot-core",
+    "amazon-iot-device-defender",
+    "amazon-iot-device-management",
+    "amazon-iot-greengrass",
+    "arduino",
+    "armada",
+    "automile",
+    "avnet",
+    "bell-canada",
+    "bharti-airtel",
+    "cisco-control-hub",
+    "cisco-meraki",
+    "cloudstudioiot",
+    "cognite",
+    "controlup",
+    "cumulocity",
+    "ecobee",
+    "edge-impulse",
+    "facilio",
+    "fitbit",
+    "fiware",
+    "golioth",
+    "google-assistant",
+    "hildebrand",
+    "hubble-network",
+    "inductive-automation",
+    "influxdata",
+    "kpn",
+    "lvt",
+    "maintainx",
+    "microsoft-azure-event-hubs",
+    "microsoft-endpoint-configuration-management",
+    "mtn-group",
+    "openpath",
+    "orange-business",
+    "passivelogic",
+    "rachio",
+    "reliance-jio",
+    "rfid",
+    "sensibo",
+    "siemens-plm",
+    "solar-edge",
+    "steute-technologies-gmbh-and-co-kg",
+    "tank-utility",
+    "tata-communications",
+    "telia",
+    "telnyx",
+    "thingsboard",
+    "tive",
+    "tttech",
+    "ubicquia",
+    "viridi-parente",
+    "xiaomi",
+    "zededa"
+   ],
+   "other": [
+    "1komma5",
+    "1nce",
+    "701x",
+    "adafruit-io",
+    "aeris",
+    "air-quality-programmatic-apis",
+    "amazon-ground-station",
+    "amazon-iot-core",
+    "amazon-iot-device-defender",
+    "amazon-iot-device-management",
+    "amazon-iot-events",
+    "amazon-iot-fleetwise",
+    "amazon-iot-greengrass",
+    "amazon-iot-sitewise",
+    "amazon-iot-twinmaker",
+    "amazon-panorama",
+    "amazon-private-ca",
+    "amazon-signer",
+    "amazon-timestream",
+    "avnet",
+    "ayla-networks",
+    "balena",
+    "cloudstudioiot",
+    "cognite",
+    "coinrailz-com",
+    "cumulocity",
+    "door",
+    "ev-energy",
+    "fitbit",
+    "google-nest",
+    "hologram",
+    "inductive-automation",
+    "kisi",
+    "kpn",
+    "lvt",
+    "microsoft-azure-event-hubs",
+    "microsoft-endpoint-configuration-management",
+    "mtn-group",
+    "optus",
+    "otonomo",
+    "passivelogic",
+    "rachio",
+    "reolink",
+    "telnyx",
+    "tesla",
+    "tesla-motors",
+    "thingsboard",
+    "twilio",
+    "viam",
+    "viridi-parente",
+    "waqi",
+    "weidmueller",
+    "withings",
+    "xiaomi",
+    "xylem"
+   ],
+   "snake_case": [
+    "1nce",
+    "aedifion",
+    "aeris",
+    "anduril",
+    "arduino",
+    "ayla-networks",
+    "balena",
+    "beehero",
+    "bharti-airtel",
+    "blues-wireless",
+    "brick",
+    "butterflymx",
+    "cognite",
+    "controlup",
+    "cradlepoint",
+    "elemental-machines",
+    "emnify",
+    "esper",
+    "ev-energy",
+    "golioth",
+    "high-mobility",
+    "hubble-network",
+    "inductive-automation",
+    "kandji",
+    "kisi",
+    "kolide",
+    "kore-wireless",
+    "kpn",
+    "loconav",
+    "memfault",
+    "mtn-group",
+    "oden-technologies",
+    "optus",
+    "orange-business",
+    "otonomo",
+    "particle",
+    "polar",
+    "rachio",
+    "reliance-jio",
+    "samsara",
+    "sense",
+    "soracom",
+    "steelcase",
+    "tago-io",
+    "telnyx",
+    "tesla",
+    "tesla-energy",
+    "tesla-motors",
+    "the-things-network",
+    "thingsboard",
+    "truphone",
+    "twilio",
+    "videri",
+    "viridi-parente",
+    "withings"
+   ],
+   "PascalCase": [
+    "1nce",
+    "701x",
+    "automile",
+    "avnet",
+    "bioflyte",
+    "carrier-global",
+    "cloudstudioiot",
+    "controlup",
+    "hexagon",
+    "inductive-automation",
+    "ixon",
+    "kore-wireless",
+    "kpn",
+    "microsoft-endpoint-configuration-management",
+    "mtn-group",
+    "particle",
+    "ptc-thingworx",
+    "samsara",
+    "siemens-plm",
+    "tata-communications",
+    "telnyx",
+    "threatlocker",
+    "twilio",
+    "ubicquia",
+    "viam",
+    "vivalink",
+    "xylem"
+   ]
+  },
+  "path_param": {
+   "camelCase": [
+    "1komma5",
+    "1nce",
+    "30mhz",
+    "701x",
+    "actionstreamer",
+    "aeris",
+    "afero",
+    "agrology",
+    "allegion",
+    "amazon-freertos",
+    "amazon-ground-station",
+    "amazon-iot-core",
+    "amazon-iot-device-defender",
+    "amazon-iot-device-management",
+    "amazon-iot-events",
+    "amazon-iot-greengrass",
+    "amazon-iot-sitewise",
+    "amazon-iot-twinmaker",
+    "amazon-signer",
+    "anduril",
+    "apache-nifi",
+    "arccos-golf",
+    "arduino",
+    "armada",
+    "automile",
+    "avnet",
+    "ayla-networks",
+    "bharti-airtel",
+    "blues-wireless",
+    "cisco-control-hub",
+    "cisco-meraki",
+    "clevergy",
+    "cloudstudioiot",
+    "cognite",
+    "coinrailz-com",
+    "controlup",
+    "cumulocity",
+    "delos",
+    "door",
+    "edge-impulse",
+    "eight-sleep",
+    "emnify",
+    "esper",
+    "facilio",
+    "fiware",
+    "golioth",
+    "google-assistant",
+    "google-nest",
+    "got-its",
+    "gridx-ai",
+    "hildebrand",
+    "hivemq",
+    "ikea",
+    "inductive-automation",
+    "influxdata",
+    "itron",
+    "ixon",
+    "kisi",
+    "kolide",
+    "kontaktio",
+    "kpn",
+    "lobster-world",
+    "loconav",
+    "lunar-energy",
+    "lvt",
+    "maintainx",
+    "microsoft-azure-event-hubs",
+    "microsoft-endpoint-configuration-management",
+    "mtn-group",
+    "nortech",
+    "openpath",
+    "orange-business",
+    "osisoft-pi",
+    "particle",
+    "passivelogic",
+    "polar",
+    "ptc-thingworx",
+    "pulse-grow",
+    "rachio",
+    "reliance-jio",
+    "revvo",
+    "rfid",
+    "rockwell-automation",
+    "samsara",
+    "samsung",
+    "shodan",
+    "siemens",
+    "siemens-mindsphere",
+    "siemens-plm",
+    "solar-edge",
+    "soracom",
+    "span-io",
+    "stanley-black-and-decker",
+    "starlink",
+    "steute-technologies-gmbh-and-co-kg",
+    "tago-io",
+    "tank-utility",
+    "tata-communications",
+    "telnyx",
+    "thingsboard",
+    "tibber",
+    "tive",
+    "trimble-agriculture",
+    "tttech",
+    "twilio",
+    "verdigris-technologies",
+    "videri",
+    "viridi-parente",
+    "visteon",
+    "vivalink",
+    "weavix",
+    "xiaomi",
+    "zededa"
+   ],
+   "lower": [
+    "1komma5",
+    "1nce",
+    "30mhz",
+    "701x",
+    "adafruit-io",
+    "aedifion",
+    "aeris",
+    "afero",
+    "agrology",
+    "air-quality-programmatic-apis",
+    "amazon-iot-core",
+    "amazon-iot-device-defender",
+    "amazon-iot-device-management",
+    "amazon-iot-greengrass",
+    "angelcam",
+    "apache-nifi",
+    "arduino",
+    "armada",
+    "automile",
+    "automotive-grade-linux",
+    "avnet",
+    "ayla-networks",
+    "bell-canada",
+    "bharti-airtel",
+    "blues-wireless",
+    "bodytrace",
+    "butterflymx",
+    "cesanta",
+    "cisco-meraki",
+    "clevergy",
+    "cognite",
+    "coinrailz-com",
+    "controlup",
+    "cradlepoint",
+    "cumulocity",
+    "edge-impulse",
+    "elemental-machines",
+    "emnify",
+    "esper",
+    "ev-energy",
+    "facilio",
+    "farmers-edge",
+    "fitbit",
+    "fleet",
+    "golioth",
+    "gridx-ai",
+    "high-mobility",
+    "hildebrand",
+    "hologram",
+    "ifttt",
+    "inductive-automation",
+    "influxdata",
+    "jumpcloud",
+    "kisi",
+    "kolide",
+    "kontaktio",
+    "kore-wireless",
+    "kpn",
+    "lisnr",
+    "lobster-world",
+    "lvt",
+    "macadress",
+    "maintainx",
+    "microsoft-azure-event-hubs",
+    "mtn-group",
+    "node-red",
+    "nortech",
+    "openpath",
+    "optus",
+    "orange-business",
+    "otonomo",
+    "particle",
+    "passivelogic",
+    "phosphorus",
+    "polar",
+    "rachio",
+    "revvo",
+    "rockwell-automation",
+    "samsara",
+    "sensibo",
+    "shodan",
+    "siemens-mindsphere",
+    "siemens-plm",
+    "smartcar",
+    "soracom",
+    "span-io",
+    "starlink",
+    "steute-technologies-gmbh-and-co-kg",
+    "tago-io",
+    "tata-communications",
+    "telia",
+    "telnyx",
+    "the-things-network",
+    "thingsboard",
+    "truphone",
+    "tttech",
+    "tuya",
+    "twilio",
+    "ubicquia",
+    "verdigris-technologies",
+    "videri",
+    "viridi-parente",
+    "waqi",
+    "weavix",
+    "zededa"
+   ],
+   "snake_case": [
+    "1nce",
+    "adafruit-io",
+    "aedifion",
+    "aeris",
+    "angelcam",
+    "arduino",
+    "armada",
+    "ayla-networks",
+    "brick",
+    "butterflymx",
+    "cognite",
+    "controlup",
+    "elemental-machines",
+    "emnify",
+    "esper",
+    "ev-energy",
+    "hubble-network",
+    "influxdata",
+    "kandji",
+    "kisi",
+    "kore-wireless",
+    "kpn",
+    "lisnr",
+    "loconav",
+    "memfault",
+    "onomondo",
+    "optus",
+    "particle",
+    "polar",
+    "rachio",
+    "samsara",
+    "sense",
+    "sensibo",
+    "soracom",
+    "span-io",
+    "tago-io",
+    "telnyx",
+    "tesla",
+    "tesla-energy",
+    "tesla-motors",
+    "the-things-network",
+    "thingspeak",
+    "tttech",
+    "tuya",
+    "twilio",
+    "ubicquia",
+    "weidmueller"
+   ],
+   "kebab-case": [
+    "30mhz",
+    "aeris",
+    "apache-nifi",
+    "fitbit",
+    "inductive-automation",
+    "ixon",
+    "kore-wireless",
+    "li-cor-intermediate",
+    "polar",
+    "telnyx",
+    "wattwatchers"
+   ],
+   "PascalCase": [
+    "701x",
+    "amazon-kinesis-video-streams",
+    "amazon-lookout-for-equipment",
+    "amazon-panorama",
+    "avnet",
+    "kore-wireless",
+    "tago-io",
+    "twilio"
+   ],
+   "other": [
+    "kpn",
+    "mtn-group",
+    "otonomo",
+    "the-things-network",
+    "xiaomi",
+    "zededa"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "1komma5",
+    "1nce",
+    "30mhz",
+    "701x",
+    "actionstreamer",
+    "adafruit-io",
+    "aedifion",
+    "aeris",
+    "afero",
+    "agrology",
+    "air-quality-programmatic-apis",
+    "allegion",
+    "amazon-iot-core",
+    "amazon-iot-device-defender",
+    "amazon-iot-device-management",
+    "amazon-iot-events",
+    "amazon-iot-greengrass",
+    "amazon-iot-sitewise",
+    "amazon-iot-twinmaker",
+    "amazon-panorama",
+    "amazon-signer",
+    "anduril",
+    "angelcam",
+    "apache-nifi",
+    "arccos-golf",
+    "arduino",
+    "atmospore-pollen-forecasts",
+    "automile",
+    "automotive-grade-linux",
+    "avnet",
+    "awattar",
+    "ayla-networks",
+    "bell-canada",
+    "bharti-airtel",
+    "bioflyte",
+    "blues-wireless",
+    "bodytrace",
+    "butterflymx",
+    "carrier-global",
+    "cisco-control-hub",
+    "cisco-meraki",
+    "clevergy",
+    "cloudstudioiot",
+    "cognite",
+    "coinrailz-com",
+    "controlup",
+    "cradlepoint",
+    "cumulocity",
+    "delos",
+    "ecobee",
+    "ecoflow",
+    "edge-impulse",
+    "eight-sleep",
+    "elemental-machines",
+    "emnify",
+    "esper",
+    "ev-energy",
+    "facilio",
+    "farmers-edge",
+    "fitbit",
+    "fiware",
+    "fleet",
+    "golioth",
+    "goodyear-tire-and-rubber",
+    "got-its",
+    "gridx-ai",
+    "hildebrand",
+    "hologram",
+    "hubble-network",
+    "ikea",
+    "inductive-automation",
+    "influxdata",
+    "ixon",
+    "kandji",
+    "kisi",
+    "kolide",
+    "kontaktio",
+    "kore-wireless",
+    "kpn",
+    "li-cor-intermediate",
+    "lisnr",
+    "lunar-energy",
+    "lvt",
+    "macadress",
+    "maintainx",
+    "microsoft-azure-event-hubs",
+    "microsoft-endpoint-configuration-management",
+    "mtn-group",
+    "nats",
+    "nortech",
+    "oden-technologies",
+    "onomondo",
+    "openpath",
+    "optus",
+    "orange-business",
+    "osisoft-pi",
+    "otonomo",
+    "passivelogic",
+    "phosphorus",
+    "polar",
+    "ptc-thingworx",
+    "pulse-grow",
+    "rachio",
+    "reliance-jio",
+    "revvo",
+    "rockwell-automation",
+    "samsara",
+    "samsung",
+    "sense",
+    "sensibo",
+    "sentera",
+    "shodan",
+    "siemens",
+    "siemens-mindsphere",
+    "siemens-plm",
+    "solar-edge",
+    "soracom",
+    "stanley-black-and-decker",
+    "starlink",
+    "steelcase",
+    "tago-io",
+    "tank-utility",
+    "tata-communications",
+    "telnyx",
+    "tesla",
+    "tesla-energy",
+    "tesla-motors",
+    "the-things-network",
+    "thingsboard",
+    "thingspeak",
+    "threatlocker",
+    "tibber",
+    "trimble-agriculture",
+    "truphone",
+    "tttech",
+    "tuya",
+    "twilio",
+    "ubicquia",
+    "verdigris-technologies",
+    "videri",
+    "viridi-parente",
+    "visteon",
+    "vivalink",
+    "waqi",
+    "wattwatchers",
+    "weidmueller",
+    "withings",
+    "xiaomi",
+    "xylem",
+    "zededa"
+   ],
+   "camelCase": [
+    "1komma5",
+    "1nce",
+    "30mhz",
+    "701x",
+    "actionstreamer",
+    "aedifion",
+    "aeris",
+    "afero",
+    "allegion",
+    "amazon-freertos",
+    "amazon-ground-station",
+    "amazon-iot-core",
+    "amazon-iot-device-defender",
+    "amazon-iot-device-management",
+    "amazon-iot-events",
+    "amazon-iot-fleetwise",
+    "amazon-iot-greengrass",
+    "amazon-iot-sitewise",
+    "amazon-iot-twinmaker",
+    "amazon-panorama",
+    "amazon-signer",
+    "anduril",
+    "apache-nifi",
+    "arccos-golf",
+    "automile",
+    "avnet",
+    "ayla-networks",
+    "bell-canada",
+    "bharti-airtel",
+    "bioflyte",
+    "blues-wireless",
+    "carrier-global",
+    "cisco-control-hub",
+    "cisco-meraki",
+    "clevergy",
+    "cloudstudioiot",
+    "cognite",
+    "controlup",
+    "cumulocity",
+    "delos",
+    "door",
+    "edge-impulse",
+    "facilio",
+    "fitbit",
+    "fiware",
+    "geotab",
+    "golioth",
+    "goodyear-tire-and-rubber",
+    "got-its",
+    "gridx-ai",
+    "ikea",
+    "inductive-automation",
+    "influxdata",
+    "kontaktio",
+    "kpn",
+    "lunar-energy",
+    "lvt",
+    "maintainx",
+    "mtn-group",
+    "nortech",
+    "openpath",
+    "orange-business",
+    "osisoft-pi",
+    "passivelogic",
+    "phosphorus",
+    "polar",
+    "ptc-thingworx",
+    "pulse-grow",
+    "reliance-jio",
+    "revvo",
+    "rfid",
+    "rockwell-automation",
+    "samsara",
+    "samsung",
+    "siemens-mindsphere",
+    "siemens-plm",
+    "solar-edge",
+    "soracom",
+    "stanley-black-and-decker",
+    "starlink",
+    "steute-technologies-gmbh-and-co-kg",
+    "tago-io",
+    "tata-communications",
+    "telnyx",
+    "thingsboard",
+    "threatlocker",
+    "tive",
+    "trimble-agriculture",
+    "tttech",
+    "twilio",
+    "videri",
+    "viridi-parente",
+    "vivalink",
+    "wattwatchers",
+    "xiaomi",
+    "xylem",
+    "zededa"
+   ],
+   "snake_case": [
+    "1nce",
+    "adafruit-io",
+    "aedifion",
+    "aeris",
+    "angelcam",
+    "arduino",
+    "atmospore-pollen-forecasts",
+    "automile",
+    "automotive-grade-linux",
+    "ayla-networks",
+    "blues-wireless",
+    "brick",
+    "cisco-meraki",
+    "controlup",
+    "cumulocity",
+    "ecobee",
+    "elemental-machines",
+    "emnify",
+    "esper",
+    "ev-energy",
+    "fitbit",
+    "fleet",
+    "gridx-ai",
+    "hubble-network",
+    "inductive-automation",
+    "kandji",
+    "kisi",
+    "kolide",
+    "kore-wireless",
+    "kpn",
+    "li-cor-intermediate",
+    "lisnr",
+    "maintainx",
+    "memfault",
+    "mtn-group",
+    "nats",
+    "otonomo",
+    "phosphorus",
+    "polar",
+    "rachio",
+    "samsara",
+    "sense",
+    "shodan",
+    "soracom",
+    "span-io",
+    "steelcase",
+    "tago-io",
+    "telnyx",
+    "tesla-energy",
+    "the-things-network",
+    "thingspeak",
+    "truphone",
+    "tttech",
+    "tuya",
+    "twilio",
+    "ubicquia",
+    "verdigris-technologies",
+    "videri",
+    "weidmueller",
+    "withings"
+   ],
+   "other": [
+    "701x",
+    "ayla-networks",
+    "balena",
+    "bharti-airtel",
+    "butterflymx",
+    "controlup",
+    "cradlepoint",
+    "elemental-machines",
+    "esper",
+    "ev-energy",
+    "golioth",
+    "kandji",
+    "kpn",
+    "maintainx",
+    "microsoft-azure-event-hubs",
+    "microsoft-endpoint-configuration-management",
+    "mtn-group",
+    "orange-business",
+    "rachio",
+    "rfid",
+    "rockwell-automation",
+    "siemens-plm",
+    "tago-io",
+    "telia",
+    "telnyx",
+    "the-things-network",
+    "twilio",
+    "wattwatchers",
+    "zededa"
+   ],
+   "PascalCase": [
+    "701x",
+    "amazon-panorama",
+    "amazon-private-ca",
+    "automile",
+    "avnet",
+    "bioflyte",
+    "kore-wireless",
+    "mtn-group",
+    "siemens-plm",
+    "telnyx",
+    "threatlocker",
+    "twilio",
+    "zededa"
+   ],
+   "kebab-case": [
+    "farmers-edge",
+    "gridx-ai",
+    "kore-wireless",
+    "kpn",
+    "microsoft-azure-event-hubs",
+    "microsoft-endpoint-configuration-management",
+    "nats"
+   ]
+  },
+  "pagination_param": {
+   "limit": [
+    "1komma5",
+    "701x",
+    "actionstreamer",
+    "adafruit-io",
+    "aeris",
+    "angelcam",
+    "apache-nifi",
+    "arccos-golf",
+    "arduino",
+    "ayla-networks",
+    "bell-canada",
+    "blues-wireless",
+    "bodytrace",
+    "carrier-global",
+    "cisco-meraki",
+    "clevergy",
+    "cognite",
+    "controlup",
+    "cradlepoint",
+    "delos",
+    "edge-impulse",
+    "elemental-machines",
+    "esper",
+    "ev-energy",
+    "fitbit",
+    "fiware",
+    "golioth",
+    "got-its",
+    "gridx-ai",
+    "hologram",
+    "hubble-network",
+    "inductive-automation",
+    "influxdata",
+    "kandji",
+    "kisi",
+    "kpn",
+    "lisnr",
+    "lvt",
+    "macadress",
+    "maintainx",
+    "mtn-group",
+    "nats",
+    "nortech",
+    "onomondo",
+    "openpath",
+    "orange-business",
+    "phosphorus",
+    "reliance-jio",
+    "rockwell-automation",
+    "samsara",
+    "sensibo",
+    "shodan",
+    "siemens-mindsphere",
+    "soracom",
+    "stanley-black-and-decker",
+    "starlink",
+    "telnyx",
+    "the-things-network",
+    "thingsboard",
+    "tttech",
+    "twilio",
+    "verdigris-technologies",
+    "videri",
+    "viridi-parente",
+    "visteon",
+    "vivalink",
+    "weidmueller"
+   ],
+   "page": [
+    "1komma5",
+    "1nce",
+    "30mhz",
+    "aedifion",
+    "aeris",
+    "afero",
+    "automile",
+    "automotive-grade-linux",
+    "ayla-networks",
+    "bharti-airtel",
+    "butterflymx",
+    "cisco-meraki",
+    "clevergy",
+    "controlup",
+    "elemental-machines",
+    "emnify",
+    "ev-energy",
+    "facilio",
+    "fleet",
+    "golioth",
+    "gridx-ai",
+    "kandji",
+    "kontaktio",
+    "kore-wireless",
+    "kpn",
+    "mtn-group",
+    "orange-business",
+    "otonomo",
+    "pulse-grow",
+    "shodan",
+    "siemens-mindsphere",
+    "starlink",
+    "tago-io",
+    "telnyx",
+    "the-things-network",
+    "thingsboard",
+    "truphone",
+    "tttech",
+    "twilio",
+    "ubicquia",
+    "videri",
+    "viridi-parente",
+    "xylem"
+   ],
+   "offset": [
+    "701x",
+    "actionstreamer",
+    "aeris",
+    "angelcam",
+    "apache-nifi",
+    "arccos-golf",
+    "bell-canada",
+    "bharti-airtel",
+    "cisco-control-hub",
+    "cisco-meraki",
+    "cradlepoint",
+    "delos",
+    "edge-impulse",
+    "esper",
+    "fitbit",
+    "fiware",
+    "gridx-ai",
+    "hildebrand",
+    "inductive-automation",
+    "influxdata",
+    "kandji",
+    "kisi",
+    "mtn-group",
+    "nats",
+    "onomondo",
+    "openpath",
+    "orange-business",
+    "phosphorus",
+    "reliance-jio",
+    "samsung",
+    "stanley-black-and-decker",
+    "thingspeak",
+    "twilio",
+    "visteon",
+    "withings"
+   ],
+   "page_size": [
+    "1nce",
+    "aeris",
+    "amazon-iot-core",
+    "amazon-iot-device-defender",
+    "amazon-iot-device-management",
+    "anduril",
+    "avnet",
+    "bharti-airtel",
+    "blues-wireless",
+    "controlup",
+    "cumulocity",
+    "door",
+    "emnify",
+    "ev-energy",
+    "facilio",
+    "hubble-network",
+    "kore-wireless",
+    "kpn",
+    "mtn-group",
+    "otonomo",
+    "siemens-plm",
+    "solar-edge",
+    "tata-communications",
+    "telnyx",
+    "thingsboard",
+    "threatlocker",
+    "tuya",
+    "twilio",
+    "viridi-parente"
+   ],
+   "size": [
+    "30mhz",
+    "aeris",
+    "afero",
+    "avnet",
+    "bharti-airtel",
+    "clevergy",
+    "controlup",
+    "ikea",
+    "kandji",
+    "kontaktio",
+    "kpn",
+    "mtn-group",
+    "nortech",
+    "orange-business",
+    "shodan",
+    "siemens-mindsphere",
+    "solar-edge",
+    "tuya",
+    "videri",
+    "xylem",
+    "zededa"
+   ],
+   "start": [
+    "aedifion",
+    "aeris",
+    "angelcam",
+    "arduino",
+    "awattar",
+    "controlup",
+    "ev-energy",
+    "golioth",
+    "gridx-ai",
+    "hubble-network",
+    "ikea",
+    "influxdata",
+    "kore-wireless",
+    "lunar-energy",
+    "pulse-grow",
+    "sense",
+    "thingspeak",
+    "twilio",
+    "videri",
+    "vivalink"
+   ],
+   "per_page": [
+    "1nce",
+    "aedifion",
+    "aeris",
+    "automotive-grade-linux",
+    "ayla-networks",
+    "cisco-meraki",
+    "elemental-machines",
+    "emnify",
+    "fleet",
+    "golioth",
+    "gridx-ai",
+    "kolide",
+    "kpn",
+    "mtn-group",
+    "telnyx",
+    "truphone",
+    "ubicquia"
+   ],
+   "cursor": [
+    "aeris",
+    "blues-wireless",
+    "clevergy",
+    "cognite",
+    "esper",
+    "kandji",
+    "kisi",
+    "kolide",
+    "lvt",
+    "maintainx",
+    "openpath",
+    "starlink",
+    "telnyx",
+    "vivalink",
+    "weidmueller"
+   ],
+   "max_results": [
+    "amazon-freertos",
+    "amazon-ground-station",
+    "amazon-iot-core",
+    "amazon-iot-device-defender",
+    "amazon-iot-device-management",
+    "amazon-iot-events",
+    "amazon-iot-fleetwise",
+    "amazon-iot-greengrass",
+    "amazon-iot-sitewise",
+    "amazon-iot-twinmaker",
+    "amazon-panorama",
+    "amazon-private-ca",
+    "amazon-signer",
+    "kpn",
+    "mtn-group"
+   ],
+   "page_token": [
+    "anduril",
+    "door",
+    "golioth",
+    "kore-wireless",
+    "samsung",
+    "telnyx",
+    "twilio"
+   ],
+   "after": [
+    "apache-nifi",
+    "controlup",
+    "influxdata",
+    "kandji",
+    "samsara",
+    "telnyx",
+    "the-things-network"
+   ],
+   "count": [
+    "apache-nifi",
+    "avnet",
+    "facilio",
+    "microsoft-endpoint-configuration-management",
+    "pulse-grow",
+    "shodan",
+    "videri"
+   ],
+   "skip": [
+    "automile",
+    "balena",
+    "microsoft-azure-event-hubs",
+    "microsoft-endpoint-configuration-management",
+    "shodan",
+    "siemens",
+    "tago-io"
+   ],
+   "top": [
+    "701x",
+    "balena",
+    "microsoft-azure-event-hubs",
+    "microsoft-endpoint-configuration-management",
+    "rockwell-automation",
+    "siemens"
+   ],
+   "starting_after": [
+    "cisco-meraki",
+    "kpn",
+    "lisnr",
+    "samsara"
+   ],
+   "next": [
+    "angelcam",
+    "ayla-networks"
+   ],
+   "before": [
+    "the-things-network"
+   ]
+  },
+  "property": {
+   "lower": [
+    "1nce",
+    "30mhz",
+    "actionstreamer",
+    "aedifion",
+    "aeris",
+    "afero",
+    "allegion",
+    "amazon-iot-core",
+    "amazon-iot-device-defender",
+    "amazon-iot-device-management",
+    "amazon-iot-sitewise",
+    "arduino",
+    "avnet",
+    "ayla-networks",
+    "balena",
+    "beehero",
+    "blues-wireless",
+    "bodytrace",
+    "cesanta",
+    "cisco-meraki",
+    "controlup",
+    "cumulocity",
+    "edge-impulse",
+    "eight-sleep",
+    "esper",
+    "fitbit",
+    "golioth",
+    "google-assistant",
+    "google-nest",
+    "got-its",
+    "govee",
+    "gridx-ai",
+    "hildebrand",
+    "hologram",
+    "hubble-network",
+    "influxdata",
+    "itron",
+    "ixon",
+    "kandji",
+    "kolide",
+    "kontaktio",
+    "kpn",
+    "lunar-energy",
+    "microsoft-endpoint-configuration-management",
+    "mtn-group",
+    "openpath",
+    "orange-business",
+    "phosphorus",
+    "polar",
+    "ptc-thingworx",
+    "samsara",
+    "samsung",
+    "sense",
+    "sensibo",
+    "soracom",
+    "tago-io",
+    "tank-utility",
+    "telnyx",
+    "the-things-network",
+    "thingsboard",
+    "tibber",
+    "tive",
+    "tttech",
+    "tuya",
+    "twilio",
+    "viridi-parente",
+    "vivalink",
+    "wattwatchers",
+    "withings",
+    "zededa"
+   ],
+   "camelCase": [
+    "1nce",
+    "30mhz",
+    "actionstreamer",
+    "aeris",
+    "afero",
+    "allegion",
+    "amazon-iot-core",
+    "amazon-iot-device-defender",
+    "amazon-iot-device-management",
+    "amazon-iot-sitewise",
+    "avnet",
+    "beehero",
+    "bodytrace",
+    "cisco-meraki",
+    "cumulocity",
+    "edge-impulse",
+    "eight-sleep",
+    "esper",
+    "fitbit",
+    "golioth",
+    "google-assistant",
+    "google-nest",
+    "got-its",
+    "gridx-ai",
+    "hildebrand",
+    "influxdata",
+    "itron",
+    "ixon",
+    "kontaktio",
+    "kpn",
+    "lunar-energy",
+    "microsoft-endpoint-configuration-management",
+    "mtn-group",
+    "openpath",
+    "orange-business",
+    "ptc-thingworx",
+    "samsara",
+    "samsung",
+    "sensibo",
+    "soracom",
+    "tago-io",
+    "tank-utility",
+    "thingsboard",
+    "tibber",
+    "tive",
+    "tttech",
+    "viridi-parente",
+    "vivalink",
+    "wattwatchers",
+    "zededa"
+   ],
+   "snake_case": [
+    "aedifion",
+    "arduino",
+    "ayla-networks",
+    "balena",
+    "beehero",
+    "blues-wireless",
+    "cesanta",
+    "controlup",
+    "edge-impulse",
+    "esper",
+    "hubble-network",
+    "kandji",
+    "kolide",
+    "kontaktio",
+    "polar",
+    "sense",
+    "soracom",
+    "tago-io",
+    "telnyx",
+    "the-things-network",
+    "tttech",
+    "tuya",
+    "twilio"
+   ],
+   "PascalCase": [
+    "amazon-panorama",
+    "avnet",
+    "kpn",
+    "microsoft-endpoint-configuration-management",
+    "revvo",
+    "sense"
+   ],
+   "other": [
+    "balena",
+    "cumulocity",
+    "esper",
+    "lunar-energy",
+    "mtn-group",
+    "revvo"
+   ],
+   "kebab-case": [
+    "polar"
+   ]
+  }
+ }
+}

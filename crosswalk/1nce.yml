@@ -1,0 +1,43 @@
+provider: 1nce
+apis_io: https://apis.io/providers/1nce/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - endpoints
+    - devices
+    properties:
+      name: name
+      id: id
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/1nce-os-openapi.yml#GET /v1/inspect/devices
+    - openapi/_original/1nce-os-openapi.yml#GET /v1/inspect/devices/{deviceId}
+    - openapi/_original/1nce-os-openapi.yml#GET /v1/integrate/devices/endpoints
+    - openapi/_original/1nce-os-openapi.yml#GET /v1/integrate/devices/endpoints/{protocol}
+    - openapi/_original/1nce-os-openapi.yml#PATCH /v1/integrate/devices/endpoints/{protocol}
+  telemetry:
+    path_segment:
+    - telemetry
+    properties:
+      status: state
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/1nce-os-openapi.yml#GET /v1/inspect/devices/{deviceId}/telemetry
+  device_command:
+    path_segment:
+    - jobs
+    - actions
+    properties:
+      command: action
+      status: status
+      created_at: createdAt
+      id: id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/1nce-os-openapi.yml#GET /v1/integrate/devices/presharedkey/jobs
+    - openapi/_original/1nce-os-openapi.yml#GET /v1/integrate/devices/psk/jobs
+    - openapi/_original/1nce-os-openapi.yml#POST /v1/devices/{deviceId}/actions
+    - openapi/_original/1nce-os-openapi.yml#POST /v1/integrate/devices/presharedkey/jobs
+    - openapi/_original/1nce-os-openapi.yml#POST /v1/integrate/devices/psk/jobs

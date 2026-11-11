@@ -1,0 +1,15 @@
+provider: butterflymx
+apis_io: https://apis.io/providers/butterflymx/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/butterflymx-api-openapi.json#GET /v4/devices
+    - openapi/_original/butterflymx-api-openapi.json#GET /v4/devices/{id}
+    - openapi/_original/butterflymx-api-openapi.yml#GET /v4/devices
+    - openapi/_original/butterflymx-api-openapi.yml#GET /v4/devices/{id}

@@ -1,0 +1,33 @@
+provider: lunar-energy
+apis_io: https://apis.io/providers/lunar-energy/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties:
+      type:
+      - kind
+      - model
+      - type
+      metadata: properties
+      device_id: deviceId
+      serial_number: serialNumber
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/gridshare-customer-api-openapi.yml#GET /api/v2/devices
+    - openapi/_original/gridshare-customer-api-openapi.yml#GET /api/v2/devices/{synthId}
+    - openapi/_original/gridshare-customer-api-openapi.yml#PATCH /api/v2/devices/{synthId}
+    - openapi/_original/gridshare-partner-api-openapi.yml#GET /api/v1/devices
+    - openapi/_original/gridshare-partner-api-openapi.yml#GET /api/v1/devices/{synthId}
+  telemetry:
+    path_segment:
+    - telemetry
+    properties:
+      timestamp: timestamp
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/gridshare-customer-api-openapi.yml#GET /api/v2/devices/{synthId}/telemetry
+    - openapi/_original/gridshare-partner-api-openapi.yml#GET /api/v1/counterfactuals/{counterfactualName}/devices/{deviceId}/telemetry
+    - openapi/_original/gridshare-partner-api-openapi.yml#GET /api/v1/devices/{synthId}/telemetry

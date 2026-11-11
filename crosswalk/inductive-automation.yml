@@ -1,0 +1,17 @@
+provider: inductive-automation
+apis_io: https://apis.io/providers/inductive-automation/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - device
+    - gateways
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/inductive-automation-ignition-gateway.yaml#GET /data/api/v1/gateway-network/gateways
+    - openapi/_original/inductive-automation-ignition-gateway.yaml#GET /data/api/v1/resources/find/com.inductiveautomation.opcua/device/{name}
+    - openapi/_original/inductive-automation-ignition-gateway.yaml#GET /data/api/v1/resources/list/com.inductiveautomation.opcua/device
+    - openapi/_original/inductive-automation-ignition-gateway.yaml#GET /data/api/v1/resources/names/com.inductiveautomation.opcua/device
+    - openapi/_original/inductive-automation-ignition-gateway.yaml#GET /data/api/v1/resources/type/com.inductiveautomation.opcua/device

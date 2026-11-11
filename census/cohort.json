@@ -1,0 +1,1691 @@
+[
+ {
+  "slug": "1komma5",
+  "specs": [
+   "openapi/_original/1komma5-offer-tool-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "1nce",
+  "specs": [
+   "openapi/_original/1nce-authorization-openapi.yml",
+   "openapi/_original/1nce-authorization-v2-openapi.yml",
+   "openapi/_original/1nce-order-management-openapi.yml",
+   "openapi/_original/1nce-os-openapi.yml",
+   "openapi/_original/1nce-product-information-openapi.yml",
+   "openapi/_original/1nce-sim-management-openapi.yml",
+   "openapi/_original/1nce-sim-management-v2-openapi.yml",
+   "openapi/_original/1nce-support-management-openapi.yml"
+  ]
+ },
+ {
+  "slug": "30mhz",
+  "specs": [
+   "openapi/_original/30mhz-zensie-openapi.json",
+   "openapi/_original/30mhz-zensie-openapi_2.json"
+  ]
+ },
+ {
+  "slug": "701x",
+  "specs": [
+   "openapi/_original/701x-api-v1-openapi.json"
+  ]
+ },
+ {
+  "slug": "actionstreamer",
+  "specs": [
+   "openapi/_original/actionstreamer-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "adafruit-io",
+  "specs": [
+   "openapi/_original/adafruit-io-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "aedifion",
+  "specs": [
+   "openapi/_original/aedifion-openapi.json",
+   "openapi/_original/aedifion-openapi.yml"
+  ]
+ },
+ {
+  "slug": "aeris",
+  "specs": [
+   "openapi/_original/aeris-auth-3.0-openapi.yaml",
+   "openapi/_original/aeris-consumer-connectivity-openapi.yaml",
+   "openapi/_original/aeris-mds-esb-device-localization-openapi.yaml",
+   "openapi/_original/aeris-mds-esb-subscription-management-openapi.yaml",
+   "openapi/_original/aeris-subscription-change-history-openapi.yaml",
+   "openapi/_original/aeris-watchtower-api-openapi-openapi.yaml",
+   "openapi/_original/auth-3.0.yaml",
+   "openapi/_original/business-analytics-report-api.yaml",
+   "openapi/_original/business-automation-api.yaml",
+   "openapi/_original/consumer-connectivity.yaml",
+   "openapi/_original/eco-operations-api.yaml",
+   "openapi/_original/eim-info-api.yaml",
+   "openapi/_original/enterprise-management-api.yaml",
+   "openapi/_original/euicc-setup-api.yaml",
+   "openapi/_original/incidents-external-api.yaml",
+   "openapi/_original/mds-esb-device-localization.yaml",
+   "openapi/_original/mds-esb-subscription-management.yaml",
+   "openapi/_original/operator-order-management-api.yaml",
+   "openapi/_original/organization-signaling-aggregations-api.yaml",
+   "openapi/_original/resource-inventory-api.yaml",
+   "openapi/_original/shared-bundle-api.yaml",
+   "openapi/_original/sim-specification-management-api.yaml",
+   "openapi/_original/sms-messaging-api.yaml",
+   "openapi/_original/subscription-change-history.yaml",
+   "openapi/_original/subscription-custom-fields-api.yaml",
+   "openapi/_original/subscription-device-api.yaml",
+   "openapi/_original/subscription-device-reconnect-api.yaml",
+   "openapi/_original/subscription-inventory-common-api.yaml",
+   "openapi/_original/subscription-location-api.yaml",
+   "openapi/_original/subscription-number-management-api.yaml",
+   "openapi/_original/subscription-search-api.yaml",
+   "openapi/_original/subscription-signalling-events-api.yaml",
+   "openapi/_original/subscription-signalling-usages-api.yaml",
+   "openapi/_original/watchtower-api-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "afero",
+  "specs": [
+   "openapi/_original/afero-cloud-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "agrology",
+  "specs": [
+   "openapi/_original/agrology-public-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "aictx",
+  "specs": [
+   "openapi/_original/aictx-wp-json-route-index.json"
+  ]
+ },
+ {
+  "slug": "air-quality-programmatic-apis",
+  "specs": [
+   "openapi/_original/air-quality-programmatic-apis-openapi.yml"
+  ]
+ },
+ {
+  "slug": "allegion",
+  "specs": [
+   "openapi/_original/engage-credentialing-openapi.yml",
+   "openapi/_original/schlage-home-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-freertos",
+  "specs": [
+   "openapi/_original/amazon-freertos-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-ground-station",
+  "specs": [
+   "openapi/_original/amazon-ground-station-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "amazon-iot-core",
+  "specs": [
+   "openapi/_original/amazon-iot-core-openapi-original.yml",
+   "openapi/_original/amazon-iot-core-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-iot-device-defender",
+  "specs": [
+   "openapi/_original/amazon-iot-device-defender-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "amazon-iot-device-management",
+  "specs": [
+   "openapi/_original/amazon-iot-device-management-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "amazon-iot-events",
+  "specs": [
+   "openapi/_original/amazon-iot-events-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "amazon-iot-fleetwise",
+  "specs": [
+   "openapi/_original/amazon-iot-fleetwise-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "amazon-iot-greengrass",
+  "specs": [
+   "openapi/_original/amazon-iot-greengrass-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "amazon-iot-sitewise",
+  "specs": [
+   "openapi/_original/amazon-iot-sitewise-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "amazon-iot-twinmaker",
+  "specs": [
+   "openapi/_original/amazon-iot-twinmaker-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "amazon-kinesis-video-streams",
+  "specs": [
+   "openapi/_original/amazon-kinesis-video-streams-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-lookout-for-equipment",
+  "specs": [
+   "openapi/_original/amazon-lookout-for-equipment-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-panorama",
+  "specs": [
+   "openapi/_original/amazon-panorama-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-private-ca",
+  "specs": [
+   "openapi/_original/amazon-private-ca-openapi-original.yaml"
+  ]
+ },
+ {
+  "slug": "amazon-signer",
+  "specs": [
+   "openapi/_original/amazon-signer.yaml"
+  ]
+ },
+ {
+  "slug": "amazon-timestream",
+  "specs": [
+   "openapi/_original/amazon-timestream-openapi.yml"
+  ]
+ },
+ {
+  "slug": "anduril",
+  "specs": [
+   "openapi/_original/anduril-openapi.json"
+  ]
+ },
+ {
+  "slug": "angelcam",
+  "specs": [
+   "openapi/_original/angelcam-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "apache-nifi",
+  "specs": [
+   "openapi/_original/apache-nifi-openapi.yml"
+  ]
+ },
+ {
+  "slug": "arccos-golf",
+  "specs": [
+   "openapi/_original/arccos-golf-on-course-data-api-openapi.yml",
+   "openapi/_original/arccos-golf-on-course-data-api-swagger.json"
+  ]
+ },
+ {
+  "slug": "arduino",
+  "specs": [
+   "openapi/_original/arduino-iot-cloud-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "armada",
+  "specs": [
+   "openapi/_original/armada-orchestrator-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "armis",
+  "specs": [
+   "openapi/_original/armis-api-v3-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "aspentech",
+  "specs": [
+   "openapi/_original/aspentech-inmation-web-openapi.yml"
+  ]
+ },
+ {
+  "slug": "atmospore-pollen-forecasts",
+  "specs": [
+   "openapi/_original/atmospore-pollen-forecasts-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "automile",
+  "specs": [
+   "openapi/_original/automile-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "automotive-grade-linux",
+  "specs": [
+   "openapi/_original/automotive-grade-linux-events-api-openapi.json",
+   "openapi/_original/automotive-grade-linux-events-tec-v1-openapi.json"
+  ]
+ },
+ {
+  "slug": "avnet",
+  "specs": [
+   "openapi/_original/avnet-iotconnect-auth-aws-prod-swagger.json",
+   "openapi/_original/avnet-iotconnect-auth-azure-prod-swagger.json",
+   "openapi/_original/avnet-iotconnect-auth-openapi.yml",
+   "openapi/_original/avnet-iotconnect-device-aws-prod-swagger.json",
+   "openapi/_original/avnet-iotconnect-device-azure-prod-swagger.json",
+   "openapi/_original/avnet-iotconnect-device-openapi.yml",
+   "openapi/_original/avnet-iotconnect-event-aws-prod-swagger.json",
+   "openapi/_original/avnet-iotconnect-event-azure-prod-swagger.json",
+   "openapi/_original/avnet-iotconnect-event-openapi.yml",
+   "openapi/_original/avnet-iotconnect-file-aws-prod-swagger.json",
+   "openapi/_original/avnet-iotconnect-file-azure-prod-swagger.json",
+   "openapi/_original/avnet-iotconnect-file-openapi.yml",
+   "openapi/_original/avnet-iotconnect-firmware-azure-prod-swagger.json",
+   "openapi/_original/avnet-iotconnect-firmware-openapi.yml",
+   "openapi/_original/avnet-iotconnect-master-aws-prod-swagger.json",
+   "openapi/_original/avnet-iotconnect-master-azure-prod-swagger.json",
+   "openapi/_original/avnet-iotconnect-master-openapi.yml",
+   "openapi/_original/avnet-iotconnect-telemetry-aws-prod-swagger.json",
+   "openapi/_original/avnet-iotconnect-telemetry-azure-prod-swagger.json",
+   "openapi/_original/avnet-iotconnect-telemetry-openapi.yml",
+   "openapi/_original/avnet-iotconnect-user-aws-prod-swagger.json",
+   "openapi/_original/avnet-iotconnect-user-azure-prod-swagger.json",
+   "openapi/_original/avnet-iotconnect-user-openapi.yml"
+  ]
+ },
+ {
+  "slug": "awattar",
+  "specs": [
+   "openapi/_original/awattar-market-data-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ayla-networks",
+  "specs": [
+   "openapi/_original/ayla-networks-client-mqtt-openapi.yml",
+   "openapi/_original/ayla-networks-client-mqtt-readme-slices.json",
+   "openapi/_original/ayla-networks-contracts-service-openapi.yml",
+   "openapi/_original/ayla-networks-contracts-service-readme-slices.json",
+   "openapi/_original/ayla-networks-data-search-service-v2-openapi.yml",
+   "openapi/_original/ayla-networks-data-search-service-v2-readme-slices.json",
+   "openapi/_original/ayla-networks-data-stream-service-v2-openapi.yml",
+   "openapi/_original/ayla-networks-data-stream-service-v2-readme-slices.json",
+   "openapi/_original/ayla-networks-dealer-service-openapi.yml",
+   "openapi/_original/ayla-networks-dealer-service-readme-slices.json",
+   "openapi/_original/ayla-networks-device-service-openapi.yml",
+   "openapi/_original/ayla-networks-device-service-readme-slices.json",
+   "openapi/_original/ayla-networks-factory-proxy-service-openapi.yml",
+   "openapi/_original/ayla-networks-factory-proxy-service-readme-slices.json",
+   "openapi/_original/ayla-networks-groups-scenes-openapi.yml",
+   "openapi/_original/ayla-networks-groups-scenes-readme-slices.json",
+   "openapi/_original/ayla-networks-iot-command-center-openapi.yml",
+   "openapi/_original/ayla-networks-iot-command-center-readme-slices.json",
+   "openapi/_original/ayla-networks-iot-command-center-v2-openapi.yml",
+   "openapi/_original/ayla-networks-iot-command-center-v2-readme-slices.json",
+   "openapi/_original/ayla-networks-message-service-openapi.yml",
+   "openapi/_original/ayla-networks-message-service-readme-slices.json",
+   "openapi/_original/ayla-networks-metering-service-readme-slices.json",
+   "openapi/_original/ayla-networks-ota-service-openapi.yml",
+   "openapi/_original/ayla-networks-ota-service-readme-slices.json",
+   "openapi/_original/ayla-networks-reports-service-openapi.yml",
+   "openapi/_original/ayla-networks-reports-service-readme-slices.json",
+   "openapi/_original/ayla-networks-rule-service-openapi.yml",
+   "openapi/_original/ayla-networks-rule-service-readme-slices.json",
+   "openapi/_original/ayla-networks-sign-in-readme-slices.json",
+   "openapi/_original/ayla-networks-user-service-openapi.yml",
+   "openapi/_original/ayla-networks-user-service-readme-slices.json",
+   "openapi/_original/ayla-networks-virtual-devices-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "balena",
+  "specs": [
+   "openapi/_original/balena-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bear-robotics",
+  "specs": [
+   "openapi/_original/bear-robotics-cloud-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "beehero",
+  "specs": [
+   "openapi/_original/beehero-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "bell-canada",
+  "specs": [
+   "openapi/_original/bell-canada-change-management-api-openapi.json",
+   "openapi/_original/bell-canada-resource-inventory-api-openapi.json",
+   "openapi/_original/bell-canada-service-order-api-openapi.json",
+   "openapi/_original/bell-canada-trouble-ticket-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "bharti-airtel",
+  "specs": [
+   "openapi/_original/airtel-iot.json",
+   "openapi/_original/airtel-iq-reporting-cdr.json",
+   "openapi/_original/airtel-iq-sms-core-apis.json",
+   "openapi/_original/airtel-locate.json",
+   "openapi/_original/bharti-airtel-iot-openapi.yml",
+   "openapi/_original/bharti-airtel-iq-reporting-openapi.yml",
+   "openapi/_original/bharti-airtel-iq-sms-openapi.yml",
+   "openapi/_original/bharti-airtel-locate-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bioflyte",
+  "specs": [
+   "openapi/_original/bioflyte-portal-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "blues-wireless",
+  "specs": [
+   "openapi/_original/blues-wireless-notehub-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bodytrace",
+  "specs": [
+   "openapi/_original/bodytrace-openapi.yml"
+  ]
+ },
+ {
+  "slug": "brick",
+  "specs": [
+   "openapi/_original/brick-brick-server-openapi.json",
+   "openapi/_original/brick-brick-server-openapi.yml"
+  ]
+ },
+ {
+  "slug": "butterflymx",
+  "specs": [
+   "openapi/_original/butterflymx-api-openapi.json",
+   "openapi/_original/butterflymx-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "carrier-global",
+  "specs": [
+   "openapi/_original/carrier-global-lynx-2way-command-api-openapi.yaml",
+   "openapi/_original/carrier-global-lynx-container-api-openapi.yaml",
+   "openapi/_original/carrier-global-lynx-fleet-api-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "cesanta",
+  "specs": [
+   "openapi/_original/cesanta-mdash-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cisco-control-hub",
+  "specs": [
+   "openapi/_original/cisco-control-hub-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cisco-meraki",
+  "specs": [
+   "openapi/_original/cisco-meraki-dashboard-api-openapi.json",
+   "openapi/_original/cisco-meraki-secure-connect-deployments-api-openapi.yml",
+   "openapi/_original/cisco-meraki-secure-connect-firewallapplications-api-openapi.yml",
+   "openapi/_original/cisco-meraki-secure-connect-openapi.json",
+   "openapi/_original/cisco-meraki-secure-connect-policies-api-openapi.yml",
+   "openapi/_original/cisco-meraki-secure-connect-reports-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "clevergy",
+  "specs": [
+   "openapi/_original/clevergy-connect-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cloudstudioiot",
+  "specs": [
+   "openapi/_original/cloudstudioiot-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "cognite",
+  "specs": [
+   "openapi/_original/cognite-data-fusion-api.json",
+   "openapi/_original/cognite-data-fusion-api.yaml"
+  ]
+ },
+ {
+  "slug": "coinrailz-com",
+  "specs": [
+   "openapi/_original/coinrailz-com-agent-payment-api-openapi.json",
+   "openapi/_original/coinrailz-com-x402-services-openapi.json",
+   "openapi/_original/coinrailz-com-x402-services-openapi.yml"
+  ]
+ },
+ {
+  "slug": "controlup",
+  "specs": [
+   "openapi/_original/ComplianceAPI.yaml",
+   "openapi/_original/WorkflowsAPI.json",
+   "openapi/_original/controlup-compliance-openapi.yml",
+   "openapi/_original/controlup-daas-iq-openapi.yml",
+   "openapi/_original/controlup-desktops-openapi.yml",
+   "openapi/_original/controlup-dex-alerts-openapi.yml",
+   "openapi/_original/controlup-dex-events-openapi.yml",
+   "openapi/_original/controlup-dex-platform-openapi.yml",
+   "openapi/_original/controlup-synthetic-monitoring-openapi.yml",
+   "openapi/_original/controlup-vdi-config-triggers-openapi.yml",
+   "openapi/_original/controlup-vdi-daas-configuration-openapi.yml",
+   "openapi/_original/controlup-vdi-daas-historical-openapi.yml",
+   "openapi/_original/controlup-vdi-daas-realtime-metrics-openapi.yml",
+   "openapi/_original/controlup-workflows-openapi.yml",
+   "openapi/_original/daas-iq.json",
+   "openapi/_original/dex-alerts.json",
+   "openapi/_original/dex.json",
+   "openapi/_original/dex_incidents_dal.json",
+   "openapi/_original/edge-dx-api.json",
+   "openapi/_original/synthetic-monitoring.json",
+   "openapi/_original/vdi-and-daas-realtime-metrics-v1.0.json",
+   "openapi/_original/vdi-config-triggers-api.json",
+   "openapi/_original/vdi-daas-api.json",
+   "openapi/_original/vdi-daas-configuration-api.json"
+  ]
+ },
+ {
+  "slug": "cradlepoint",
+  "specs": [
+   "openapi/_original/cradlepoint-netcloud-manager-api-v2-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cumulocity",
+  "specs": [
+   "openapi/_original/cumulocity-datahub-api-openapi.yml",
+   "openapi/_original/cumulocity-dtm-api-openapi.yml",
+   "openapi/_original/cumulocity-edge-api-openapi.yml",
+   "openapi/_original/cumulocity-openapi.yml"
+  ]
+ },
+ {
+  "slug": "delos",
+  "specs": [
+   "openapi/_original/delos-wellcube-cloud-be-openapi-original.json",
+   "openapi/_original/delos-wellcube-cloud-be-openapi.yml"
+  ]
+ },
+ {
+  "slug": "door",
+  "specs": [
+   "openapi/_original/door-authentication-openapi.json",
+   "openapi/_original/door-partner-openapi.json"
+  ]
+ },
+ {
+  "slug": "ecobee",
+  "specs": [
+   "openapi/_original/ecobee-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ecoflow",
+  "specs": [
+   "openapi/_original/ecoflow-iot-openapi.yml"
+  ]
+ },
+ {
+  "slug": "edge-impulse",
+  "specs": [
+   "openapi/_original/edge-impulse-openapi.yml",
+   "openapi/_original/edge-impulse-studio-openapi-2026-09-06.yml"
+  ]
+ },
+ {
+  "slug": "eight-sleep",
+  "specs": [
+   "openapi/_original/eight-sleep-openapi.yml"
+  ]
+ },
+ {
+  "slug": "elemental-machines",
+  "specs": [
+   "openapi/_original/elemental-machines-alert_logs-swagger-1.2.json",
+   "openapi/_original/elemental-machines-alert_rules-swagger-1.2.json",
+   "openapi/_original/elemental-machines-api-docs-swagger-1.2.json",
+   "openapi/_original/elemental-machines-api-openapi.yml",
+   "openapi/_original/elemental-machines-customer_groups-swagger-1.2.json",
+   "openapi/_original/elemental-machines-machine_sample_stats-swagger-1.2.json",
+   "openapi/_original/elemental-machines-machine_samples-swagger-1.2.json",
+   "openapi/_original/elemental-machines-machines-swagger-1.2.json",
+   "openapi/_original/elemental-machines-machines_usage-swagger-1.2.json",
+   "openapi/_original/elemental-machines-oauth-swagger-1.2.json",
+   "openapi/_original/elemental-machines-release_notes-swagger-1.2.json",
+   "openapi/_original/elemental-machines-status-swagger-1.2.json",
+   "openapi/_original/elemental-machines-user_activities-swagger-1.2.json",
+   "openapi/_original/elemental-machines-users-swagger-1.2.json"
+  ]
+ },
+ {
+  "slug": "emnify",
+  "specs": [
+   "openapi/_original/emnify-openapi.yml"
+  ]
+ },
+ {
+  "slug": "esper",
+  "specs": [
+   "openapi/_original/esper-openapi.json"
+  ]
+ },
+ {
+  "slug": "ev-energy",
+  "specs": [
+   "openapi/_original/ev-energy-api-v2-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "facilio",
+  "specs": [
+   "openapi/_original/facilio-openapi.yml"
+  ]
+ },
+ {
+  "slug": "farmers-edge",
+  "specs": [
+   "openapi/_original/farmers-edge-farmcommand-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "fitbit",
+  "specs": [
+   "openapi/_original/fitbit-activity-api-openapi.yml",
+   "openapi/_original/fitbit-authorization-api-openapi.yml",
+   "openapi/_original/fitbit-body-api-openapi.yml",
+   "openapi/_original/fitbit-devices-api-openapi.yml",
+   "openapi/_original/fitbit-ecg-irn-api-openapi.yml",
+   "openapi/_original/fitbit-friends-api-openapi.yml",
+   "openapi/_original/fitbit-heart-rate-api-openapi.yml",
+   "openapi/_original/fitbit-nutrition-api-openapi.yml",
+   "openapi/_original/fitbit-sleep-api-openapi.yml",
+   "openapi/_original/fitbit-spo2-breathing-temperature-api-openapi.yml",
+   "openapi/_original/fitbit-subscriptions-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "fiware",
+  "specs": [
+   "openapi/_original/fiware-ngsi-ld-openapi.yml",
+   "openapi/_original/fiware-ngsiv2-openapi.yml"
+  ]
+ },
+ {
+  "slug": "fleet",
+  "specs": [
+   "openapi/_original/fleet-premium-openapi.json"
+  ]
+ },
+ {
+  "slug": "geotab",
+  "specs": [
+   "openapi/_original/geotab-data-intake-gateway-openapi.yml"
+  ]
+ },
+ {
+  "slug": "gigsky",
+  "specs": [
+   "openapi/_original/gigsky-openapi.yml"
+  ]
+ },
+ {
+  "slug": "golioth",
+  "specs": [
+   "openapi/_original/golioth-openapi.yml"
+  ]
+ },
+ {
+  "slug": "goodyear-tire-and-rubber",
+  "specs": [
+   "openapi/_original/gaas-portal.yml",
+   "openapi/_original/sightline-api.yml"
+  ]
+ },
+ {
+  "slug": "google-assistant",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-nest",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "got-its",
+  "specs": [
+   "openapi/_original/got-its-gateway-openapi-original.yml",
+   "openapi/_original/got-its-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "govee",
+  "specs": [
+   "openapi/_original/govee-openapi.yml"
+  ]
+ },
+ {
+  "slug": "gridx-ai",
+  "specs": [
+   "openapi/_original/gridx-ai-openapi.yml",
+   "openapi/_original/gridx-api.json"
+  ]
+ },
+ {
+  "slug": "hexagon",
+  "specs": [
+   "openapi/_original/hexagon-eam-ion-api-swagger.json"
+  ]
+ },
+ {
+  "slug": "high-mobility",
+  "specs": [
+   "openapi/_original/high-mobility-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hildebrand",
+  "specs": [
+   "openapi/_original/hildebrand-glowmarkt-device-management-system-swagger.json",
+   "openapi/_original/hildebrand-glowmarkt-notification-system-swagger.json",
+   "openapi/_original/hildebrand-glowmarkt-resource-system-swagger.json",
+   "openapi/_original/hildebrand-glowmarkt-user-system-swagger.json",
+   "openapi/_original/hildebrand-glowmarkt-virtual-entity-system-swagger.json"
+  ]
+ },
+ {
+  "slug": "hivemq",
+  "specs": [
+   "openapi/_original/hivemq-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hologram",
+  "specs": [
+   "openapi/_original/hologram-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hubble-network",
+  "specs": [
+   "openapi/_original/hubble-network-openapi.yml",
+   "openapi/_original/hubble-network-platform-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "ifttt",
+  "specs": [
+   "openapi/_original/ifttt-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ikea",
+  "specs": [
+   "openapi/_original/ikea-after-purchase-ordering-openapi.yml",
+   "openapi/_original/ikea-product-catalog-openapi.yml",
+   "openapi/_original/ikea-sales-item-openapi.yml",
+   "openapi/_original/ikea-search-openapi.yml"
+  ]
+ },
+ {
+  "slug": "inductive-automation",
+  "specs": [
+   "openapi/_original/inductive-automation-ignition-gateway.yaml"
+  ]
+ },
+ {
+  "slug": "influxdata",
+  "specs": [
+   "openapi/_original/influxdata-cloud-openapi-original.yml",
+   "openapi/_original/influxdata-oss-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "itron",
+  "specs": [
+   "openapi/_original/starfish-data-platform-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ixon",
+  "specs": [
+   "openapi/_original/ixon-openapi.json"
+  ]
+ },
+ {
+  "slug": "jumpcloud",
+  "specs": [
+   "openapi/_original/jumpcloud-openapi.yml"
+  ]
+ },
+ {
+  "slug": "kandji",
+  "specs": [
+   "openapi/_original/kandji-endpoint-management-openapi.json",
+   "openapi/_original/kandji-upload-to-s3-openapi.json"
+  ]
+ },
+ {
+  "slug": "kisi",
+  "specs": [
+   "openapi/_original/kisi-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "kolide",
+  "specs": [
+   "openapi/_original/kolide-k2-2023-05-26-openapi.json",
+   "openapi/_original/kolide-k2-openapi.json"
+  ]
+ },
+ {
+  "slug": "kontaktio",
+  "specs": [
+   "openapi/_original/kontaktio-device-management-openapi-original.yml",
+   "openapi/_original/kontaktio-device-management-openapi.yml",
+   "openapi/_original/kontaktio-entity-management-openapi-original.yml",
+   "openapi/_original/kontaktio-entity-management-openapi.yml",
+   "openapi/_original/kontaktio-location-occupancy-openapi-original.yml",
+   "openapi/_original/kontaktio-location-occupancy-openapi.yml",
+   "openapi/_original/kontaktio-spaces-openapi-original.yml",
+   "openapi/_original/kontaktio-spaces-openapi.yml"
+  ]
+ },
+ {
+  "slug": "kore-wireless",
+  "specs": [
+   "openapi/_original/kore-wireless-api-clients.yml",
+   "openapi/_original/kore-wireless-connectivity-pro.yml",
+   "openapi/_original/kore-wireless-iam.yml",
+   "openapi/_original/kore-wireless-programmable-wireless.yml",
+   "openapi/_original/kore-wireless-sms.yml",
+   "openapi/_original/kore-wireless-supersim.yml",
+   "openapi/_original/kore-wireless-token.yml",
+   "openapi/_original/kore-wireless-webhook.yml"
+  ]
+ },
+ {
+  "slug": "kpn",
+  "specs": [
+   "openapi/_original/apidaze-voice-openapi.yml",
+   "openapi/_original/kpn-disturbance-check-openapi.yml",
+   "openapi/_original/kpn-fiam-eneco-data-products-openapi.yml",
+   "openapi/_original/kpn-fiam-openapi.yml",
+   "openapi/_original/kpn-high-level-design-ftth-openapi.yml",
+   "openapi/_original/kpn-internet-speed-check-openapi.yml",
+   "openapi/_original/kpn-ise-openapi.yml",
+   "openapi/_original/kpn-lora-device-management-openapi.yml",
+   "openapi/_original/kpn-match-openapi.yml",
+   "openapi/_original/kpn-mobile-services-management-openapi.yml",
+   "openapi/_original/kpn-number-verify-openapi.yml",
+   "openapi/_original/kpn-sd-lan-sd-wan-network-view-openapi.yml",
+   "openapi/_original/kpn-servicenow-connect-openapi.yml",
+   "openapi/_original/kpn-sim-swap-openapi.yml",
+   "openapi/_original/kpn-sms-inbound-openapi.yml",
+   "openapi/_original/kpn-sms-openapi.yml",
+   "openapi/_original/kpn-tv-guide-openapi.yml",
+   "openapi/_original/kpn-webhook-privacy-config-manager-openapi.yml",
+   "openapi/_original/kpn-webhook-signing-keys-openapi.yml",
+   "openapi/_original/kpn-wholesale-broadband-access-fpi-cip-openapi.yml",
+   "openapi/_original/kpn-wholesale-wba-openapi.yml",
+   "openapi/_original/parley-secure-messenger-openapi.yml",
+   "openapi/_original/pollyhelp-knowledge-management-openapi.yml",
+   "openapi/_original/registered-email-openapi.yml",
+   "openapi/_original/tracebuzz-social-media-webcare-openapi.yml",
+   "openapi/_original/vonage-messages-openapi.yml",
+   "openapi/_original/vonage-number-insight-openapi.yml",
+   "openapi/_original/vonage-phone-numbers-openapi.yml",
+   "openapi/_original/vonage-sms-openapi.yml",
+   "openapi/_original/vonage-verify-openapi.yml",
+   "openapi/_original/vonage-voice-openapi.yml",
+   "openapi/_original/weseedo-direct-openapi.yml",
+   "openapi/_original/weseedo-personal-openapi.yml",
+   "openapi/_original/xdroid-speech-to-text-openapi.yml"
+  ]
+ },
+ {
+  "slug": "li-cor-intermediate",
+  "specs": [
+   "openapi/_original/li-cor-intermediate-hobolink-openapi.json"
+  ]
+ },
+ {
+  "slug": "lisnr",
+  "specs": [
+   "openapi/_original/lisnr-portal-openapi-derived.json",
+   "openapi/_original/lisnr-tones-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "lobster-world",
+  "specs": [
+   "openapi/_original/lobster-world-openapi.json"
+  ]
+ },
+ {
+  "slug": "loconav",
+  "specs": [
+   "openapi/_original/loconav-integration-openapi.yml"
+  ]
+ },
+ {
+  "slug": "losant",
+  "specs": [
+   "openapi/_original/losant-platform-api-bravado.json"
+  ]
+ },
+ {
+  "slug": "lunar-energy",
+  "specs": [
+   "openapi/_original/gridshare-customer-api-openapi.yml",
+   "openapi/_original/gridshare-partner-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lvt",
+  "specs": [
+   "openapi/_original/lvt-partner-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "macadress",
+  "specs": [
+   "openapi/_original/macadress-openapi.yml"
+  ]
+ },
+ {
+  "slug": "maintainx",
+  "specs": [
+   "openapi/_original/maintainx-openapi.json"
+  ]
+ },
+ {
+  "slug": "memfault",
+  "specs": [
+   "openapi/_original/memfault-openapi.yml"
+  ]
+ },
+ {
+  "slug": "microsoft-azure-event-hubs",
+  "specs": [
+   "openapi/_original/azure-event-hubs-data-plane-openapi.yml",
+   "openapi/_original/azure-event-hubs-management-openapi.yml"
+  ]
+ },
+ {
+  "slug": "microsoft-endpoint-configuration-management",
+  "specs": [
+   "openapi/_original/microsoft-endpoint-configuration-management-configmgr-rest-api-openapi.yml",
+   "openapi/_original/microsoft-endpoint-configuration-management-intune-data-warehouse-api-openapi.yml",
+   "openapi/_original/microsoft-endpoint-configuration-management-intune-graph-api-openapi.yml",
+   "openapi/_original/microsoft-endpoint-configuration-management-intune-reporting-export-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "motorola-solutions",
+  "specs": [
+   "openapi/_original/motorola-solutions-motorola-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "mtn-group",
+  "specs": [
+   "openapi/_original/mtn-group-account-decisioning.yml",
+   "openapi/_original/mtn-group-account-management-coe.yml",
+   "openapi/_original/mtn-group-advertising-v2.yml",
+   "openapi/_original/mtn-group-agent-profile.yml",
+   "openapi/_original/mtn-group-ayo-preapproval.yml",
+   "openapi/_original/mtn-group-ayoaccountholderinfo.yml",
+   "openapi/_original/mtn-group-balance-management-v1.yml",
+   "openapi/_original/mtn-group-bss-tt-oauth-v1.yml",
+   "openapi/_original/mtn-group-callmeback-v1.yml",
+   "openapi/_original/mtn-group-callmeback-v2.yml",
+   "openapi/_original/mtn-group-communication-management-v1.yml",
+   "openapi/_original/mtn-group-content-push.yml",
+   "openapi/_original/mtn-group-customer-account-management-v1.yml",
+   "openapi/_original/mtn-group-customer-billing-token-v1.yml",
+   "openapi/_original/mtn-group-customer-data-transfer-ng-prod.yml",
+   "openapi/_original/mtn-group-customer-delivery-booking.yml",
+   "openapi/_original/mtn-group-customer-identification-v1.yml",
+   "openapi/_original/mtn-group-customer-kyc-verification.yml",
+   "openapi/_original/mtn-group-customer-loyalty-management.yml",
+   "openapi/_original/mtn-group-customer-management-coe-za-preprod.yml",
+   "openapi/_original/mtn-group-customer-management.yml",
+   "openapi/_original/mtn-group-customer-pin-management-v2.yml",
+   "openapi/_original/mtn-group-customer-promotion.yml",
+   "openapi/_original/mtn-group-customer-survey.yml",
+   "openapi/_original/mtn-group-device-swap-v1.yml",
+   "openapi/_original/mtn-group-digital-partner-management.yml",
+   "openapi/_original/mtn-group-document-managment.yml",
+   "openapi/_original/mtn-group-eec-token-management.yml",
+   "openapi/_original/mtn-group-g2m.yml",
+   "openapi/_original/mtn-group-hcm-v1.yml",
+   "openapi/_original/mtn-group-insurance.yml",
+   "openapi/_original/mtn-group-iot-device-management.yml",
+   "openapi/_original/mtn-group-job-card-management.yml",
+   "openapi/_original/mtn-group-kyc-consent.yml",
+   "openapi/_original/mtn-group-loans-v2.yml",
+   "openapi/_original/mtn-group-logback-v1.yml",
+   "openapi/_original/mtn-group-medallia-sms-v2.yml",
+   "openapi/_original/mtn-group-merchant-provisioning-v1.yml",
+   "openapi/_original/mtn-group-mobile-customer-information.yml",
+   "openapi/_original/mtn-group-momo-verification.yml",
+   "openapi/_original/mtn-group-mtn-advertising-api-v1.yml",
+   "openapi/_original/mtn-group-mtn-customer-bill-management.yml",
+   "openapi/_original/mtn-group-mtn-customer-datatransfer.yml",
+   "openapi/_original/mtn-group-mtn-customer-kyc-api-v1-product.yml",
+   "openapi/_original/mtn-group-mtn-customer-loans-api-v1.yml",
+   "openapi/_original/mtn-group-mtn-customer-locations-api-v1.yml",
+   "openapi/_original/mtn-group-mtn-customer-plans-api-v2.yml",
+   "openapi/_original/mtn-group-mtn-customer-profiles-api-v2-product.yml",
+   "openapi/_original/mtn-group-mtn-customer-score.yml",
+   "openapi/_original/mtn-group-mtn-ng-retailer-productivity-tracking-v1.yml",
+   "openapi/_original/mtn-group-mtn-nigeria-customer-datashare.yml",
+   "openapi/_original/mtn-group-mtn-nigeria-data-gifting-v1.yml",
+   "openapi/_original/mtn-group-mtn-party-management.yml",
+   "openapi/_original/mtn-group-mtn-product-offering-api-v2.yml",
+   "openapi/_original/mtn-group-mtn-product-offering-api-v3.yml",
+   "openapi/_original/mtn-group-mtn-sms-api-v1.yml",
+   "openapi/_original/mtn-group-mtn-sms-interface.yml",
+   "openapi/_original/mtn-group-mtn-subscription-api-v2.yml",
+   "openapi/_original/mtn-group-mtnid-getinfo.yml",
+   "openapi/_original/mtn-group-notification-production.yml",
+   "openapi/_original/mtn-group-notification-v2.yml",
+   "openapi/_original/mtn-group-oauth-v1.yml",
+   "openapi/_original/mtn-group-order-fulfillment.yml",
+   "openapi/_original/mtn-group-payment-methods-management-sa.yml",
+   "openapi/_original/mtn-group-payments-v1.yml",
+   "openapi/_original/mtn-group-product-catalog-coe.yml",
+   "openapi/_original/mtn-group-product-catalog-management-v1.yml",
+   "openapi/_original/mtn-group-product-catalogue-management.yml",
+   "openapi/_original/mtn-group-product-ordering-coe.yml",
+   "openapi/_original/mtn-group-provisioning.yml",
+   "openapi/_original/mtn-group-rcs-capability.yml",
+   "openapi/_original/mtn-group-rcs-communication.yml",
+   "openapi/_original/mtn-group-resource-config-v1.yml",
+   "openapi/_original/mtn-group-resource-pool-management.yml",
+   "openapi/_original/mtn-group-risk-management.yml",
+   "openapi/_original/mtn-group-rwanda-party-management.yml",
+   "openapi/_original/mtn-group-sales-management.yml",
+   "openapi/_original/mtn-group-service-activation-and-configuration.yml",
+   "openapi/_original/mtn-group-service-ordering.yml",
+   "openapi/_original/mtn-group-siebel.yml",
+   "openapi/_original/mtn-group-sim-management-staging.yml",
+   "openapi/_original/mtn-group-sim-swap-verification-v1.yml",
+   "openapi/_original/mtn-group-simverification.yml",
+   "openapi/_original/mtn-group-sms-v3-api.yml",
+   "openapi/_original/mtn-group-subscriber-details.yml",
+   "openapi/_original/mtn-group-subscriber-management.yml",
+   "openapi/_original/mtn-group-subscriber-type.yml",
+   "openapi/_original/mtn-group-taxation-v1.yml",
+   "openapi/_original/mtn-group-ticket.yml",
+   "openapi/_original/mtn-group-tmf-720-digital-identity-management.yml",
+   "openapi/_original/mtn-group-tmf-customer-bill-management.yml",
+   "openapi/_original/mtn-group-tmf-document-management-tmf667.yml",
+   "openapi/_original/mtn-group-tmf-loyalty-management-tmf658.yml",
+   "openapi/_original/mtn-group-tmf-party-interaction-tmf683.yml",
+   "openapi/_original/mtn-group-tmf-party-management.yml",
+   "openapi/_original/mtn-group-tmf-payment-management-tmf676.yml",
+   "openapi/_original/mtn-group-tmf-prepay-balance-management-tmf654.yml",
+   "openapi/_original/mtn-group-tmf-product-catalog-tmf620.yml",
+   "openapi/_original/mtn-group-tmf-product-ordering-tmf622.yml",
+   "openapi/_original/mtn-group-tmf-resource-ordering-tmf652.yml",
+   "openapi/_original/mtn-group-tmf-resourceinventorymanagement-tmf639.yml",
+   "openapi/_original/mtn-group-tmf-service-activation-tmf678.yml",
+   "openapi/_original/mtn-group-tmf-trouble-ticket-tmf621.yml",
+   "openapi/_original/mtn-group-tmf-usage-consumption-tmf677.yml",
+   "openapi/_original/mtn-group-tmf-usage-management-tmf635.yml",
+   "openapi/_original/mtn-group-tmf629-customer-management.yml",
+   "openapi/_original/mtn-group-tmf633-shopping-cart-management.yml",
+   "openapi/_original/mtn-group-tmf637-product-inventory.yml",
+   "openapi/_original/mtn-group-tmf681-communication-management.yml",
+   "openapi/_original/mtn-group-tmf688-event-management.yml",
+   "openapi/_original/mtn-group-unified-balance-v1.yml",
+   "openapi/_original/mtn-group-usage-consumption.yml",
+   "openapi/_original/mtn-group-usage-management.yml",
+   "openapi/_original/mtn-group-ussd.yml",
+   "openapi/_original/mtn-group-withdrawals-v1.yml"
+  ]
+ },
+ {
+  "slug": "nats",
+  "specs": [
+   "openapi/_original/nats-monitoring-api-openapi.yml",
+   "openapi/_original/nats-monitoring.yml"
+  ]
+ },
+ {
+  "slug": "node-red",
+  "specs": [
+   "openapi/_original/node-red-admin-openapi.yml"
+  ]
+ },
+ {
+  "slug": "nortech",
+  "specs": [
+   "openapi/_original/nortech-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "oden-technologies",
+  "specs": [
+   "openapi/_original/oden-technologies-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "onomondo",
+  "specs": [
+   "openapi/_original/onomondo-openapi.yml"
+  ]
+ },
+ {
+  "slug": "openpath",
+  "specs": [
+   "openapi/_original/openpath-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "optus",
+  "specs": [
+   "openapi/_original/optus-sms-suite-campaign-manager-openapi.yml",
+   "openapi/_original/optus-sms-suite-rest-v1-openapi.yml",
+   "openapi/_original/optus-sms-suite-rest-v2-openapi.yml",
+   "openapi/_original/optus-sms-suite-status-openapi.json"
+  ]
+ },
+ {
+  "slug": "orange",
+  "specs": [
+   "openapi/_original/orange-openapi.yml"
+  ]
+ },
+ {
+  "slug": "orange-business",
+  "specs": [
+   "openapi/_original/orange-business-device-location-retrieval-openapi.yml",
+   "openapi/_original/orange-business-device-location-verification-openapi.yml",
+   "openapi/_original/orange-business-device-reachability-status-openapi.yml",
+   "openapi/_original/orange-business-device-roaming-status-openapi.yml",
+   "openapi/_original/orange-business-device-swap-openapi.yml",
+   "openapi/_original/orange-business-geofencing-openapi.yml",
+   "openapi/_original/orange-business-kyc-match-openapi.yml",
+   "openapi/_original/orange-business-live-objects-openapi.json",
+   "openapi/_original/orange-business-number-verification-openapi.yml",
+   "openapi/_original/orange-business-population-density-data-openapi.yml",
+   "openapi/_original/orange-business-quality-on-demand-openapi.yml",
+   "openapi/_original/orange-business-sim-swap-openapi.yml"
+  ]
+ },
+ {
+  "slug": "osisoft-pi",
+  "specs": [
+   "openapi/_original/osisoft-pi-web-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "otonomo",
+  "specs": [
+   "openapi/_original/otonomo-fleet-openapi.yml"
+  ]
+ },
+ {
+  "slug": "particle",
+  "specs": [
+   "openapi/_original/particle-cloud-api-openapi.yml",
+   "openapi/_original/particle-openapi.yml"
+  ]
+ },
+ {
+  "slug": "passivelogic",
+  "specs": [
+   "openapi/_original/passivelogic-openapi.json",
+   "openapi/_original/passivelogic-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "phosphorus",
+  "specs": [
+   "openapi/_original/phosphorus-api-openapi.yml",
+   "openapi/_original/phosphorus-openapi.json"
+  ]
+ },
+ {
+  "slug": "polar",
+  "specs": [
+   "openapi/_original/polar-accesslink-api-openapi.yml",
+   "openapi/_original/polar-teampro-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ptc-thingworx",
+  "specs": [
+   "openapi/_original/ptc-thingworx-rest-openapi.yml"
+  ]
+ },
+ {
+  "slug": "pulse-grow",
+  "specs": [
+   "openapi/_original/pulse-grow-openapi.json"
+  ]
+ },
+ {
+  "slug": "rachio",
+  "specs": [
+   "openapi/_original/rachio-api-settings-openapi.yml",
+   "openapi/_original/rachio-api-settings-readme-slices.json",
+   "openapi/_original/rachio-property-service-readme-slices.json",
+   "openapi/_original/rachio-smart-hose-timer-openapi.yml",
+   "openapi/_original/rachio-smart-hose-timer-readme-slices.json",
+   "openapi/_original/rachio-smart-lighting-controller-openapi.yml",
+   "openapi/_original/rachio-smart-lighting-controller-readme-slices.json",
+   "openapi/_original/rachio-webhooks-openapi.yml",
+   "openapi/_original/rachio-webhooks-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "reliance-jio",
+  "specs": [
+   "openapi/_original/jio-jioevents-platform-openapi.json",
+   "openapi/_original/jio-jiomeet-oauth-openapi.json",
+   "openapi/_original/jio-jiomeet-platform-openapi.json",
+   "openapi/_original/reliance-jio-jioevents-platform-openapi.yml",
+   "openapi/_original/reliance-jio-jiomeet-oauth-openapi.yml",
+   "openapi/_original/reliance-jio-jiomeet-platform-openapi.yml"
+  ]
+ },
+ {
+  "slug": "reolink",
+  "specs": [
+   "openapi/_original/reolink-camera-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "revvo",
+  "specs": [
+   "openapi/_original/revvo-api-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "rfid",
+  "specs": [
+   "openapi/_original/rfid-epcis-openapi.yml"
+  ]
+ },
+ {
+  "slug": "rockwell-automation",
+  "specs": [
+   "openapi/_original/plex-documentation-info.json",
+   "openapi/_original/rockwell-automation-plex-openapi.yml"
+  ]
+ },
+ {
+  "slug": "samsara",
+  "specs": [
+   "openapi/_original/samsara-openapi.yml"
+  ]
+ },
+ {
+  "slug": "samsung",
+  "specs": [
+   "openapi/_original/samsung-smartthings-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sense",
+  "specs": [
+   "openapi/_original/sense-sense-client-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sensibo",
+  "specs": [
+   "openapi/_original/sensibo-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sentera",
+  "specs": [
+   "openapi/_original/sentera-openapi.yml"
+  ]
+ },
+ {
+  "slug": "shodan",
+  "specs": [
+   "openapi/_original/shodan-cvedb-openapi.yml",
+   "openapi/_original/shodan-internetdb-openapi.yml",
+   "openapi/_original/shodan-rest-openapi.yml",
+   "openapi/_original/shodan-stream-openapi.yml",
+   "openapi/_original/shodan-trends-openapi.yml"
+  ]
+ },
+ {
+  "slug": "siemens",
+  "specs": [
+   "openapi/_original/siemens-building-operations-openapi.yml"
+  ]
+ },
+ {
+  "slug": "siemens-mindsphere",
+  "specs": [
+   "openapi/_original/siemens-mindsphere-asset-management-openapi.yml",
+   "openapi/_original/siemens-mindsphere-iot-timeseries-openapi.yml"
+  ]
+ },
+ {
+  "slug": "siemens-plm",
+  "specs": [
+   "openapi/_original/polarion-rest-api.json",
+   "openapi/_original/product-information-api.yaml",
+   "openapi/_original/teamcenter-product-cost-management.yaml"
+  ]
+ },
+ {
+  "slug": "smartcar",
+  "specs": [
+   "openapi/_original/smartcar-vehicles-openapi.yml"
+  ]
+ },
+ {
+  "slug": "solar-edge",
+  "specs": [
+   "openapi/_original/openapi.yml",
+   "openapi/_original/solar-edge-monitoring-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "soracom",
+  "specs": [
+   "openapi/_original/soracom-analysis-query-api-openapi.yml",
+   "openapi/_original/soracom-event-handler-api-openapi.yml",
+   "openapi/_original/soracom-harvest-api-openapi.yml",
+   "openapi/_original/soracom-inventory-api-openapi.yml",
+   "openapi/_original/soracom-lorawan-api-openapi.yml",
+   "openapi/_original/soracom-napter-api-openapi.yml",
+   "openapi/_original/soracom-platform-api-openapi.yml",
+   "openapi/_original/soracom-sandbox-api-openapi.yml",
+   "openapi/_original/soracom-sigfox-api-openapi.yml",
+   "openapi/_original/soracom-vpg-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "span-io",
+  "specs": [
+   "openapi/_original/span-rest-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "stanley-black-and-decker",
+  "specs": [
+   "openapi/_original/stanley-black-and-decker-tool-connect-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "starlink",
+  "specs": [
+   "openapi/_original/starlink-public-api-v2-openapi.json"
+  ]
+ },
+ {
+  "slug": "steelcase",
+  "specs": [
+   "openapi/_original/steelcase-roomwizard-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "steute-technologies-gmbh-and-co-kg",
+  "specs": [
+   "openapi/_original/steute-technologies-gmbh-and-co-kg-sensor-bridge-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "tago-io",
+  "specs": [
+   "openapi/_original/tago-io-tago-io-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tank-utility",
+  "specs": [
+   "openapi/_original/tank-utility-devices-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tata-communications",
+  "specs": [
+   "openapi/_original/tata-communications-mobile-messaging-exchange-account-administration.json",
+   "openapi/_original/tata-communications-mobile-messaging-exchange-cdr-report-api.json",
+   "openapi/_original/tata-communications-number-intelligence-api.json"
+  ]
+ },
+ {
+  "slug": "telia",
+  "specs": [
+   "openapi/_original/telia-lso-sonata-site-management.yml"
+  ]
+ },
+ {
+  "slug": "telnyx",
+  "specs": [
+   "openapi/_original/telnyx-openapi.json",
+   "openapi/_original/telnyx-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tesla",
+  "specs": [
+   "openapi/_original/tesla-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "tesla-energy",
+  "specs": [
+   "openapi/_original/tesla-energy-fleet-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tesla-motors",
+  "specs": [
+   "openapi/_original/tesla-motors-owner-openapi.yml"
+  ]
+ },
+ {
+  "slug": "the-things-network",
+  "specs": [
+   "openapi/_original/the-things-stack-application-server-openapi.yml",
+   "openapi/_original/the-things-stack-end-device-registry-openapi.yml",
+   "openapi/_original/the-things-stack-events-openapi.yml",
+   "openapi/_original/the-things-stack-gateway-server-openapi.yml",
+   "openapi/_original/the-things-stack-identity-server-openapi.yml",
+   "openapi/_original/the-things-stack-integrations-openapi.yml",
+   "openapi/_original/the-things-stack-join-server-openapi.yml",
+   "openapi/_original/the-things-stack-network-server-openapi.yml",
+   "openapi/_original/the-things-stack-packet-broker-agent-openapi.yml"
+  ]
+ },
+ {
+  "slug": "thingsboard",
+  "specs": [
+   "openapi/_original/thingsboard-admin-openapi.yml",
+   "openapi/_original/thingsboard-ai-openapi.yml",
+   "openapi/_original/thingsboard-alarms-openapi.yml",
+   "openapi/_original/thingsboard-assets-openapi.yml",
+   "openapi/_original/thingsboard-auth-openapi.yml",
+   "openapi/_original/thingsboard-dashboards-openapi.yml",
+   "openapi/_original/thingsboard-devices-openapi.yml",
+   "openapi/_original/thingsboard-edge-openapi.yml",
+   "openapi/_original/thingsboard-lwm2m-openapi.yml",
+   "openapi/_original/thingsboard-mobile-openapi.yml",
+   "openapi/_original/thingsboard-notifications-openapi.yml",
+   "openapi/_original/thingsboard-rpc-openapi.yml",
+   "openapi/_original/thingsboard-rule-engine-openapi.yml",
+   "openapi/_original/thingsboard-telemetry-openapi.yml",
+   "openapi/_original/thingsboard-tenants-openapi.yml"
+  ]
+ },
+ {
+  "slug": "thingspeak",
+  "specs": [
+   "openapi/_original/thingspeak-feeds-api-openapi.yml",
+   "openapi/_original/thingspeak-talkback-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "threatlocker",
+  "specs": [
+   "openapi/_original/threatlocker-portal-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "tibber",
+  "specs": [
+   "openapi/_original/tibber-data-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tive",
+  "specs": [
+   "openapi/_original/tive-openapi.yml"
+  ]
+ },
+ {
+  "slug": "trimble-agriculture",
+  "specs": [
+   "openapi/_original/trimble-agriculture-openapi.yml"
+  ]
+ },
+ {
+  "slug": "truphone",
+  "specs": [
+   "openapi/_original/truphone-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tttech",
+  "specs": [
+   "openapi/_original/tttech-nerve-management-system-openapi-original.json",
+   "openapi/_original/tttech-nerve-management-system-openapi.yml",
+   "openapi/_original/tttech-nerve-node-openapi-original.json",
+   "openapi/_original/tttech-nerve-node-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tuya",
+  "specs": [
+   "openapi/_original/tuya-device-management-openapi.yml"
+  ]
+ },
+ {
+  "slug": "twilio",
+  "specs": [
+   "openapi/_original/accounts-openapi-original.yml",
+   "openapi/_original/assistant-openapi-original.yml",
+   "openapi/_original/autopilot-openapi-original.yml",
+   "openapi/_original/bulk-exports-openapi-original.yml",
+   "openapi/_original/chat-v3-openapi-original.yml",
+   "openapi/_original/content-openapi-original.yml",
+   "openapi/_original/content-v2-openapi-original.yml",
+   "openapi/_original/conversations-openapi-original.yml",
+   "openapi/_original/events-openapi-original.yml",
+   "openapi/_original/frontline-openapi-original.yml",
+   "openapi/_original/iam-openapi-original.yml",
+   "openapi/_original/iam-organizations-openapi-original.yml",
+   "openapi/_original/insights-openapi-original.yml",
+   "openapi/_original/insights-v3-openapi-original.yml",
+   "openapi/_original/intelligence-openapi-original.yml",
+   "openapi/_original/intelligence-v3-openapi-original.yml",
+   "openapi/_original/ip-message-openapi-original.yml",
+   "openapi/_original/knowledge-openapi-original.yml",
+   "openapi/_original/knowledge-v1-openapi-original.yml",
+   "openapi/_original/marketplace-openapi-original.yml",
+   "openapi/_original/media-openapi-original.yml",
+   "openapi/_original/memory-openapi-original.yml",
+   "openapi/_original/messaging-openapi-original.yml",
+   "openapi/_original/messaging-v3-openapi-original.yml",
+   "openapi/_original/microvisor-openapi-original.yml",
+   "openapi/_original/monitor-openapi-original.yml",
+   "openapi/_original/notify-openapi-original.yml",
+   "openapi/_original/numbers-openapi-original.yml",
+   "openapi/_original/numbers-v3-openapi-original.yml",
+   "openapi/_original/oauth-openapi-original.yml",
+   "openapi/_original/oauth-v1-openapi-original.yml",
+   "openapi/_original/pricing-openapi-original.yml",
+   "openapi/_original/proxy-openapi-original.yml",
+   "openapi/_original/routes-openapi-original.yml",
+   "openapi/_original/routes-v3-openapi-original.yml",
+   "openapi/_original/serverless-openapi-original.yml",
+   "openapi/_original/studio-openapi-original.yml",
+   "openapi/_original/super-sim-openapi-original.yml",
+   "openapi/_original/sync-openapi-original.yml",
+   "openapi/_original/task-router-openapi-original.yml",
+   "openapi/_original/trunking-openapi-original.yml",
+   "openapi/_original/trust-hub-openapi-original.yml",
+   "openapi/_original/twilio-accounts-openapi.yml",
+   "openapi/_original/twilio-flex-openapi.yml",
+   "openapi/_original/twilio-lookup-openapi.yml",
+   "openapi/_original/twilio-messaging-openapi.yml",
+   "openapi/_original/twilio-sendgrid-openapi.yml",
+   "openapi/_original/twilio-verify-openapi.yml",
+   "openapi/_original/twilio-video-openapi.yml",
+   "openapi/_original/twilio-voice-openapi.yml",
+   "openapi/_original/verify-openapi-original.yml",
+   "openapi/_original/video-openapi-original.yml",
+   "openapi/_original/voice-openapi-original.yml",
+   "openapi/_original/voice-v3-openapi-original.yml",
+   "openapi/_original/wireless-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "ubicquia",
+  "specs": [
+   "openapi/_original/ubicquia-config-api-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "verdigris-technologies",
+  "specs": [
+   "openapi/_original/verdigris-technologies-data-v4-openapi.json"
+  ]
+ },
+ {
+  "slug": "viam",
+  "specs": [
+   "openapi/_original/viam-billing-api-openapi.yml",
+   "openapi/_original/viam-component-apis-openapi.yml",
+   "openapi/_original/viam-data-client-api-openapi.yml",
+   "openapi/_original/viam-data-pipelines-api-openapi.yml",
+   "openapi/_original/viam-data-sync-api-openapi.yml",
+   "openapi/_original/viam-fleet-management-api-openapi.yml",
+   "openapi/_original/viam-machine-management-api-openapi.yml",
+   "openapi/_original/viam-ml-inference-api-openapi.yml",
+   "openapi/_original/viam-ml-model-service-api-openapi.yml",
+   "openapi/_original/viam-ml-training-api-openapi.yml",
+   "openapi/_original/viam-motion-service-api-openapi.yml",
+   "openapi/_original/viam-slam-service-api-openapi.yml",
+   "openapi/_original/viam-vision-service-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "videri",
+  "specs": [
+   "openapi/_original/videri-canvas-service.json",
+   "openapi/_original/videri-messaging-websocket.json",
+   "openapi/_original/videri-rpm-service.json"
+  ]
+ },
+ {
+  "slug": "viridi-parente",
+  "specs": [
+   "openapi/_original/viridi-parente-vista-openapi.json",
+   "openapi/_original/viridi-parente-vista-openapi_2.json"
+  ]
+ },
+ {
+  "slug": "visteon",
+  "specs": [
+   "openapi/_original/visteon-phoenix-openapi.yml"
+  ]
+ },
+ {
+  "slug": "vivalink",
+  "specs": [
+   "openapi/_original/vivalink-openapi.yml"
+  ]
+ },
+ {
+  "slug": "waqi",
+  "specs": [
+   "openapi/_original/waqi-openapi.json"
+  ]
+ },
+ {
+  "slug": "wattwatchers",
+  "specs": [
+   "openapi/_original/wattwatchers-rest-api-v3-openapi.json"
+  ]
+ },
+ {
+  "slug": "weavix",
+  "specs": [
+   "openapi/_original/weavix-rest-openapi.yml"
+  ]
+ },
+ {
+  "slug": "weidmueller",
+  "specs": [
+   "openapi/_original/administration-openapi.yaml",
+   "openapi/_original/variable-http-openapi.yaml",
+   "openapi/_original/weidmueller-administration-openapi.yml",
+   "openapi/_original/weidmueller-variable-http-openapi.yml"
+  ]
+ },
+ {
+  "slug": "withings",
+  "specs": [
+   "openapi/_original/withings-data-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "xiaomi",
+  "specs": [
+   "openapi/_original/xiaomi-galaxy-fds-openapi.yml",
+   "openapi/_original/xiaomi-mimo-api-openapi.yml",
+   "openapi/_original/xiaomi-open-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "xylem",
+  "specs": [
+   "openapi/_original/xylem-apis-dev-swagger.json",
+   "openapi/_original/xylem-apis-manager-openapi.yml"
+  ]
+ },
+ {
+  "slug": "zededa",
+  "specs": [
+   "openapi/_original/zededa-app_profile_service-openapi.json",
+   "openapi/_original/zededa-app_service-openapi.json",
+   "openapi/_original/zededa-diag_service-openapi.json",
+   "openapi/_original/zededa-job_service-openapi.json",
+   "openapi/_original/zededa-kubernetes_service-openapi.json",
+   "openapi/_original/zededa-network_service-openapi.json",
+   "openapi/_original/zededa-node_cluster_service-openapi.json",
+   "openapi/_original/zededa-node_service-openapi.json",
+   "openapi/_original/zededa-storage_service-openapi.json",
+   "openapi/_original/zededa-user_service-openapi.json"
+  ]
+ }
+]

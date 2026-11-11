@@ -1,0 +1,14 @@
+provider: truphone
+apis_io: https://apis.io/providers/truphone/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/truphone-openapi.yml#GET /v2.2/devices
+    - openapi/_original/truphone-openapi.yml#GET /v2.2/devices/{id}
+    - openapi/_original/truphone-openapi.yml#PATCH /v2.2/devices/{id}

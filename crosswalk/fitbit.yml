@@ -1,0 +1,15 @@
+provider: fitbit
+apis_io: https://apis.io/providers/fitbit/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties:
+      type: type
+      id: id
+      serial_number: mac
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/fitbit-devices-api-openapi.yml#GET /1/user/{user-id}/devices.json

@@ -1,0 +1,19 @@
+provider: aedifion
+apis_io: https://apis.io/providers/aedifion/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - device
+    - devices
+    properties:
+      name: name
+      id: id
+      metadata: tags
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/aedifion-openapi.json#GET /v2/project/{project_id}/device/{device_id}
+    - openapi/_original/aedifion-openapi.json#GET /v2/project/{project_id}/devices
+    - openapi/_original/aedifion-openapi.yml#GET /v2/project/{project_id}/device/{device_id}
+    - openapi/_original/aedifion-openapi.yml#GET /v2/project/{project_id}/devices

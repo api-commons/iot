@@ -1,0 +1,18 @@
+provider: hologram
+apis_io: https://apis.io/providers/hologram/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties:
+      name: name
+      id: id
+      metadata: tags
+      serial_number: imei
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/hologram-openapi.yml#GET /devices
+    - openapi/_original/hologram-openapi.yml#GET /devices/{deviceid}
+    - openapi/_original/hologram-openapi.yml#PUT /devices/{deviceid}

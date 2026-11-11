@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/iot/main/schema/device.json",
+  "title": "Device",
+  "description": "The common device in IoT Devices, distilled from 62 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.677,
+      "x-commons-providers": 42,
+      "x-commons-spellings": [
+        "name",
+        "device_name",
+        "label",
+        "deviceName",
+        "Name",
+        "displayName",
+        "nickname",
+        "title"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.548,
+      "x-commons-providers": 34,
+      "x-commons-spellings": [
+        "model",
+        "type",
+        "deviceType",
+        "device_type",
+        "category",
+        "kind",
+        "Type",
+        "product"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.532,
+      "x-commons-providers": 33,
+      "x-commons-spellings": [
+        "id",
+        "uuid",
+        "uid",
+        "thingName",
+        "guid",
+        "objectId"
+      ]
+    },
+    "metadata": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.419,
+      "x-commons-providers": 26,
+      "x-commons-spellings": [
+        "tags",
+        "attributes",
+        "metadata",
+        "properties",
+        "Tags"
+      ]
+    },
+    "device_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.387,
+      "x-commons-providers": 24,
+      "x-commons-spellings": [
+        "deviceId",
+        "device_id",
+        "deviceID",
+        "thingId",
+        "DeviceId",
+        "assetId"
+      ]
+    },
+    "serial_number": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.371,
+      "x-commons-providers": 23,
+      "x-commons-spellings": [
+        "serialNumber",
+        "serial",
+        "imei",
+        "mac",
+        "serial_number",
+        "SerialNumber",
+        "mac_address",
+        "hardwareId"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.371,
+      "x-commons-providers": 23,
+      "x-commons-spellings": [
+        "status",
+        "online",
+        "Status",
+        "connectionStatus",
+        "connection_status",
+        "is_online",
+        "state",
+        "connected"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.306,
+      "x-commons-providers": 19,
+      "x-commons-spellings": [
+        "created_at",
+        "createdAt",
+        "creationDate",
+        "created",
+        "createdDate",
+        "created_on",
+        "createdOn",
+        "registeredAt"
+      ],
+      "format": "date-time"
+    },
+    "firmware_version": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.21,
+      "x-commons-providers": 13,
+      "x-commons-spellings": [
+        "firmwareVersion",
+        "version",
+        "os_version",
+        "firmware",
+        "osVersion"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "iot",
+    "concept": "device",
+    "providers": 62,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

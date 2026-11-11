@@ -1,0 +1,35 @@
+provider: tuya
+apis_io: https://apis.io/providers/tuya/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties:
+      name: name
+      type:
+      - category
+      - product_id
+      id:
+      - id
+      - uid
+      - uuid
+      status:
+      - online
+      - status
+      created_at: create_time
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/tuya-device-management-openapi.yml#DELETE /v1.0/devices/{device_id}
+    - openapi/_original/tuya-device-management-openapi.yml#GET /v1.0/devices
+    - openapi/_original/tuya-device-management-openapi.yml#GET /v1.0/devices/{device_id}
+    - openapi/_original/tuya-device-management-openapi.yml#GET /v1.0/users/{uid}/devices
+    - openapi/_original/tuya-device-management-openapi.yml#PUT /v1.0/devices/{device_id}
+  device_command:
+    path_segment:
+    - commands
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/tuya-device-management-openapi.yml#POST /v1.0/devices/{device_id}/commands

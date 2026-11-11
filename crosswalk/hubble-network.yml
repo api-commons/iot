@@ -1,0 +1,20 @@
+provider: hubble-network
+apis_io: https://apis.io/providers/hubble-network/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties:
+      name: name
+      id: id
+      metadata: tags
+      device_id: device_id
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/hubble-network-openapi.yml#DELETE /v2/org/{org_id}/devices
+    - openapi/_original/hubble-network-openapi.yml#DELETE /v2/org/{org_id}/devices/{device_id}
+    - openapi/_original/hubble-network-openapi.yml#GET /v2/org/{org_id}/devices
+    - openapi/_original/hubble-network-openapi.yml#GET /v2/org/{org_id}/devices/{device_id}
+    - openapi/_original/hubble-network-openapi.yml#PATCH /v2/org/{org_id}/devices

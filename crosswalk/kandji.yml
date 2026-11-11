@@ -1,0 +1,24 @@
+provider: kandji
+apis_io: https://apis.io/providers/kandji/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties:
+      metadata: tags
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/kandji-endpoint-management-openapi.json#DELETE /api/v1/devices/{device_id}
+    - openapi/_original/kandji-endpoint-management-openapi.json#GET /api/v1/devices
+    - openapi/_original/kandji-endpoint-management-openapi.json#GET /api/v1/devices/{device_id}
+    - openapi/_original/kandji-endpoint-management-openapi.json#GET /api/v1/integrations/apple/ade/devices
+    - openapi/_original/kandji-endpoint-management-openapi.json#GET /api/v1/integrations/apple/ade/devices/{device_id}
+  device_command:
+    path_segment:
+    - commands
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/kandji-endpoint-management-openapi.json#GET /api/v1/devices/{device_id}/commands

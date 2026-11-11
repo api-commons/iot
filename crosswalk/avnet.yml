@@ -1,0 +1,37 @@
+provider: avnet
+apis_io: https://apis.io/providers/avnet/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - device
+    - devices
+    properties:
+      name: displayName
+      id: guid
+      metadata: properties
+      status: status
+      created_at: createdDate
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/avnet-iotconnect-device-aws-prod-swagger.json#DELETE /api/v2.1/CloudTemplate/device/{deviceGuid}
+    - openapi/_original/avnet-iotconnect-device-aws-prod-swagger.json#DELETE /api/v2.1/Device/{deviceGuid}
+    - openapi/_original/avnet-iotconnect-device-aws-prod-swagger.json#DELETE /api/v2.1/Group/{groupGuid}/device/{deviceGuid}
+    - openapi/_original/avnet-iotconnect-device-aws-prod-swagger.json#GET /api/v2.1/Certificate/device/{uniqueId}
+    - openapi/_original/avnet-iotconnect-device-aws-prod-swagger.json#GET /api/v2.1/CloudTemplate/device
+  firmware_update:
+    path_segment:
+    - firmware
+    properties:
+      description: description
+      created_at: createdDate
+      id: guid
+      status: status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/avnet-iotconnect-firmware-azure-prod-swagger.json#GET /api/v2/Firmware
+    - openapi/_original/avnet-iotconnect-firmware-azure-prod-swagger.json#GET /api/v2/Firmware/{firmwareGuid}
+    - openapi/_original/avnet-iotconnect-firmware-azure-prod-swagger.json#POST /api/v2/Firmware
+    - openapi/_original/avnet-iotconnect-firmware-azure-prod-swagger.json#PUT /api/v2/Firmware/{firmwareGuid}
+    - openapi/_original/avnet-iotconnect-firmware-openapi.yml#GET /api/v2/Firmware

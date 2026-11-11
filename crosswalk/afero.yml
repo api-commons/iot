@@ -1,0 +1,23 @@
+provider: afero
+apis_io: https://apis.io/providers/afero/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties:
+      metadata: attributes
+      device_id: deviceId
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/afero-cloud-api-openapi.yml#GET /v1/accounts/{accountId}/devices
+    - openapi/_original/afero-cloud-api-openapi.yml#GET /v1/accounts/{accountId}/devices/{deviceId}
+  device_command:
+    path_segment:
+    - actions
+    properties:
+      command: type
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/afero-cloud-api-openapi.yml#POST /v1/accounts/{accountId}/devices/{deviceId}/actions

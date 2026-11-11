@@ -1,0 +1,20 @@
+provider: actionstreamer
+apis_io: https://apis.io/providers/actionstreamer/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - device
+    properties:
+      name: deviceName
+      device_id: deviceID
+      serial_number: serialNumber
+      created_at: creationDate
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/actionstreamer-openapi-original.json#DELETE /v1/device/{deviceID}
+    - openapi/_original/actionstreamer-openapi-original.json#DELETE /v1/devicesetting/device/{deviceID}
+    - openapi/_original/actionstreamer-openapi-original.json#DELETE /v1/eventpreset/startupevent/{deviceState}/device/{deviceID}
+    - openapi/_original/actionstreamer-openapi-original.json#GET /v1/device/{deviceID}
+    - openapi/_original/actionstreamer-openapi-original.json#GET /v1/devicesetting/device/{deviceID}

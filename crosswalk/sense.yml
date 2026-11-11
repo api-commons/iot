@@ -1,0 +1,17 @@
+provider: sense
+apis_io: https://apis.io/providers/sense/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties:
+      name: name
+      id: id
+      metadata: tags
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/sense-sense-client-api-openapi.yml#GET /app/monitors/{monitor_id}/devices
+    - openapi/_original/sense-sense-client-api-openapi.yml#GET /app/monitors/{monitor_id}/devices/{device_id}
+    - openapi/_original/sense-sense-client-api-openapi.yml#GET /monitors/{monitor_id}/devices

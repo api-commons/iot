@@ -1,0 +1,28 @@
+provider: controlup
+apis_io: https://apis.io/providers/controlup/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties:
+      name: device_name
+      device_id: device_id
+      serial_number: mac_address
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/ComplianceAPI.yaml#GET /devices
+    - openapi/_original/ComplianceAPI.yaml#GET /devices/{device_id}
+    - openapi/_original/controlup-compliance-openapi.yml#GET /devices
+    - openapi/_original/controlup-compliance-openapi.yml#GET /devices/{device_id}
+    - openapi/_original/controlup-desktops-openapi.yml#GET /devices
+  device_command:
+    path_segment:
+    - actions
+    properties:
+      command: type
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/controlup-desktops-openapi.yml#POST /devices/{deviceID}/actions
+    - openapi/_original/edge-dx-api.json#POST /devices/{deviceID}/actions

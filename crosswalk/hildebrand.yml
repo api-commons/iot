@@ -1,0 +1,26 @@
+provider: hildebrand
+apis_io: https://apis.io/providers/hildebrand/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - device
+    properties:
+      device_id: deviceId
+      serial_number: hardwareId
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/hildebrand-glowmarkt-device-management-system-swagger.json#GET /device
+    - openapi/_original/hildebrand-glowmarkt-device-management-system-swagger.json#GET /device/{id}
+    - openapi/_original/hildebrand-glowmarkt-device-management-system-swagger.json#POST /device
+  telemetry:
+    path_segment:
+    - readings
+    properties:
+      name: name
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/hildebrand-glowmarkt-resource-system-swagger.json#GET /resource/{id}/readings

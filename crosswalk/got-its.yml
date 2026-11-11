@@ -1,0 +1,20 @@
+provider: got-its
+apis_io: https://apis.io/providers/got-its/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - gateways
+    properties:
+      name: name
+      id: id
+      device_id: deviceId
+      created_at: createdOn
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/got-its-openapi-original.yml#DELETE /consignments/{consignmentId}/gateways/{gatewayId}
+    - openapi/_original/got-its-openapi-original.yml#DELETE /spaces/{spaceId}/gateways/{gatewayId}
+    - openapi/_original/got-its-openapi-original.yml#GET /consignments/{consignmentId}/gateways
+    - openapi/_original/got-its-openapi-original.yml#POST /consignments/{consignmentId}/gateways
+    - openapi/_original/got-its-openapi-original.yml#POST /spaces/{spaceId}/gateways

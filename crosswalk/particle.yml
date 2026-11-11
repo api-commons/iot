@@ -1,0 +1,36 @@
+provider: particle
+apis_io: https://apis.io/providers/particle/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/particle-cloud-api-openapi.yml#DELETE /v1/devices/{deviceId}
+    - openapi/_original/particle-cloud-api-openapi.yml#DELETE /v1/products/{productIdOrSlug}/devices/{deviceId}
+    - openapi/_original/particle-cloud-api-openapi.yml#GET /v1/devices
+    - openapi/_original/particle-cloud-api-openapi.yml#GET /v1/devices/{deviceId}
+    - openapi/_original/particle-cloud-api-openapi.yml#GET /v1/products/{productIdOrSlug}/devices
+  telemetry:
+    path_segment:
+    - events
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/particle-cloud-api-openapi.yml#GET /v1/devices/events/{eventPrefix}
+    - openapi/_original/particle-cloud-api-openapi.yml#GET /v1/devices/{deviceId}/events/{eventPrefix}
+    - openapi/_original/particle-cloud-api-openapi.yml#POST /v1/devices/events
+  firmware_update:
+    path_segment:
+    - firmware
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/particle-cloud-api-openapi.yml#DELETE /v1/products/{productIdOrSlug}/firmware/{version}
+    - openapi/_original/particle-cloud-api-openapi.yml#GET /v1/products/{productIdOrSlug}/firmware
+    - openapi/_original/particle-cloud-api-openapi.yml#GET /v1/products/{productIdOrSlug}/firmware/{version}
+    - openapi/_original/particle-cloud-api-openapi.yml#POST /v1/products/{productIdOrSlug}/firmware
+    - openapi/_original/particle-cloud-api-openapi.yml#PUT /v1/products/{productIdOrSlug}/firmware/{version}

@@ -1,0 +1,54 @@
+aid: common-iot
+name: IoT Devices
+type: Common
+description: 'The common IoT Devices vocabulary, distilled from the harvested OpenAPI of 195 providers in APIs.io:
+  shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names to each
+  provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- IoT
+- Internet of Things
+- Industrial IoT
+- IIoT
+- Common Schema
+created: '2026-11-10'
+modified: '2026-11-10'
+url: https://raw.githubusercontent.com/api-commons/iot/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-iot:iot
+  name: Common IoT Devices Interface
+  description: The IoT Devices interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/iot
+  tags:
+  - IoT
+  - Internet of Things
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/iot/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/iot/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/iot/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: device
+    url: https://raw.githubusercontent.com/api-commons/iot/main/schema/device.json
+  - type: JSONSchema
+    name: telemetry
+    url: https://raw.githubusercontent.com/api-commons/iot/main/schema/telemetry.json
+  - type: JSONSchema
+    name: device_command
+    url: https://raw.githubusercontent.com/api-commons/iot/main/schema/device_command.json
+  - type: JSONSchema
+    name: firmware_update
+    url: https://raw.githubusercontent.com/api-commons/iot/main/schema/firmware_update.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/iot/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

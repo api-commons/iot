@@ -1,0 +1,26 @@
+provider: aeris
+apis_io: https://apis.io/providers/aeris/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - gateways
+    - devices
+    properties:
+      type: deviceType
+      metadata: attributes
+      device_id: deviceId
+      serial_number:
+      - imei
+      - serialNumber
+      status: status
+      created_at: createdAt
+      firmware_version: firmwareVersion
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/subscription-device-api.yaml#GET /devices
+    - openapi/_original/watchtower-api-openapi.yaml#DELETE /watchtower/v1/batch/gateways
+    - openapi/_original/watchtower-api-openapi.yaml#DELETE /watchtower/v1/gateways/{gatewayId}
+    - openapi/_original/watchtower-api-openapi.yaml#GET /watchtower/v1/gateways
+    - openapi/_original/watchtower-api-openapi.yaml#GET /watchtower/v1/gateways/{gatewayId}

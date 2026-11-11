@@ -1,0 +1,15 @@
+provider: eight-sleep
+apis_io: https://apis.io/providers/eight-sleep/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties:
+      device_id: deviceId
+      status: online
+      firmware_version: firmwareVersion
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/eight-sleep-openapi.yml#GET /v1/devices/{deviceId}

@@ -1,0 +1,48 @@
+provider: orange-business
+apis_io: https://apis.io/providers/orange-business/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    - gateways
+    properties:
+      name: name
+      type: model
+      id: id
+      metadata:
+      - tags
+      - properties
+      device_id: deviceId
+      status: status
+      created_at: created
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/orange-business-live-objects-openapi.json#DELETE /api/v1/deviceMgt/devices/{deviceId}
+    - openapi/_original/orange-business-live-objects-openapi.json#GET /api/v1/device-analytics/rules/{ruleId}/device-analyses/classifications/clusters/devices
+    - openapi/_original/orange-business-live-objects-openapi.json#GET /api/v1/device-analytics/rules/{ruleId}/device-analyses/classifications/clusters/devices/{deviceId}
+    - openapi/_original/orange-business-live-objects-openapi.json#GET /api/v1/device-analytics/rules/{ruleId}/device-analyses/classifications/regular-patterns/devices
+    - openapi/_original/orange-business-live-objects-openapi.json#GET /api/v1/device-analytics/rules/{ruleId}/device-analyses/classifications/regular-patterns/devices/{deviceId}
+  device_command:
+    path_segment:
+    - commands
+    properties:
+      status: status
+      created_at: created
+      id: id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/orange-business-live-objects-openapi.json#GET /api/v1/deviceMgt/devices/{deviceId}/commands
+    - openapi/_original/orange-business-live-objects-openapi.json#POST /api/v1/deviceMgt/devices/{deviceId}/commands
+  firmware_update:
+    path_segment:
+    - updates
+    properties:
+      created_at: created
+      id: id
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/orange-business-live-objects-openapi.json#GET /api/v1/deviceMgt/devices/{deviceId}/resources/updates
+    - openapi/_original/orange-business-live-objects-openapi.json#POST /api/v1/deviceMgt/devices/{deviceId}/resources/{resourceId}/updates

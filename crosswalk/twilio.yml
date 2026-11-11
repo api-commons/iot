@@ -1,0 +1,26 @@
+provider: twilio
+apis_io: https://apis.io/providers/twilio/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties:
+      created_at: date_created
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/microvisor-openapi-original.yml#GET /v1/Devices
+    - openapi/_original/microvisor-openapi-original.yml#GET /v1/Devices/{Sid}
+    - openapi/_original/microvisor-openapi-original.yml#POST /v1/Devices/{Sid}
+  telemetry:
+    path_segment:
+    - samples
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/assistant-openapi-original.yml#DELETE /understand/Assistants/{AssistantSid}/Tasks/{TaskSid}/Samples/{Sid}
+    - openapi/_original/assistant-openapi-original.yml#GET /understand/Assistants/{AssistantSid}/Tasks/{TaskSid}/Samples
+    - openapi/_original/assistant-openapi-original.yml#GET /understand/Assistants/{AssistantSid}/Tasks/{TaskSid}/Samples/{Sid}
+    - openapi/_original/assistant-openapi-original.yml#POST /understand/Assistants/{AssistantSid}/Tasks/{TaskSid}/Samples
+    - openapi/_original/assistant-openapi-original.yml#POST /understand/Assistants/{AssistantSid}/Tasks/{TaskSid}/Samples/{Sid}

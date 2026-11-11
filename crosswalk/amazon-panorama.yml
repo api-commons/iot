@@ -1,0 +1,22 @@
+provider: amazon-panorama
+apis_io: https://apis.io/providers/amazon-panorama/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties:
+      name: Name
+      type: Type
+      metadata: Tags
+      device_id: DeviceId
+      serial_number: SerialNumber
+      status: Status
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/amazon-panorama-openapi.yml#DELETE /devices/{DeviceId}
+    - openapi/_original/amazon-panorama-openapi.yml#GET /devices
+    - openapi/_original/amazon-panorama-openapi.yml#GET /devices/{DeviceId}
+    - openapi/_original/amazon-panorama-openapi.yml#POST /devices
+    - openapi/_original/amazon-panorama-openapi.yml#PUT /devices/{DeviceId}

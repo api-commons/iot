@@ -1,0 +1,21 @@
+provider: 30mhz
+apis_io: https://apis.io/providers/30mhz/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - device
+    properties:
+      name: name
+      type: deviceType
+      device_id: deviceId
+      serial_number: serialNumber
+      created_at: createdAt
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/30mhz-zensie-openapi.json#DELETE /authorization/role-assignment/assignee/{assignee}/role/{role}/device/{deviceId}
+    - openapi/_original/30mhz-zensie-openapi.json#DELETE /device/{deviceId}
+    - openapi/_original/30mhz-zensie-openapi.json#GET /authorization/check/device/{deviceId}
+    - openapi/_original/30mhz-zensie-openapi.json#GET /device
+    - openapi/_original/30mhz-zensie-openapi.json#GET /device/{deviceId}

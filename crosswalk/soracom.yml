@@ -1,0 +1,50 @@
+provider: soracom
+apis_io: https://apis.io/providers/soracom/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    - gateways
+    properties:
+      name: name
+      metadata: tags
+      device_id:
+      - device_id
+      - deviceId
+      serial_number: serialNumber
+      status:
+      - online
+      - status
+      - connected
+      firmware_version: firmwareVersion
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/soracom-analysis-query-api-openapi.yml#GET /query/devices
+    - openapi/_original/soracom-inventory-api-openapi.yml#DELETE /devices/{device_id}
+    - openapi/_original/soracom-inventory-api-openapi.yml#GET /devices
+    - openapi/_original/soracom-inventory-api-openapi.yml#GET /devices/{device_id}
+    - openapi/_original/soracom-inventory-api-openapi.yml#POST /devices
+  telemetry:
+    path_segment:
+    - data
+    - events
+    properties:
+      timestamp: time
+      device_id: deviceId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/soracom-inventory-api-openapi.yml#GET /devices/{device_id}/data
+    - openapi/_original/soracom-platform-api-openapi.yml#GET /devices/{device_id}/data
+    - openapi/_original/soracom-platform-api-openapi.yml#GET /sora_cam/devices/events
+    - openapi/_original/soracom-platform-api-openapi.yml#GET /sora_cam/devices/{device_id}/events
+    - openapi/_original/soracom-platform-api-openapi.yml#POST /sora_cam/devices/{device_id}/data
+  firmware_update:
+    path_segment:
+    - updates
+    properties:
+      version: firmwareVersion
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/soracom-platform-api-openapi.yml#GET /sora_cam/devices/atom_cam/firmware/updates

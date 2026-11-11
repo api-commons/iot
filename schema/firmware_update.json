@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/iot/main/schema/firmware_update.json",
+  "title": "Firmware Update",
+  "description": "The common firmware_update in IoT Devices, distilled from 8 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "description": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "description"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.375,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "created",
+        "createdDate"
+      ],
+      "format": "date-time"
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.375,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "id",
+        "guid"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.375,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "status"
+      ]
+    },
+    "version": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.375,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "version",
+        "firmwareVersion"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "iot",
+    "concept": "firmware_update",
+    "providers": 8,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

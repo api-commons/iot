@@ -1,0 +1,32 @@
+provider: esper
+apis_io: https://apis.io/providers/esper/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    - device
+    properties:
+      name:
+      - device_name
+      - name
+      type: device_type
+      id: id
+      metadata: tags
+      device_id: device_id
+      serial_number: serial
+      status:
+      - status
+      - state
+      created_at:
+      - created_on
+      - created_at
+      firmware_version: os_version
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/esper-openapi.json#DELETE /device/v0/devices/{id}/
+    - openapi/_original/esper-openapi.json#GET /device/v0/devices/
+    - openapi/_original/esper-openapi.json#GET /device/v0/devices/{id}/
+    - openapi/_original/esper-openapi.json#GET /enterprise/{enterprise_id}/device/
+    - openapi/_original/esper-openapi.json#GET /enterprise/{enterprise_id}/device/{device_id}/

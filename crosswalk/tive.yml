@@ -1,0 +1,15 @@
+provider: tive
+apis_io: https://apis.io/providers/tive/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties:
+      name: deviceName
+      device_id: deviceId
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/tive-openapi.yml#GET /devices
+    - openapi/_original/tive-openapi.yml#GET /devices/{deviceId}

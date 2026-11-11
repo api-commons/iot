@@ -1,0 +1,40 @@
+provider: golioth
+apis_io: https://apis.io/providers/golioth/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties:
+      name: name
+      id: id
+      metadata: metadata
+      status: status
+      created_at: createdAt
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/golioth-openapi.yml#DELETE /v1/projects/{projectId}/devices/{deviceId}
+    - openapi/_original/golioth-openapi.yml#GET /v1/organizations/{organizationId}/projects/{projectId}/networks/{networkId}/devices
+    - openapi/_original/golioth-openapi.yml#GET /v1/organizations/{organizationId}/usage/{projectId}/devices
+    - openapi/_original/golioth-openapi.yml#GET /v1/organizations/{organizationId}/usage/{projectId}/devices/{id}
+    - openapi/_original/golioth-openapi.yml#GET /v1/projects/{projectId}/devices
+  telemetry:
+    path_segment:
+    - data
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/golioth-openapi.yml#DELETE /v1/projects/{projectId}/devices/{deviceId}/data/{path}
+    - openapi/_original/golioth-openapi.yml#GET /v1/projects/{projectId}/devices/{deviceId}/data/{path}
+    - openapi/_original/golioth-openapi.yml#PATCH /v1/projects/{projectId}/devices/{deviceId}/data/{path}
+    - openapi/_original/golioth-openapi.yml#POST /v1/projects/{projectId}/devices/{deviceId}/data/{path}
+    - openapi/_original/golioth-openapi.yml#PUT /v1/projects/{projectId}/devices/{deviceId}/data/{path}
+  device_command:
+    path_segment:
+    - rpc
+    properties:
+      command: method
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/golioth-openapi.yml#POST /v1/projects/{projectId}/devices/{deviceId}/rpc

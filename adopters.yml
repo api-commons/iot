@@ -1,0 +1,389 @@
+context: iot
+generated: '2026-11-10'
+adopters:
+- provider: 1nce
+  apis_io: https://apis.io/providers/1nce/
+  crosswalk: crosswalk/1nce.yml
+  concepts:
+  - device
+  - device_command
+  - telemetry
+- provider: 30mhz
+  apis_io: https://apis.io/providers/30mhz/
+  crosswalk: crosswalk/30mhz.yml
+  concepts:
+  - device
+- provider: actionstreamer
+  apis_io: https://apis.io/providers/actionstreamer/
+  crosswalk: crosswalk/actionstreamer.yml
+  concepts:
+  - device
+- provider: aedifion
+  apis_io: https://apis.io/providers/aedifion/
+  crosswalk: crosswalk/aedifion.yml
+  concepts:
+  - device
+- provider: aeris
+  apis_io: https://apis.io/providers/aeris/
+  crosswalk: crosswalk/aeris.yml
+  concepts:
+  - device
+- provider: afero
+  apis_io: https://apis.io/providers/afero/
+  crosswalk: crosswalk/afero.yml
+  concepts:
+  - device
+  - device_command
+- provider: agrology
+  apis_io: https://apis.io/providers/agrology/
+  crosswalk: crosswalk/agrology.yml
+  concepts:
+  - device
+- provider: allegion
+  apis_io: https://apis.io/providers/allegion/
+  crosswalk: crosswalk/allegion.yml
+  concepts:
+  - device
+  - device_command
+- provider: amazon-iot-core
+  apis_io: https://apis.io/providers/amazon-iot-core/
+  crosswalk: crosswalk/amazon-iot-core.yml
+  concepts:
+  - device
+  - device_command
+- provider: amazon-iot-sitewise
+  apis_io: https://apis.io/providers/amazon-iot-sitewise/
+  crosswalk: crosswalk/amazon-iot-sitewise.yml
+  concepts:
+  - device
+- provider: amazon-panorama
+  apis_io: https://apis.io/providers/amazon-panorama/
+  crosswalk: crosswalk/amazon-panorama.yml
+  concepts:
+  - device
+- provider: arduino
+  apis_io: https://apis.io/providers/arduino/
+  crosswalk: crosswalk/arduino.yml
+  concepts:
+  - device
+  - firmware_update
+  - telemetry
+- provider: avnet
+  apis_io: https://apis.io/providers/avnet/
+  crosswalk: crosswalk/avnet.yml
+  concepts:
+  - device
+  - firmware_update
+- provider: ayla-networks
+  apis_io: https://apis.io/providers/ayla-networks/
+  crosswalk: crosswalk/ayla-networks.yml
+  concepts:
+  - device
+  - firmware_update
+- provider: balena
+  apis_io: https://apis.io/providers/balena/
+  crosswalk: crosswalk/balena.yml
+  concepts:
+  - device
+- provider: blues-wireless
+  apis_io: https://apis.io/providers/blues-wireless/
+  crosswalk: crosswalk/blues-wireless.yml
+  concepts:
+  - device
+  - firmware_update
+- provider: bodytrace
+  apis_io: https://apis.io/providers/bodytrace/
+  crosswalk: crosswalk/bodytrace.yml
+  concepts:
+  - device
+- provider: butterflymx
+  apis_io: https://apis.io/providers/butterflymx/
+  crosswalk: crosswalk/butterflymx.yml
+  concepts:
+  - device
+- provider: cesanta
+  apis_io: https://apis.io/providers/cesanta/
+  crosswalk: crosswalk/cesanta.yml
+  concepts:
+  - device
+  - device_command
+  - firmware_update
+  - telemetry
+- provider: cisco-control-hub
+  apis_io: https://apis.io/providers/cisco-control-hub/
+  crosswalk: crosswalk/cisco-control-hub.yml
+  concepts:
+  - device
+- provider: cisco-meraki
+  apis_io: https://apis.io/providers/cisco-meraki/
+  crosswalk: crosswalk/cisco-meraki.yml
+  concepts:
+  - device
+  - device_command
+- provider: controlup
+  apis_io: https://apis.io/providers/controlup/
+  crosswalk: crosswalk/controlup.yml
+  concepts:
+  - device
+  - device_command
+- provider: edge-impulse
+  apis_io: https://apis.io/providers/edge-impulse/
+  crosswalk: crosswalk/edge-impulse.yml
+  concepts:
+  - device
+  - telemetry
+- provider: eight-sleep
+  apis_io: https://apis.io/providers/eight-sleep/
+  crosswalk: crosswalk/eight-sleep.yml
+  concepts:
+  - device
+- provider: esper
+  apis_io: https://apis.io/providers/esper/
+  crosswalk: crosswalk/esper.yml
+  concepts:
+  - device
+- provider: fitbit
+  apis_io: https://apis.io/providers/fitbit/
+  crosswalk: crosswalk/fitbit.yml
+  concepts:
+  - device
+- provider: golioth
+  apis_io: https://apis.io/providers/golioth/
+  crosswalk: crosswalk/golioth.yml
+  concepts:
+  - device
+  - device_command
+  - telemetry
+- provider: google-assistant
+  apis_io: https://apis.io/providers/google-assistant/
+  crosswalk: crosswalk/google-assistant.yml
+  concepts:
+  - device
+- provider: google-nest
+  apis_io: https://apis.io/providers/google-nest/
+  crosswalk: crosswalk/google-nest.yml
+  concepts:
+  - device
+- provider: got-its
+  apis_io: https://apis.io/providers/got-its/
+  crosswalk: crosswalk/got-its.yml
+  concepts:
+  - device
+- provider: govee
+  apis_io: https://apis.io/providers/govee/
+  crosswalk: crosswalk/govee.yml
+  concepts:
+  - device
+- provider: gridx-ai
+  apis_io: https://apis.io/providers/gridx-ai/
+  crosswalk: crosswalk/gridx-ai.yml
+  concepts:
+  - device
+  - firmware_update
+  - telemetry
+- provider: hildebrand
+  apis_io: https://apis.io/providers/hildebrand/
+  crosswalk: crosswalk/hildebrand.yml
+  concepts:
+  - device
+  - telemetry
+- provider: hologram
+  apis_io: https://apis.io/providers/hologram/
+  crosswalk: crosswalk/hologram.yml
+  concepts:
+  - device
+- provider: hubble-network
+  apis_io: https://apis.io/providers/hubble-network/
+  crosswalk: crosswalk/hubble-network.yml
+  concepts:
+  - device
+- provider: inductive-automation
+  apis_io: https://apis.io/providers/inductive-automation/
+  crosswalk: crosswalk/inductive-automation.yml
+  concepts:
+  - device
+- provider: itron
+  apis_io: https://apis.io/providers/itron/
+  crosswalk: crosswalk/itron.yml
+  concepts:
+  - device
+- provider: ixon
+  apis_io: https://apis.io/providers/ixon/
+  crosswalk: crosswalk/ixon.yml
+  concepts:
+  - device
+- provider: kandji
+  apis_io: https://apis.io/providers/kandji/
+  crosswalk: crosswalk/kandji.yml
+  concepts:
+  - device
+  - device_command
+- provider: kolide
+  apis_io: https://apis.io/providers/kolide/
+  crosswalk: crosswalk/kolide.yml
+  concepts:
+  - device
+- provider: kontaktio
+  apis_io: https://apis.io/providers/kontaktio/
+  crosswalk: crosswalk/kontaktio.yml
+  concepts:
+  - device
+  - firmware_update
+  - telemetry
+- provider: kpn
+  apis_io: https://apis.io/providers/kpn/
+  crosswalk: crosswalk/kpn.yml
+  concepts:
+  - device
+- provider: lunar-energy
+  apis_io: https://apis.io/providers/lunar-energy/
+  crosswalk: crosswalk/lunar-energy.yml
+  concepts:
+  - device
+  - telemetry
+- provider: memfault
+  apis_io: https://apis.io/providers/memfault/
+  crosswalk: crosswalk/memfault.yml
+  concepts:
+  - device
+- provider: microsoft-endpoint-configuration-management
+  apis_io: https://apis.io/providers/microsoft-endpoint-configuration-management/
+  crosswalk: crosswalk/microsoft-endpoint-configuration-management.yml
+  concepts:
+  - device
+- provider: mtn-group
+  apis_io: https://apis.io/providers/mtn-group/
+  crosswalk: crosswalk/mtn-group.yml
+  concepts:
+  - device
+- provider: orange-business
+  apis_io: https://apis.io/providers/orange-business/
+  crosswalk: crosswalk/orange-business.yml
+  concepts:
+  - device
+  - device_command
+  - firmware_update
+- provider: particle
+  apis_io: https://apis.io/providers/particle/
+  crosswalk: crosswalk/particle.yml
+  concepts:
+  - device
+  - firmware_update
+  - telemetry
+- provider: phosphorus
+  apis_io: https://apis.io/providers/phosphorus/
+  crosswalk: crosswalk/phosphorus.yml
+  concepts:
+  - device
+  - firmware_update
+  - telemetry
+- provider: ptc-thingworx
+  apis_io: https://apis.io/providers/ptc-thingworx/
+  crosswalk: crosswalk/ptc-thingworx.yml
+  concepts:
+  - device
+- provider: samsara
+  apis_io: https://apis.io/providers/samsara/
+  crosswalk: crosswalk/samsara.yml
+  concepts:
+  - device
+- provider: samsung
+  apis_io: https://apis.io/providers/samsung/
+  crosswalk: crosswalk/samsung.yml
+  concepts:
+  - device
+  - device_command
+- provider: sense
+  apis_io: https://apis.io/providers/sense/
+  crosswalk: crosswalk/sense.yml
+  concepts:
+  - device
+- provider: soracom
+  apis_io: https://apis.io/providers/soracom/
+  crosswalk: crosswalk/soracom.yml
+  concepts:
+  - device
+  - firmware_update
+  - telemetry
+- provider: tago-io
+  apis_io: https://apis.io/providers/tago-io/
+  crosswalk: crosswalk/tago-io.yml
+  concepts:
+  - device
+  - telemetry
+- provider: tank-utility
+  apis_io: https://apis.io/providers/tank-utility/
+  crosswalk: crosswalk/tank-utility.yml
+  concepts:
+  - device
+- provider: the-things-network
+  apis_io: https://apis.io/providers/the-things-network/
+  crosswalk: crosswalk/the-things-network.yml
+  concepts:
+  - device
+- provider: thingsboard
+  apis_io: https://apis.io/providers/thingsboard/
+  crosswalk: crosswalk/thingsboard.yml
+  concepts:
+  - device
+  - telemetry
+- provider: tibber
+  apis_io: https://apis.io/providers/tibber/
+  crosswalk: crosswalk/tibber.yml
+  concepts:
+  - device
+- provider: tive
+  apis_io: https://apis.io/providers/tive/
+  crosswalk: crosswalk/tive.yml
+  concepts:
+  - device
+- provider: truphone
+  apis_io: https://apis.io/providers/truphone/
+  crosswalk: crosswalk/truphone.yml
+  concepts:
+  - device
+- provider: tttech
+  apis_io: https://apis.io/providers/tttech/
+  crosswalk: crosswalk/tttech.yml
+  concepts:
+  - device
+- provider: tuya
+  apis_io: https://apis.io/providers/tuya/
+  crosswalk: crosswalk/tuya.yml
+  concepts:
+  - device
+  - device_command
+- provider: twilio
+  apis_io: https://apis.io/providers/twilio/
+  crosswalk: crosswalk/twilio.yml
+  concepts:
+  - device
+  - telemetry
+- provider: viridi-parente
+  apis_io: https://apis.io/providers/viridi-parente/
+  crosswalk: crosswalk/viridi-parente.yml
+  concepts:
+  - device
+  - telemetry
+- provider: vivalink
+  apis_io: https://apis.io/providers/vivalink/
+  crosswalk: crosswalk/vivalink.yml
+  concepts:
+  - device
+  - telemetry
+- provider: wattwatchers
+  apis_io: https://apis.io/providers/wattwatchers/
+  crosswalk: crosswalk/wattwatchers.yml
+  concepts:
+  - device
+- provider: withings
+  apis_io: https://apis.io/providers/withings/
+  crosswalk: crosswalk/withings.yml
+  concepts:
+  - device
+- provider: zededa
+  apis_io: https://apis.io/providers/zededa/
+  crosswalk: crosswalk/zededa.yml
+  concepts:
+  - device
+  - telemetry

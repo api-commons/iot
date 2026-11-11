@@ -1,0 +1,18 @@
+provider: amazon-iot-sitewise
+apis_io: https://apis.io/providers/amazon-iot-sitewise/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - gateways
+    properties:
+      metadata: tags
+      created_at: creationDate
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/amazon-iot-sitewise-openapi-original.yml#DELETE /20200301/gateways/{gatewayId}
+    - openapi/_original/amazon-iot-sitewise-openapi-original.yml#GET /20200301/gateways
+    - openapi/_original/amazon-iot-sitewise-openapi-original.yml#GET /20200301/gateways/{gatewayId}
+    - openapi/_original/amazon-iot-sitewise-openapi-original.yml#POST /20200301/gateways
+    - openapi/_original/amazon-iot-sitewise-openapi-original.yml#PUT /20200301/gateways/{gatewayId}

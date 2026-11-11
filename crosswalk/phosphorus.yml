@@ -1,0 +1,29 @@
+provider: phosphorus
+apis_io: https://apis.io/providers/phosphorus/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - device
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/phosphorus-api-openapi.yml#GET /api/v2/device/{uuid}
+    - openapi/_original/phosphorus-openapi.json#GET /api/v2/device/{uuid}
+  telemetry:
+    path_segment:
+    - data
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/phosphorus-api-openapi.yml#GET /api/v2/device/{uuid}/data
+    - openapi/_original/phosphorus-openapi.json#GET /api/v2/device/{uuid}/data
+  firmware_update:
+    path_segment:
+    - firmware
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/phosphorus-api-openapi.yml#GET /api/v2/device/{uuid}/firmware
+    - openapi/_original/phosphorus-openapi.json#GET /api/v2/device/{uuid}/firmware

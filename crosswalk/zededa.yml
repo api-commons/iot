@@ -1,0 +1,38 @@
+provider: zededa
+apis_io: https://apis.io/providers/zededa/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    - device
+    properties:
+      name:
+      - name
+      - title
+      type: model
+      id:
+      - id
+      - objectId
+      metadata: tags
+      device_id: assetId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/zededa-network_service-openapi.json#GET /v1/networks/id/{id}/devices
+    - openapi/_original/zededa-node_service-openapi.json#GET /v1/devices
+    - openapi/_original/zededa-node_service-openapi.json#POST /v1/devices
+    - openapi/_original/zededa-user_service-openapi.json#GET /v1/reports/device
+  telemetry:
+    path_segment:
+    - events
+    - timeseries
+    properties:
+      timestamp: timestamp
+      device_id: device
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/zededa-node_service-openapi.json#GET /v1/devices/id/{objid}/events
+    - openapi/_original/zededa-node_service-openapi.json#GET /v1/devices/id/{objid}/timeSeries/{mType}
+    - openapi/_original/zededa-node_service-openapi.json#GET /v1/devices/name/{objname}/events
+    - openapi/_original/zededa-node_service-openapi.json#GET /v1/devices/name/{objname}/timeSeries/{mType}

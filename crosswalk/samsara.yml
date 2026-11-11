@@ -1,0 +1,17 @@
+provider: samsara
+apis_io: https://apis.io/providers/samsara/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - gateways
+    properties:
+      type: model
+      serial_number: serial
+      status: connectionStatus
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/samsara-openapi.yml#DELETE /gateways/{id}
+    - openapi/_original/samsara-openapi.yml#GET /gateways
+    - openapi/_original/samsara-openapi.yml#POST /gateways

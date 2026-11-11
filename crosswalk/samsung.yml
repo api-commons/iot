@@ -1,0 +1,29 @@
+provider: samsung
+apis_io: https://apis.io/providers/samsung/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties:
+      name:
+      - name
+      - label
+      type: type
+      device_id: deviceId
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/samsung-smartthings-openapi.yml#DELETE /devices/{deviceId}
+    - openapi/_original/samsung-smartthings-openapi.yml#GET /devices
+    - openapi/_original/samsung-smartthings-openapi.yml#GET /devices/{deviceId}
+  device_command:
+    path_segment:
+    - commands
+    properties:
+      command: command
+      status: status
+      id: id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/samsung-smartthings-openapi.yml#POST /devices/{deviceId}/commands

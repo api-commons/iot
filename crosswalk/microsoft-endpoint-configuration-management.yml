@@ -1,0 +1,24 @@
+provider: microsoft-endpoint-configuration-management
+apis_io: https://apis.io/providers/microsoft-endpoint-configuration-management/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - device
+    - devices
+    properties:
+      name:
+      - Name
+      - deviceName
+      type:
+      - deviceType
+      - model
+      device_id: deviceId
+      serial_number: serialNumber
+      status: Status
+      firmware_version: osVersion
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/microsoft-endpoint-configuration-management-configmgr-rest-api-openapi.yml#GET /v1.0/Device
+    - openapi/_original/microsoft-endpoint-configuration-management-intune-data-warehouse-api-openapi.yml#GET /devices

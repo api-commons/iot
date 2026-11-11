@@ -1,0 +1,16 @@
+provider: memfault
+apis_io: https://apis.io/providers/memfault/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/memfault-openapi.yml#DELETE /api/v0/organizations/{organization_slug}/projects/{project_slug}/devices/{device_serial}
+    - openapi/_original/memfault-openapi.yml#GET /api/v0/organizations/{organization_slug}/projects/{project_slug}/cohorts/{cohort_slug}/devices
+    - openapi/_original/memfault-openapi.yml#GET /api/v0/organizations/{organization_slug}/projects/{project_slug}/devices
+    - openapi/_original/memfault-openapi.yml#GET /api/v0/organizations/{organization_slug}/projects/{project_slug}/devices/{device_serial}
+    - openapi/_original/memfault-openapi.yml#PATCH /api/v0/organizations/{organization_slug}/projects/{project_slug}/cohorts/{cohort_slug}/devices

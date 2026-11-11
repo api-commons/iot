@@ -1,0 +1,29 @@
+provider: edge-impulse
+apis_io: https://apis.io/providers/edge-impulse/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - device
+    - devices
+    properties:
+      name: name
+      type: deviceType
+      id: id
+      device_id: deviceId
+      created_at: created
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/edge-impulse-openapi.yml#DELETE /api/{projectId}/device/{deviceId}
+    - openapi/_original/edge-impulse-openapi.yml#GET /api/{projectId}/device/{deviceId}
+    - openapi/_original/edge-impulse-openapi.yml#GET /api/{projectId}/devices
+    - openapi/_original/edge-impulse-studio-openapi-2026-09-06.yml#DELETE /api/{projectId}/device/{deviceId}
+    - openapi/_original/edge-impulse-studio-openapi-2026-09-06.yml#GET /api/{projectId}/device/{deviceId}
+  telemetry:
+    path_segment:
+    - samples
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/edge-impulse-studio-openapi-2026-09-06.yml#POST /api/{projectId}/post-processing/{postProcessingId}/samples/{sampleId}

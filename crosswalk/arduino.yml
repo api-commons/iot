@@ -1,0 +1,50 @@
+provider: arduino
+apis_io: https://apis.io/providers/arduino/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - things
+    - devices
+    properties:
+      name:
+      - label
+      - device_name
+      - name
+      type:
+      - type
+      - device_type
+      id: id
+      metadata:
+      - tags
+      - properties
+      - metadata
+      device_id: device_id
+      serial_number: serial
+      created_at: created_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/arduino-iot-cloud-api-openapi.yml#DELETE /iot/v1/manage/users/{id}/devices
+    - openapi/_original/arduino-iot-cloud-api-openapi.yml#DELETE /iot/v1/things/{id}
+    - openapi/_original/arduino-iot-cloud-api-openapi.yml#DELETE /iot/v2/devices/{id}
+    - openapi/_original/arduino-iot-cloud-api-openapi.yml#DELETE /iot/v2/things/{id}
+    - openapi/_original/arduino-iot-cloud-api-openapi.yml#GET /iot/v1/supported/devices
+  telemetry:
+    path_segment:
+    - events
+    properties:
+      name: name
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/arduino-iot-cloud-api-openapi.yml#GET /iot/v2/devices/{id}/events
+  firmware_update:
+    path_segment:
+    - ota
+    properties:
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/arduino-iot-cloud-api-openapi.yml#GET /iot/ota/{id}
+    - openapi/_original/arduino-iot-cloud-api-openapi.yml#POST /iot/v2/devices/{id}/ota
+    - openapi/_original/arduino-iot-cloud-api-openapi.yml#PUT /iot/v2/devices/{id}/ota

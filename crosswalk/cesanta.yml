@@ -1,0 +1,39 @@
+provider: cesanta
+apis_io: https://apis.io/providers/cesanta/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties:
+      name: name
+      id: id
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/cesanta-mdash-openapi.yml#DELETE /devices/{id}
+    - openapi/_original/cesanta-mdash-openapi.yml#GET /devices
+    - openapi/_original/cesanta-mdash-openapi.yml#POST /devices
+    - openapi/_original/cesanta-mdash-openapi.yml#POST /devices/{id}
+  telemetry:
+    path_segment:
+    - data
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/cesanta-mdash-openapi.yml#GET /devices/data
+    - openapi/_original/cesanta-mdash-openapi.yml#GET /devices/{id}/data
+  device_command:
+    path_segment:
+    - rpc
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/cesanta-mdash-openapi.yml#POST /devices/{id}/rpc/{func}
+  firmware_update:
+    path_segment:
+    - ota
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/cesanta-mdash-openapi.yml#POST /devices/{id}/ota

@@ -1,0 +1,14 @@
+provider: bodytrace
+apis_io: https://apis.io/providers/bodytrace/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - devices
+    properties:
+      type: deviceType
+      serial_number: imei
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/bodytrace-openapi.yml#GET /devices

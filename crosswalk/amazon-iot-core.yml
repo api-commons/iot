@@ -1,0 +1,32 @@
+provider: amazon-iot-core
+apis_io: https://apis.io/providers/amazon-iot-core/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - things
+    properties:
+      id: thingName
+      metadata: attributes
+      device_id: thingId
+      firmware_version: version
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/amazon-iot-core-openapi-original.yml#DELETE /things/{thingName}
+    - openapi/_original/amazon-iot-core-openapi-original.yml#GET /billing-groups/{billingGroupName}/things
+    - openapi/_original/amazon-iot-core-openapi-original.yml#GET /jobs/{jobId}/things
+    - openapi/_original/amazon-iot-core-openapi-original.yml#GET /thing-groups/{thingGroupName}/things
+    - openapi/_original/amazon-iot-core-openapi-original.yml#GET /things
+  device_command:
+    path_segment:
+    - jobs
+    properties:
+      status: status
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/amazon-iot-core-openapi-original.yml#GET /things/{thingName}/jobs
+    - openapi/_original/amazon-iot-core-openapi-original.yml#GET /things/{thingName}/jobs/{jobId}
+    - openapi/_original/amazon-iot-device-defender-openapi-original.yml#GET /things/{thingName}/jobs
+    - openapi/_original/amazon-iot-device-defender-openapi-original.yml#GET /things/{thingName}/jobs/{jobId}
+    - openapi/_original/amazon-iot-device-management-openapi-original.yml#GET /things/{thingName}/jobs

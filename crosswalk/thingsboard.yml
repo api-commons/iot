@@ -1,0 +1,30 @@
+provider: thingsboard
+apis_io: https://apis.io/providers/thingsboard/
+context: iot
+generated: '2026-11-10'
+concepts:
+  device:
+    path_segment:
+    - device
+    - devices
+    properties:
+      name:
+      - name
+      - label
+      type: type
+      id: id
+      firmware_version: version
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/thingsboard-devices-openapi.yml#DELETE /api/customer/device/{deviceId}
+    - openapi/_original/thingsboard-devices-openapi.yml#DELETE /api/device/{deviceId}
+    - openapi/_original/thingsboard-devices-openapi.yml#DELETE /api/edge/{edgeId}/device/{deviceId}
+    - openapi/_original/thingsboard-devices-openapi.yml#GET /api/customer/{customerId}/devices
+    - openapi/_original/thingsboard-devices-openapi.yml#GET /api/device/{deviceId}
+  telemetry:
+    path_segment:
+    - timeseries
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/thingsboard-devices-openapi.yml#GET /api/deviceProfile/devices/keys/timeseries
